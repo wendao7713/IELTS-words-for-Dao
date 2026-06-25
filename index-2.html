@@ -1,0 +1,2120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#f4f3ee">
+<meta name="description" content="雅思高频考点词背诵 · 阅读 538 + 听力 179 · 自选背词周期 · 同义替换 · 真人发音 · 小游戏 · 单词故事 · 进度自动保存">
+<title>雅思考点词背诵 · 阅读 538 + 听力 179</title>
+<style>
+:root{
+  --paper:#f4f3ee; --surface:#ffffff; --surface-2:#fbfaf6;
+  --ink:#20292b; --ink-soft:#54605e; --muted:#8b938f; --line:#e7e3da; --line-2:#efece4;
+  --honey:#cf8a1f; --honey-d:#a96e12; --honey-soft:#f7edd6;
+  --jade:#3a9472; --jade-d:#2c7558; --jade-soft:#e4f1ea;
+  --coral:#d9633f; --coral-d:#b94c2b; --coral-soft:#fbe6dd;
+  --cat1:#b3400c; --cat1-bg:#fbe7dd; --cat2:#9a6410; --cat2-bg:#f6ecd6; --cat3:#5f6b6a; --cat3-bg:#ecefed;
+  --r:16px; --r-sm:11px; --r-lg:22px;
+  --sh:0 6px 26px rgba(26,30,28,.07),0 1px 2px rgba(26,30,28,.05);
+  --sh-lg:0 14px 40px rgba(26,30,28,.13);
+  --maxw:640px; --tab-h:62px;
+  --f-ui:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --f-word:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+  --f-mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(244,243,238,.86);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line-2)}
+.topbar .wrap{display:flex;align-items:center;gap:10px;height:54px}
+.brand{font-weight:800;letter-spacing:.2px;font-size:16px;display:flex;align-items:center;gap:8px}
+.brand .dot{width:10px;height:10px;border-radius:3px;background:var(--honey);box-shadow:0 0 0 4px var(--honey-soft)}
+.brand small{font-weight:600;color:var(--muted);font-size:12px;margin-left:2px}
+.topbar .grow{flex:1}
+.iconbtn{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;color:var(--ink-soft);border:1px solid var(--line);background:var(--surface);font-size:17px}
+.iconbtn:active{transform:scale(.94)}
+main{padding:18px 0 calc(var(--tab-h) + env(safe-area-inset-bottom,0px) + 18px)}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(251,250,246,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line-2);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabbar .wrap{display:flex;height:var(--tab-h);padding:0 6px}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--muted);font-size:11px;font-weight:600;border-top:2px solid transparent;margin-top:-1px}
+.tab .ic{font-size:20px;line-height:1}
+.tab.on{color:var(--honey-d);border-top-color:var(--honey)}
+.tab:active{transform:translateY(1px)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.sec-t{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.6px;margin:24px 4px 10px}
+.sec-t.first{margin-top:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:13px 18px;border-radius:13px;font-weight:700;font-size:15px;background:var(--ink);color:#fff;transition:transform .08s,filter .15s;width:100%}
+.btn:active{transform:scale(.98)}
+.btn.ghost{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.btn.honey{background:var(--honey)}
+.btn.jade{background:var(--jade)}
+.btn.sm{padding:9px 13px;font-size:13px;border-radius:10px;width:auto}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;font-size:13px;font-weight:600;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-soft)}
+.badge{display:inline-flex;align-items:center;padding:2px 9px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.3px;white-space:nowrap}
+.b1{background:var(--cat1-bg);color:var(--cat1)} .b2{background:var(--cat2-bg);color:var(--cat2)} .b3{background:var(--cat3-bg);color:var(--cat3)}
+.row{display:flex;gap:10px}
+.row.wrapr{flex-wrap:wrap}
+.muted{color:var(--muted)} .soft{color:var(--ink-soft)} .center{text-align:center}
+.note{margin-top:16px;padding:14px 16px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line);font-size:13.5px;line-height:1.65;color:var(--ink-soft)}
+.note b{color:var(--ink)}
+.kbd{font-family:var(--f-mono);background:var(--line-2);padding:1px 6px;border-radius:6px;font-size:12px}
+
+/* hero / plan */
+.hero{padding:22px 20px;display:flex;gap:20px;align-items:center}
+.ring{position:relative;flex:0 0 auto;width:118px;height:118px}
+.ring svg{transform:rotate(-90deg)}
+.ring .pct{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .pct b{font-size:27px;font-weight:800;font-family:var(--f-mono);line-height:1}
+.ring .pct span{font-size:11px;color:var(--muted);margin-top:3px}
+.hero-info{flex:1;min-width:0}
+.hero-info h2{margin:0 0 4px;font-size:19px;font-weight:800}
+.hero-info .big{font-family:var(--f-mono);font-size:13px;color:var(--ink-soft);margin-bottom:10px}
+.hero-info .big b{color:var(--ink);font-size:15px}
+.deadline{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:10px;background:var(--honey-soft);color:var(--honey-d);font-weight:700;font-size:13px}
+.nudge{margin-top:14px;padding:14px 16px;border-radius:14px;display:flex;gap:11px;align-items:flex-start;font-size:14px;line-height:1.55}
+.nudge .em{font-size:20px;line-height:1.2}
+.nudge.warn{background:var(--coral-soft);color:#9c3d22}
+.nudge.go{background:var(--jade-soft);color:#1f6e51}
+.nudge.flat{background:var(--surface-2);color:var(--ink-soft);border:1px solid var(--line)}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.stat{padding:14px 8px;text-align:center}
+.stat b{display:block;font-size:22px;font-weight:800;font-family:var(--f-mono);line-height:1.1}
+.stat span{font-size:12px;color:var(--muted);margin-top:4px;display:block}
+.stat.j b{color:var(--jade)} .stat.h b{color:var(--honey-d)} .stat.c b{color:var(--coral)}
+.scopelist{display:flex;flex-direction:column;gap:10px}
+.scope{display:flex;align-items:center;gap:13px;padding:15px 16px;text-align:left;width:100%}
+.scope .si{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;flex:0 0 auto}
+.scope .stt{flex:1;min-width:0}
+.scope .stt b{display:block;font-weight:700;font-size:15px}
+.scope .stt span{font-size:13px;color:var(--muted)}
+.scope .sn{font-family:var(--f-mono);font-weight:800;font-size:16px;color:var(--ink-soft)}
+.scope .arrow{color:var(--muted);font-size:18px;margin-left:2px}
+.scope:active{transform:scale(.99)}
+.bg-h{background:var(--honey-soft);color:var(--honey-d)} .bg-j{background:var(--jade-soft);color:var(--jade)}
+.bg-c{background:var(--coral-soft);color:var(--coral)} .bg-n{background:var(--surface-2);color:var(--ink-soft)}
+.bg-p{background:#eee6f3;color:#7a4ea0}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px}
+.day{padding:11px 6px;text-align:center;border-radius:13px;border:1px solid var(--line);background:var(--surface)}
+.day .dl{font-size:11px;color:var(--muted);font-weight:700}
+.day .dn{font-family:var(--f-mono);font-weight:800;font-size:15px;margin-top:3px}
+.day .db{height:5px;border-radius:3px;background:var(--line-2);margin-top:7px;overflow:hidden}
+.day .db i{display:block;height:100%;background:var(--jade);border-radius:3px}
+.day.now{border-color:var(--honey);box-shadow:0 0 0 3px var(--honey-soft)}
+.day.doned .dn{color:var(--jade)}
+
+/* session */
+.session-top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.session-top .x{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;font-size:16px;color:var(--ink-soft);flex:0 0 auto}
+.pbar{flex:1;height:9px;border-radius:6px;background:var(--line-2);overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--honey);border-radius:6px;transition:width .25s}
+.pcount{font-family:var(--f-mono);font-size:13px;font-weight:700;color:var(--ink-soft);flex:0 0 auto}
+
+/* flashcard */
+.fcard{position:relative;min-height:430px;padding:26px 22px;display:flex;flex-direction:column;justify-content:center}
+.corner{position:absolute;top:12px;right:12px}
+.fav{width:40px;height:40px;border-radius:12px;font-size:20px;color:var(--muted);background:var(--surface-2);border:1px solid var(--line)}
+.fav.on{color:var(--honey);background:var(--honey-soft);border-color:var(--honey-soft)}
+.fav:active{transform:scale(.9)}
+.top-area{text-align:center}
+.word{font-family:var(--f-word);font-size:46px;font-weight:600;letter-spacing:.3px;word-break:break-word;line-height:1.1}
+.word.long{font-size:34px}
+.ipa{font-family:var(--f-mono);color:var(--muted);font-size:16px;margin-top:8px}
+.speak{display:inline-flex;align-items:center;gap:6px;padding:8px 15px;border-radius:11px;background:var(--honey-soft);color:var(--honey-d);font-weight:700;font-size:14px;margin-top:14px;transition:transform .1s}
+.speak:active{transform:scale(.94)}
+.speak.playing{animation:pulse .7s ease infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.speak.mini{padding:5px 9px;font-size:12px;margin:0}
+.tap-hint{text-align:center;color:var(--muted);font-size:13px;margin-top:24px;animation:floaty 2.2s ease infinite}
+@keyframes floaty{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(-3px);opacity:1}}
+.reveal{text-align:center}
+.cn{font-size:21px;font-weight:700;margin:14px 0 12px;line-height:1.5}
+.kao{margin:16px 0 4px;text-align:left;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:14px}
+.kao .lab{font-size:12.5px;font-weight:700;color:var(--honey-d);margin-bottom:11px;line-height:1.4}
+.synwrap{display:flex;flex-wrap:wrap;gap:9px}
+.syncard{display:inline-flex;align-items:center;gap:8px;padding:8px 9px 8px 13px;border-radius:12px;background:var(--surface);border:1px solid var(--line);box-shadow:0 1px 2px rgba(26,30,28,.05)}
+.syncard .sw{font-family:var(--f-word);font-size:16px;font-weight:600;color:var(--ink)}
+.syncard .sgo{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:var(--jade-d);background:var(--jade-soft);padding:3px 7px;border-radius:8px}
+.syncard .sgo:active{transform:scale(.92)}
+.syncard .sp{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-size:13px;background:var(--honey-soft);color:var(--honey-d)}
+.syncard .sp:active{transform:scale(.9)}
+.tipbox{margin-top:14px;padding:13px 15px;border-radius:13px;background:var(--jade-soft);color:var(--jade-d);font-size:14px;line-height:1.6;text-align:left}
+.dictrow{display:flex;gap:10px;margin-top:14px}
+.dictrow a{flex:1;text-align:center;padding:11px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);font-weight:700;font-size:14px;color:var(--ink-soft)}
+.dictrow a:active{transform:scale(.98)}
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.rate button{padding:14px 6px;border-radius:14px;font-weight:800;font-size:15px;display:flex;flex-direction:column;align-items:center;gap:3px;border:1.5px solid;transition:transform .08s}
+.rate button small{font-weight:600;font-size:11px;opacity:.8}
+.rate button:active{transform:scale(.96)}
+.rate .again{background:var(--coral-soft);color:var(--coral-d);border-color:#f0c9bb}
+.rate .vague{background:var(--honey-soft);color:var(--honey-d);border-color:#ecd9a8}
+.rate .knownb{background:var(--jade-soft);color:var(--jade-d);border-color:#bfe0ce}
+
+/* summary */
+.summary{text-align:center;padding:34px 22px}
+.summary .lab{font-size:15px;color:var(--ink-soft);line-height:1.6}
+.summary .big{font-family:var(--f-mono);font-size:40px;font-weight:800}
+.sgrid{display:flex;justify-content:center;gap:30px;margin:18px 0 22px}
+.sgrid b{display:block;font-size:30px;font-family:var(--f-mono);font-weight:800}
+.sgrid span{font-size:12px}
+
+/* word list items */
+.wlist{display:flex;flex-direction:column;gap:8px}
+.witem{display:flex;align-items:center;gap:11px;padding:13px 14px;text-align:left;width:100%}
+.dotk{width:9px;height:9px;border-radius:3px;flex:0 0 auto;background:var(--line)}
+.dotk.m0{background:var(--coral)} .dotk.m1{background:var(--honey)} .dotk.m2{background:var(--jade)}
+.wmain{flex:1;min-width:0}
+.ww{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:var(--f-word);font-size:17px;font-weight:600}
+.wc{display:block;font-size:13px;color:var(--muted);margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wfav{font-size:19px;color:var(--muted);flex:0 0 auto;padding:4px}
+.wfav.on{color:var(--honey)}
+
+/* library search/filter */
+.searchbar{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:8px 12px;margin-bottom:12px;box-shadow:var(--sh)}
+.searchbar .mag{color:var(--muted)}
+.searchbar input{flex:1;border:none;outline:none;background:none;font-size:15px;color:var(--ink);min-width:0}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px;align-items:center}
+.fbtn{padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;background:var(--surface);border:1px solid var(--line);color:var(--ink-soft)}
+.fbtn.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.loadmore{margin-top:12px}
+
+/* empty state */
+.emptyst{text-align:center;padding:56px 26px;color:var(--muted)}
+.emptyst .em{font-size:46px;margin-bottom:10px}
+
+/* collections (我的) */
+.coltri{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.coltri button{padding:16px 8px;text-align:center;border-radius:16px;border:1.5px solid;display:flex;flex-direction:column;align-items:center;gap:4px;transition:transform .08s}
+.coltri button:active{transform:scale(.97)}
+.coltri .n{font-family:var(--f-mono);font-size:26px;font-weight:800;line-height:1}
+.coltri .l{font-size:12.5px;font-weight:700}
+.coltri .e{font-size:18px}
+.col0{background:var(--coral-soft);border-color:#f0c9bb;color:var(--coral-d)}
+.col1{background:var(--honey-soft);border-color:#ecd9a8;color:var(--honey-d)}
+.col2{background:var(--jade-soft);border-color:#bfe0ce;color:var(--jade-d)}
+
+/* games hub */
+.gamegrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gcard{padding:18px 16px;border-radius:18px;text-align:left;display:flex;flex-direction:column;gap:6px;min-height:118px;justify-content:space-between;transition:transform .1s}
+.gcard:active{transform:scale(.98)}
+.gcard .ge{font-size:30px}
+.gcard b{font-size:16px;font-weight:800}
+.gcard span{font-size:12.5px;color:var(--muted);line-height:1.45}
+
+/* matching game */
+.matchwrap{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:6px}
+.mcol{display:flex;flex-direction:column;gap:10px}
+.mtile{padding:15px 12px;border-radius:14px;border:1.5px solid var(--line);background:var(--surface);font-weight:600;text-align:center;min-height:56px;display:flex;align-items:center;justify-content:center;line-height:1.35;transition:transform .1s,background .15s,border-color .15s}
+.mtile.en{font-family:var(--f-word);font-size:18px}
+.mtile.zh{font-size:14px}
+.mtile:active{transform:scale(.97)}
+.mtile.sel{border-color:var(--honey);background:var(--honey-soft);color:var(--honey-d)}
+.mtile.matched{border-color:var(--jade-soft);background:var(--jade-soft);color:var(--jade-d);opacity:.55;pointer-events:none}
+.mtile.bad{border-color:var(--coral);background:var(--coral-soft);color:var(--coral-d);animation:shake .3s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.gtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:13px;font-weight:700;color:var(--ink-soft)}
+.gtop .gx{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;color:var(--ink-soft)}
+.gtop .gmeta{font-family:var(--f-mono)}
+
+/* quiz */
+.q-word{font-family:var(--f-word);font-size:42px;font-weight:600;text-align:center;line-height:1.1;word-break:break-word}
+.q-word.long{font-size:30px}
+.q-cn{font-size:26px;font-weight:700;text-align:center;line-height:1.4}
+.q-sub{text-align:center;color:var(--muted);font-family:var(--f-mono);font-size:15px;margin-top:6px}
+.qcard{padding:30px 20px}
+.opts{display:flex;flex-direction:column;gap:11px;margin-top:18px}
+.opt{display:flex;align-items:center;gap:12px;padding:15px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--surface);text-align:left;font-size:16px;font-weight:600;transition:transform .08s}
+.opt:active{transform:scale(.985)}
+.opt .k{width:26px;height:26px;border-radius:8px;background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;font-size:13px;font-weight:800;color:var(--ink-soft);flex:0 0 auto}
+.opt.right{border-color:var(--jade);background:var(--jade-soft);color:var(--jade-d)} .opt.right .k{background:var(--jade);color:#fff;border-color:var(--jade)}
+.opt.wrong{border-color:var(--coral);background:var(--coral-soft);color:var(--coral-d)} .opt.wrong .k{background:var(--coral);color:#fff;border-color:var(--coral)}
+.opt.dim{opacity:.45}
+.qhint{margin-top:14px;padding:12px 15px;border-radius:12px;background:var(--honey-soft);color:var(--honey-d);font-size:14px;text-align:center;font-weight:600}
+
+/* spelling */
+.spcard{padding:28px 20px;text-align:center}
+.sp-cn{font-size:24px;font-weight:700;line-height:1.4;margin-bottom:6px}
+.sp-hint{font-family:var(--f-mono);letter-spacing:6px;font-size:22px;color:var(--muted);margin:14px 0}
+.sp-input{width:100%;text-align:center;font-family:var(--f-word);font-size:30px;font-weight:600;padding:12px;border:none;border-bottom:2px solid var(--line);outline:none;background:none;color:var(--ink)}
+.sp-input:focus{border-bottom-color:var(--honey)}
+.sp-input.ok{border-bottom-color:var(--jade);color:var(--jade-d)}
+.sp-input.no{border-bottom-color:var(--coral);color:var(--coral-d)}
+.sp-actions{display:flex;gap:10px;margin-top:20px}
+.sp-actions .btn{flex:1}
+.sp-reveal{margin-top:16px;font-family:var(--f-word);font-size:24px;font-weight:600;color:var(--jade-d)}
+
+/* stories */
+.storylist{display:flex;flex-direction:column;gap:12px}
+.storycard{padding:17px 18px;text-align:left;width:100%;display:flex;gap:14px;align-items:center}
+.storycard .se{font-size:32px;flex:0 0 auto}
+.storycard .stt{flex:1;min-width:0}
+.storycard .stt b{font-size:16px;font-weight:800;display:block}
+.storycard .stt span{font-size:13px;color:var(--muted)}
+.storyread{padding:22px 20px}
+.storyread h2{font-family:var(--f-word);font-size:25px;font-weight:600;margin:0 0 4px}
+.storyread .stheme{font-size:13px;color:var(--muted);margin-bottom:16px}
+.storytext{font-size:17px;line-height:1.95;color:var(--ink)}
+.tw{color:var(--honey-d);font-weight:600;border-bottom:1.5px dotted var(--honey);cursor:pointer;padding:0 1px}
+.tw:active{background:var(--honey-soft)}
+.storyvocab{margin-top:20px}
+.storyvocab .lab{font-size:12.5px;font-weight:700;color:var(--muted);margin-bottom:10px}
+
+/* modal / bottom sheet */
+.modal{position:fixed;inset:0;z-index:60;display:none}
+.modal.open{display:block}
+.modal .sc{position:absolute;inset:0;background:rgba(20,24,22,.42)}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:var(--surface);border-radius:22px 22px 0 0;max-height:88vh;overflow-y:auto;padding:8px 18px calc(env(safe-area-inset-bottom,0px) + 22px);max-width:var(--maxw);margin:0 auto;animation:slideup .25s ease}
+@keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet .grab{width:42px;height:5px;border-radius:3px;background:var(--line);margin:8px auto 12px}
+
+/* toast */
+.toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:calc(var(--tab-h) + 22px);background:var(--ink);color:#fff;padding:11px 20px;border-radius:13px;font-size:14px;font-weight:600;z-index:80;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;box-shadow:var(--sh-lg);max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.foot{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;margin:30px 4px 4px;padding:0 4px}
+.foot a{color:var(--honey-d);font-weight:600}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.b0{background:var(--cat3-bg);color:var(--cat3)}
+.libsw{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+.libtab{padding:12px 13px;border-radius:14px;border:1px solid var(--line);background:var(--surface);text-align:left;transition:transform .08s}
+.libtab b{display:block;font-size:14.5px;font-weight:800;color:var(--ink)}
+.libtab span{display:block;font-size:11px;color:var(--muted);font-family:var(--f-mono);margin-top:3px}
+.libtab.on{border-color:var(--honey);background:var(--honey-soft);box-shadow:0 0 0 3px var(--honey-soft)}
+.libtab.on b{color:var(--honey-d)}
+.libtab:active{transform:scale(.98)}
+.planhdr{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.cyedit{font-size:12px;font-weight:700;color:var(--honey-d);background:var(--honey-soft);padding:6px 11px;border-radius:10px;margin:24px 4px 10px;white-space:nowrap}
+.cyedit:active{transform:scale(.96)}
+.cygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:8px 0 14px}
+.cyopt{padding:10px 4px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface-2);font-weight:800;font-size:14px;color:var(--ink-soft);display:flex;flex-direction:column;align-items:center;gap:2px}
+.cyopt small{font-weight:600;font-size:10px;color:var(--muted)}
+.cyopt.on{border-color:var(--honey);background:var(--honey-soft);color:var(--honey-d)}
+.cyopt.on small{color:var(--honey-d)}
+.cyopt:active{transform:scale(.95)}
+.cynum{width:84px;padding:9px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:15px;font-family:var(--f-mono);text-align:center;color:var(--ink)}
+.pop{position:fixed;z-index:90;max-width:300px;min-width:198px;left:0;top:0;opacity:0;transform:translateY(4px) scale(.97);pointer-events:none;transition:opacity .14s ease,transform .14s ease}
+.pop.show{opacity:1;transform:none;pointer-events:auto}
+.pop-in{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 34px rgba(26,30,28,.18);padding:13px 15px 14px}
+.pop-arrow{position:absolute;left:var(--ax,20px);width:13px;height:13px;background:var(--surface);border:1px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+.pop:not(.below) .pop-arrow{bottom:-7px;border-top:none;border-left:none}
+.pop.below .pop-arrow{top:-7px;border-bottom:none;border-right:none}
+.pp-h{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.pp-w{font-family:var(--f-word);font-size:21px;font-weight:600;color:var(--ink);line-height:1.1;word-break:break-word}
+.pp-sp{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:14px;background:var(--honey-soft);color:var(--honey-d);flex:none;border:none;cursor:pointer}
+.pp-sp:active{transform:scale(.9)}
+.pp-ipa{font-family:var(--f-mono);color:var(--muted);font-size:13px;margin-bottom:4px}
+.pp-cn{font-size:15px;color:var(--ink);font-weight:600;line-height:1.45}
+.pp-rep{font-weight:600;color:var(--jade-d)}
+.pp-tag{margin-top:8px}
+.pp-note{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+.pp-dict{display:flex;gap:8px;margin-top:11px}
+.pp-dict a{flex:1;text-align:center;font-size:12.5px;font-weight:700;padding:7px 0;border-radius:9px;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-soft);text-decoration:none}
+.pp-dict a:active{transform:scale(.97)}
+.dc-ear{font-size:13px;color:var(--muted);margin-bottom:12px}
+.speak.big{font-size:17px;padding:13px 24px;border-radius:14px}
+.dc-meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin:12px 0 4px}
+.dc-cn{margin-top:14px;background:none;border:none;color:var(--honey-d);font-size:12.5px;font-weight:700;cursor:pointer}
+.dc-cnshow{margin-top:12px;font-size:15px;color:var(--ink);font-weight:600}
+.rootlist{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.rootcard{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;text-align:left;gap:10px}
+.rt{display:flex;flex-direction:column;gap:3px}
+.rt b{font-family:var(--f-word);font-size:18px;font-weight:700;color:var(--ink)}
+.rm{font-size:12.5px;color:var(--muted)}
+.rmeta{font-size:12px;color:var(--muted);font-family:var(--f-mono);white-space:nowrap;display:flex;align-items:center;gap:4px}
+.roothero{text-align:center;padding:20px 16px}
+.rh-r{font-family:var(--f-word);font-size:30px;font-weight:700;color:var(--honey-d);letter-spacing:.5px}
+.rh-m{font-size:15px;color:var(--ink-soft);margin-top:4px}
+.rwords{display:flex;flex-direction:column;gap:11px;margin-bottom:4px}
+.rword{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:13px 15px}
+.rw-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rw-en{font-family:var(--f-word);font-size:19px;font-weight:600;color:var(--ink)}
+.rw-en.link{cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px;color:var(--jade-d)}
+.kbadge{font-size:10.5px;font-weight:800;color:var(--coral-d);background:var(--coral-soft);padding:2px 8px;border-radius:7px}
+.rw-cn{font-size:14.5px;color:var(--ink-soft);font-weight:600;margin-top:6px}
+.rw-eg{font-size:14px;color:var(--ink);margin-top:9px;line-height:1.5;font-style:italic}
+.rw-egcn{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.5}
+.rootchip{display:block;width:100%;margin-top:12px;padding:11px;border-radius:11px;background:var(--jade-soft);color:var(--jade-d);font-size:13px;font-weight:700;border:1px solid var(--jade);cursor:pointer;text-align:center}
+.rootchip:active{transform:scale(.98)}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap">
+  <div class="brand"><span class="dot"></span>雅思阅读 538<small>5 天背词</small></div>
+  <div class="grow"></div>
+  <button class="iconbtn" id="btnSound" title="发音口音">🔊</button>
+  <button class="iconbtn" id="btnData" title="进度与设置">⚙</button>
+</div></div>
+
+<main><div class="wrap"><div id="view"></div>
+  <div class="foot">
+    词表引用自 刘洪波《剑桥雅思阅读考点词真经》《剑桥雅思听力考点词真经》，仅供个人学习。<br>
+    进度保存在本设备浏览器中 · 开源项目，欢迎 Star 与改进。
+  </div>
+</div></main>
+
+<div class="tabbar"><div class="wrap">
+  <button class="tab on" data-tab="home"><span class="ic">🏠</span>计划</button>
+  <button class="tab" data-tab="study"><span class="ic">📖</span>背词</button>
+  <button class="tab" data-tab="play"><span class="ic">🎮</span>闯关</button>
+  <button class="tab" data-tab="lib"><span class="ic">🔤</span>词库</button>
+  <button class="tab" data-tab="me"><span class="ic">👤</span>我的</button>
+</div></div>
+
+<div class="modal" id="modal"><div class="sc" data-close></div>
+  <div class="sheet"><div class="grab"></div><div id="sheetBody"></div></div>
+</div>
+<div class="toast" id="toast"></div>
+<div class="pop" id="pop" aria-hidden="true"></div>
+
+<script>
+"use strict";
+/* ===================== 数据 ===================== */
+const READING = [
+{"id": 0, "w": "resemble", "cn": "v. 像，与……相似", "syn": "like; look like; be similar to", "cat": 1, "rank": 1, "ipa": "/rɪˈzembl/", "tip": "re-(再)+semble(=seem 看起来)→再看也像→相似。它和 similar 长得也很像，一起记。"},
+{"id": 1, "w": "recognize", "cn": "v. 认出，识别；承认", "syn": "perceive; acknowledge; realize; appreciate; admit; identify; comprehend; understand; know", "cat": 1, "rank": 2, "ipa": "/ˈrekəɡnaɪz/", "tip": "re-(再)+cognize(认知)→再次认知→认出。雅思里 perceive / identify / acknowledge 都在替换它，是头号考点。"},
+{"id": 2, "w": "adjust", "cn": "v. 调整，使适合", "syn": "change; modify; shift; alter", "cat": 1, "rank": 3, "ipa": "/əˈdʒʌst/", "tip": "ad-(去)+just(正好)→把它调到正好→调整。"},
+{"id": 3, "w": "approach", "cn": "n. 方法", "syn": "method; way", "cat": 1, "rank": 4, "ipa": "/əˈprəʊtʃ/", "tip": "a+p+road(路)→走近的那条'路'→方法。名词时几乎只考'方法'，等于 method / way。"},
+{"id": 4, "w": "fundamental", "cn": "adj. 基本的，基础的", "syn": "rudimentary; preliminary; basic", "cat": 1, "rank": 5, "ipa": "/ˌfʌndəˈmentl/", "tip": "fund(地基、资金)+amental→打地基的→基础的。"},
+{"id": 5, "w": "rely on", "cn": "依靠，依赖", "syn": "depend on", "cat": 1, "rank": 6, "ipa": "/rɪˈlaɪ ɒn/", "tip": ""},
+{"id": 6, "w": "domestic", "cn": "adj. 家庭的；国内的", "syn": "home; local; national", "cat": 1, "rank": 7, "ipa": "/dəˈmestɪk/", "tip": "dome(家、穹顶)+stic→家里的；对一个国家而言的'家'就是'国内的'。两个义项都要记。"},
+{"id": 7, "w": "measure", "cn": "v. 测量", "syn": "calculate; assess; evaluate", "cat": 1, "rank": 8, "ipa": "/ˈmeʒə(r)/", "tip": ""},
+{"id": 8, "w": "trait", "cn": "n. 特性，特征", "syn": "characteristic; feature; property", "cat": 1, "rank": 9, "ipa": "/treɪt/", "tip": "想象拖(trai)出来的一条特征线→特性、特征。和 trace / track 同源感。"},
+{"id": 9, "w": "coin", "cn": "v. 创造（新词）", "syn": "first used; invent", "cat": 1, "rank": 10, "ipa": "/kɔɪn/", "tip": "硬币是被'铸造、创造'出来的→coin 作动词=创造（新词），考点常说 first used / invent。"},
+{"id": 10, "w": "artificial", "cn": "adj. 人造的，仿造的", "syn": "synthetic; man-made", "cat": 1, "rank": 11, "ipa": "/ˌɑːtɪˈfɪʃl/", "tip": "art(人工技艺)+ifici+al→人工做出来的→人造的，反义是 natural。"},
+{"id": 11, "w": "prompt", "cn": "v. 促进，激起；adj. 迅速的", "syn": "initiate; immediately", "cat": 1, "rank": 12, "ipa": "/prɒmpt/", "tip": "提词器(prompt)在催你说话→促进、激起；也作'迅速的'。"},
+{"id": 12, "w": "exchange", "cn": "v. 交换", "syn": "share; apply A to B", "cat": 1, "rank": 13, "ipa": "/ɪksˈtʃeɪndʒ/", "tip": ""},
+{"id": 13, "w": "underlie", "cn": "v. 成为……的基础", "syn": "based on; ground; root", "cat": 1, "rank": 14, "ipa": "/ˌʌndəˈlaɪ/", "tip": "under(下面)+lie(躺)→躺在下面→成为……的基础，等于 based on / root。"},
+{"id": 14, "w": "ignore", "cn": "v. 忽视，不顾", "syn": "neglect; overlook; underestimate", "cat": 1, "rank": 15, "ipa": "/ɪɡˈnɔː(r)/", "tip": "i-+gnore(=know的反)→假装不知道→忽视，等于 neglect / overlook。"},
+{"id": 15, "w": "fertiliser", "cn": "n. 化肥，肥料", "syn": "chemical; toxic; unnatural", "cat": 1, "rank": 16, "ipa": "/ˈfɜːtɪlaɪzə(r)/", "tip": "土壤吃了'肥料'才肥(fertile)。考点常用 chemical / unnatural 来替换它。"},
+{"id": 16, "w": "that", "cn": "pron. 那；那个（指代考点）", "syn": "this; it; they; those; these; such", "cat": 1, "rank": 17, "ipa": "", "tip": "指代考点：文章里的 this / it / they / those / such 常常指代前面出现过的名词。做题先回头找它到底指谁。"},
+{"id": 17, "w": "and", "cn": "conj. 和，而且（并列考点）", "syn": "or; as well as; both...and; not only...but also; in addition; besides; neither...nor", "cat": 1, "rank": 18, "ipa": "", "tip": "并列考点：and / or / both...and / not only...but also 连接的成分往往都是答案要点，千万别只看前半句漏了后半句。"},
+{"id": 18, "w": "rather than", "cn": "而非，不是（转折考点）", "syn": "but; yet; however; whereas; nonetheless; nevertheless; although; though; instead; notwithstanding", "cat": 1, "rank": 19, "ipa": "", "tip": "转折考点：看到 but / however / whereas / instead，作者真正想强调的常在转折之后那一句。"},
+{"id": 19, "w": "thanks to", "cn": "由于，幸亏（因果考点）", "syn": "stem from; derive; owing to; due to; because of; on account of; as a result of; leading to; since; for; in that; as; therefore; hence", "cat": 1, "rank": 20, "ipa": "", "tip": "因果考点：because / due to / owing to / lead to / as a result of 都在讲因果。做题注意别把'因'和'果'填反。"},
+{"id": 20, "w": "diversity", "cn": "n. 多样性，差异", "syn": "variety; difference", "cat": 2, "rank": 21, "ipa": "/daɪˈvɜːsəti/", "tip": "di-(分开)+verse(转向)→分向很多方向→多样性、差异。"},
+{"id": 21, "w": "detect", "cn": "v. 查明，发现", "syn": "find; look for; seek; search", "cat": 2, "rank": 22, "ipa": "/dɪˈtekt/", "tip": "de-+tect(=cover 盖)→把盖子揭开→查明、发现，等于 find / search。"},
+{"id": 22, "w": "isolate", "cn": "v. 使隔离，使孤立", "syn": "inaccessible", "cat": 2, "rank": 23, "ipa": "/ˈaɪsəleɪt/", "tip": "像一座孤'岛(isle)'被水围住→隔离、孤立；考点用 inaccessible(无法接近)替换。"},
+{"id": 23, "w": "avoid", "cn": "v. 避免", "syn": "escape; evitable", "cat": 2, "rank": 24, "ipa": "/əˈvɔɪd/", "tip": ""},
+{"id": 24, "w": "budget", "cn": "n. 预算", "syn": "fund; financial", "cat": 2, "rank": 25, "ipa": "/ˈbʌdʒɪt/", "tip": ""},
+{"id": 25, "w": "adapt to", "cn": "使适应", "syn": "fit; suit", "cat": 2, "rank": 26, "ipa": "", "tip": ""},
+{"id": 26, "w": "alternative", "cn": "adj. 供替代的；n. 替代品", "syn": "substitute", "cat": 2, "rank": 27, "ipa": "/ɔːlˈtɜːnətɪv/", "tip": "alter(改变)+native→可改换的→替代品、替代的，等于 substitute。"},
+{"id": 27, "w": "compensate", "cn": "v. 补偿，赔偿", "syn": "make up; offset", "cat": 2, "rank": 28, "ipa": "/ˈkɒmpenseɪt/", "tip": ""},
+{"id": 28, "w": "component", "cn": "n. 成分，要素", "syn": "proportion", "cat": 2, "rank": 29, "ipa": "/kəmˈpəʊnənt/", "tip": ""},
+{"id": 29, "w": "military", "cn": "adj. 军事的", "syn": "weapon; army", "cat": 2, "rank": 30, "ipa": "/ˈmɪlətri/", "tip": ""},
+{"id": 30, "w": "criteria", "cn": "n. 标准", "syn": "standard", "cat": 2, "rank": 31, "ipa": "/kraɪˈtɪəriə/", "tip": ""},
+{"id": 31, "w": "curriculum", "cn": "n. 课程", "syn": "syllabus; course of study", "cat": 2, "rank": 32, "ipa": "/kəˈrɪkjələm/", "tip": ""},
+{"id": 32, "w": "feasible", "cn": "adj. 可行的", "syn": "realistic; viable", "cat": 2, "rank": 33, "ipa": "/ˈfiːzəbl/", "tip": ""},
+{"id": 33, "w": "constrain", "cn": "v. 束缚，限制", "syn": "stop; control", "cat": 2, "rank": 34, "ipa": "", "tip": ""},
+{"id": 34, "w": "deficiency", "cn": "n. 缺陷，缺点", "syn": "shortage; defect; weakness", "cat": 2, "rank": 35, "ipa": "/dɪˈfɪʃnsi/", "tip": "de-(缺)+ficiency(=efficiency 效能)→效能不足→缺陷、不足。"},
+{"id": 35, "w": "supplement", "cn": "v./n. 补充", "syn": "provision", "cat": 2, "rank": 36, "ipa": "", "tip": ""},
+{"id": 36, "w": "distinguish", "cn": "v. 区别，辨别", "syn": "separate; differentiate", "cat": 2, "rank": 37, "ipa": "/dɪˈstɪŋɡwɪʃ/", "tip": ""},
+{"id": 37, "w": "analyze", "cn": "v. 分析，解释", "syn": "examine; diagnose", "cat": 2, "rank": 38, "ipa": "", "tip": ""},
+{"id": 38, "w": "emphasize", "cn": "v. 强调，着重", "syn": "focus on; stress", "cat": 2, "rank": 39, "ipa": "/ˈemfəsaɪz/", "tip": ""},
+{"id": 39, "w": "enormous", "cn": "adj. 庞大的，巨大的", "syn": "massive; large", "cat": 2, "rank": 40, "ipa": "/ɪˈnɔːməs/", "tip": "e-(出)+norm(规范)+ous→超出常规→巨大的。"},
+{"id": 40, "w": "imitate", "cn": "v. 模仿", "syn": "mimic; copy", "cat": 2, "rank": 41, "ipa": "/ˈɪmɪteɪt/", "tip": ""},
+{"id": 41, "w": "impair", "cn": "v. 削弱，减少", "syn": "damage; diminish; decrease", "cat": 2, "rank": 42, "ipa": "/ɪmˈpeə(r)/", "tip": "im-+pair(成对)→把好好的一对拆坏→削弱、损害，等于 damage / diminish。"},
+{"id": 42, "w": "hinder", "cn": "v. 阻碍", "syn": "impede; prevent; deter; obstacle", "cat": 2, "rank": 43, "ipa": "/ˈhɪndə(r)/", "tip": "behind(后面)→拉你后腿→阻碍，等于 impede / prevent / deter。"},
+{"id": 43, "w": "legitimate", "cn": "adj. 合法的", "syn": "legal", "cat": 2, "rank": 44, "ipa": "/lɪˈdʒɪtɪmət/", "tip": ""},
+{"id": 44, "w": "limitation", "cn": "n. 限制", "syn": "restriction", "cat": 2, "rank": 45, "ipa": "", "tip": ""},
+{"id": 45, "w": "convention", "cn": "n. 手法；习俗", "syn": "method; tradition", "cat": 2, "rank": 46, "ipa": "/kənˈvenʃn/", "tip": ""},
+{"id": 46, "w": "demanding", "cn": "adj. 苛求的，费力的", "syn": "troublesome", "cat": 2, "rank": 47, "ipa": "", "tip": ""},
+{"id": 47, "w": "determine", "cn": "v. 决定", "syn": "decide", "cat": 2, "rank": 48, "ipa": "/dɪˈtɜːmɪn/", "tip": ""},
+{"id": 48, "w": "accelerate", "cn": "v. 加速，促进", "syn": "speed up", "cat": 2, "rank": 49, "ipa": "/əkˈseləreɪt/", "tip": "ac-+celer(快)+ate→加速、促进。celerity=敏捷，一起记。"},
+{"id": 49, "w": "ancient", "cn": "adj. 古代的；古老的", "syn": "aged; old", "cat": 2, "rank": 50, "ipa": "/ˈeɪnʃənt/", "tip": ""},
+{"id": 50, "w": "beneficial", "cn": "adj. 有益的", "syn": "helpful; advantageous; wholesome", "cat": 2, "rank": 51, "ipa": "/ˌbenɪˈfɪʃl/", "tip": ""},
+{"id": 51, "w": "chronic", "cn": "adj. 慢性的，长期性的", "syn": "lasting", "cat": 2, "rank": 52, "ipa": "/ˈkrɒnɪk/", "tip": ""},
+{"id": 52, "w": "conscious", "cn": "adj. 有意识的，清醒的", "syn": "aware; knowing", "cat": 2, "rank": 53, "ipa": "/ˈkɒnʃəs/", "tip": ""},
+{"id": 53, "w": "minimize", "cn": "v. 最小化，使减到最少", "syn": "reduce; lessen", "cat": 2, "rank": 54, "ipa": "/ˈmɪnɪmaɪz/", "tip": "mini(最小)+mize→使最小化，等于 reduce / lessen。反义 maximize。"},
+{"id": 54, "w": "immunity", "cn": "n. 免疫力", "syn": "resistance", "cat": 2, "rank": 55, "ipa": "/ɪˈmjuːnəti/", "tip": ""},
+{"id": 55, "w": "imperative", "cn": "adj. 必要的，紧急的", "syn": "compelling; necessary; urgent", "cat": 2, "rank": 56, "ipa": "/ɪmˈperətɪv/", "tip": ""},
+{"id": 56, "w": "secrete", "cn": "v. 分泌", "syn": "discharge; exude", "cat": 2, "rank": 57, "ipa": "", "tip": ""},
+{"id": 57, "w": "exaggerate", "cn": "v. 夸大，夸张", "syn": "overstate", "cat": 2, "rank": 58, "ipa": "/ɪɡˈzædʒəreɪt/", "tip": "ex-+agger(堆)→越堆越多→夸大、夸张。"},
+{"id": 58, "w": "transmit", "cn": "v. 传达，传输", "syn": "pass; send; transfer", "cat": 2, "rank": 59, "ipa": "/trænzˈmɪt/", "tip": "trans-(穿过)+mit(送)→送过去→传输、传达。"},
+{"id": 59, "w": "extinct", "cn": "adj. 灭绝的", "syn": "die out; lost", "cat": 2, "rank": 60, "ipa": "/ɪkˈstɪŋkt/", "tip": "ex-(出)+tinct(=点燃的火被熄)→火灭了→灭绝，等于 die out。"},
+{"id": 60, "w": "exclusive", "cn": "adj. 独有的；排外的", "syn": "only", "cat": 2, "rank": 61, "ipa": "", "tip": ""},
+{"id": 61, "w": "guarantee", "cn": "v. 保证，担保", "syn": "assure", "cat": 2, "rank": 62, "ipa": "/ˌɡærənˈtiː/", "tip": ""},
+{"id": 62, "w": "inherit", "cn": "v. 继承", "syn": "receive", "cat": 2, "rank": 63, "ipa": "/ɪnˈherɪt/", "tip": ""},
+{"id": 63, "w": "witness", "cn": "n. 见证，证据；目击者", "syn": "view; see", "cat": 2, "rank": 64, "ipa": "/ˈwɪtnəs/", "tip": ""},
+{"id": 64, "w": "magnetic", "cn": "adj. 有磁性的；有吸引力的", "syn": "attractive", "cat": 2, "rank": 65, "ipa": "/mæɡˈnetɪk/", "tip": ""},
+{"id": 65, "w": "loss", "cn": "n. 减少；亏损；失败", "syn": "waste; gone", "cat": 2, "rank": 66, "ipa": "", "tip": ""},
+{"id": 66, "w": "option", "cn": "n. 选择", "syn": "choice", "cat": 2, "rank": 67, "ipa": "", "tip": ""},
+{"id": 67, "w": "prefer to", "cn": "更喜欢", "syn": "rather", "cat": 2, "rank": 68, "ipa": "", "tip": ""},
+{"id": 68, "w": "priority", "cn": "n. 优先权", "syn": "preference; preferential", "cat": 2, "rank": 69, "ipa": "/praɪˈɒrəti/", "tip": ""},
+{"id": 69, "w": "primary", "cn": "adj. 主要的", "syn": "principal; main", "cat": 2, "rank": 70, "ipa": "/ˈpraɪməri/", "tip": ""},
+{"id": 70, "w": "principle", "cn": "n. 原理，原则", "syn": "rule", "cat": 2, "rank": 71, "ipa": "/ˈprɪnsəpl/", "tip": ""},
+{"id": 71, "w": "potential", "cn": "n. 潜能；adj. 潜在的", "syn": "possibility", "cat": 2, "rank": 72, "ipa": "/pəˈtenʃl/", "tip": ""},
+{"id": 72, "w": "quantity", "cn": "n. 量，数量", "syn": "number", "cat": 2, "rank": 73, "ipa": "/ˈkwɒntəti/", "tip": ""},
+{"id": 73, "w": "settle", "cn": "v. 解决；定居，稳定", "syn": "fix; figure out", "cat": 2, "rank": 74, "ipa": "", "tip": ""},
+{"id": 74, "w": "sophisticate", "cn": "v. 使复杂；adj. 复杂精密的", "syn": "complicate", "cat": 2, "rank": 75, "ipa": "", "tip": ""},
+{"id": 75, "w": "specific", "cn": "adj. 明确的；特殊的", "syn": "detailed; particular", "cat": 2, "rank": 76, "ipa": "/spəˈsɪfɪk/", "tip": ""},
+{"id": 76, "w": "survive", "cn": "v. 存活，幸存", "syn": "remain", "cat": 2, "rank": 77, "ipa": "/səˈvaɪv/", "tip": ""},
+{"id": 77, "w": "swift", "cn": "adj. 迅速的，敏捷的", "syn": "quick; rapid", "cat": 2, "rank": 78, "ipa": "/swɪft/", "tip": ""},
+{"id": 78, "w": "unexpectedly", "cn": "adv. 出乎意料地", "syn": "surprising", "cat": 2, "rank": 79, "ipa": "", "tip": ""},
+{"id": 79, "w": "surrounding", "cn": "n. 环境", "syn": "setting; environment", "cat": 2, "rank": 80, "ipa": "/səˈraʊndɪŋ/", "tip": ""},
+{"id": 80, "w": "attempt", "cn": "n./v. 试图，尝试", "syn": "try; test", "cat": 2, "rank": 81, "ipa": "/əˈtempt/", "tip": ""},
+{"id": 81, "w": "expertise", "cn": "n. 专门技术", "syn": "knowledge; skill", "cat": 2, "rank": 82, "ipa": "/ˌekspɜːˈtiːz/", "tip": ""},
+{"id": 82, "w": "faculty", "cn": "n. 能力，才能；全体教员", "syn": "ability", "cat": 2, "rank": 83, "ipa": "/ˈfæklti/", "tip": ""},
+{"id": 83, "w": "donate", "cn": "v. 捐赠", "syn": "contribute", "cat": 2, "rank": 84, "ipa": "", "tip": ""},
+{"id": 84, "w": "dynamics", "cn": "n. 动力学；动力", "syn": "energy; force; move", "cat": 2, "rank": 85, "ipa": "", "tip": ""},
+{"id": 85, "w": "incentive", "cn": "n. 刺激，鼓励；动机", "syn": "motive; stimulus", "cat": 2, "rank": 86, "ipa": "/ɪnˈsentɪv/", "tip": "心里被激(incent)了一下→刺激、动机，等于 motive / stimulus。"},
+{"id": 86, "w": "mortality", "cn": "n. 死亡率", "syn": "death", "cat": 2, "rank": 87, "ipa": "/mɔːˈtæləti/", "tip": "mort(死，如 mortal 凡人必死)+ality→死亡率，等于 death。"},
+{"id": 87, "w": "peripheral", "cn": "adj. 外围的，次要的", "syn": "unimportant; minor", "cat": 2, "rank": 88, "ipa": "", "tip": ""},
+{"id": 88, "w": "vicinity", "cn": "n. 邻近，附近", "syn": "neighbourhood; nearby", "cat": 2, "rank": 89, "ipa": "/vəˈsɪnəti/", "tip": "vicin(=邻 vicinus)+ity→邻近、附近，等于 nearby / neighbourhood。"},
+{"id": 89, "w": "threaten", "cn": "v. 威胁，危及", "syn": "endanger; jeopardize; risk; hazard", "cat": 2, "rank": 90, "ipa": "/ˈθretn/", "tip": "threat(威胁)+en→威胁、危及，常被 endanger / jeopardize / risk 替换。"},
+{"id": 90, "w": "practice", "cn": "n. 实行；练习", "syn": "method; exercise", "cat": 2, "rank": 91, "ipa": "", "tip": ""},
+{"id": 91, "w": "bacteria", "cn": "n. 细菌", "syn": "virus; germ; microbe", "cat": 2, "rank": 92, "ipa": "/bækˈtɪəriə/", "tip": ""},
+{"id": 92, "w": "be subject to", "cn": "受……支配", "syn": "face", "cat": 2, "rank": 93, "ipa": "", "tip": ""},
+{"id": 93, "w": "be liable to", "cn": "易于……", "syn": "potential", "cat": 2, "rank": 94, "ipa": "", "tip": ""},
+{"id": 94, "w": "innate", "cn": "adj. 天生的；内在的", "syn": "built-in; inborn", "cat": 2, "rank": 95, "ipa": "/ɪˈneɪt/", "tip": ""},
+{"id": 95, "w": "pattern", "cn": "n. 模式", "syn": "formation", "cat": 2, "rank": 96, "ipa": "", "tip": ""},
+{"id": 96, "w": "therapy", "cn": "n. 治疗，理疗", "syn": "treatment", "cat": 2, "rank": 97, "ipa": "", "tip": ""},
+{"id": 97, "w": "original", "cn": "adj. 原始的，最初的", "syn": "initial; first", "cat": 2, "rank": 98, "ipa": "", "tip": ""},
+{"id": 98, "w": "confidential", "cn": "adj. 机密的，秘密的", "syn": "undisclosed; secret; hidden", "cat": 2, "rank": 99, "ipa": "", "tip": ""},
+{"id": 99, "w": "cognitive", "cn": "adj. 认知的", "syn": "mental", "cat": 2, "rank": 100, "ipa": "/ˈkɒɡnətɪv/", "tip": ""},
+{"id": 100, "w": "comply with", "cn": "照做，遵守", "syn": "obey", "cat": 2, "rank": 101, "ipa": "", "tip": ""},
+{"id": 101, "w": "consult", "cn": "v. 查阅，商量，咨询", "syn": "ask for advice", "cat": 2, "rank": 102, "ipa": "", "tip": ""},
+{"id": 102, "w": "superior", "cn": "adj. 上级的；优秀的", "syn": "higher; upper", "cat": 2, "rank": 103, "ipa": "/suːˈpɪəriə(r)/", "tip": ""},
+{"id": 103, "w": "co-operation", "cn": "n. 合作，协作", "syn": "support; work together", "cat": 2, "rank": 104, "ipa": "", "tip": ""},
+{"id": 104, "w": "co-ordinate", "cn": "v. 使……协调", "syn": "organize; harmonize", "cat": 2, "rank": 105, "ipa": "", "tip": ""},
+{"id": 105, "w": "differ", "cn": "v. 使……相异，不同", "syn": "vary", "cat": 2, "rank": 106, "ipa": "", "tip": ""},
+{"id": 106, "w": "cue", "cn": "n. 线索", "syn": "hint; clue", "cat": 2, "rank": 107, "ipa": "", "tip": ""},
+{"id": 107, "w": "signal", "cn": "n. 信号", "syn": "symbol; mark; sign", "cat": 2, "rank": 108, "ipa": "", "tip": ""},
+{"id": 108, "w": "abandon", "cn": "v. 放弃，遗弃", "syn": "quit; give up; forsake; derelict", "cat": 2, "rank": 109, "ipa": "/əˈbændən/", "tip": "a+band(乐队)+on→乐队散伙→放弃、遗弃，等于 give up。"},
+{"id": 109, "w": "halt", "cn": "n./v. 停止", "syn": "stop; quit", "cat": 2, "rank": 110, "ipa": "", "tip": ""},
+{"id": 110, "w": "fragile", "cn": "adj. 脆弱的", "syn": "vulnerable", "cat": 2, "rank": 111, "ipa": "/ˈfrædʒaɪl/", "tip": ""},
+{"id": 111, "w": "retain", "cn": "v. 记住；保持", "syn": "maintain", "cat": 2, "rank": 112, "ipa": "/rɪˈteɪn/", "tip": ""},
+{"id": 112, "w": "vanish", "cn": "v. 消失，绝迹", "syn": "disappear", "cat": 2, "rank": 113, "ipa": "/ˈvænɪʃ/", "tip": ""},
+{"id": 113, "w": "delivery", "cn": "n. 递送", "syn": "send", "cat": 2, "rank": 114, "ipa": "", "tip": ""},
+{"id": 114, "w": "erode", "cn": "v. 侵蚀", "syn": "rust; damage", "cat": 2, "rank": 115, "ipa": "/ɪˈrəʊd/", "tip": ""},
+{"id": 115, "w": "induce", "cn": "v. 引起，引诱", "syn": "cause; lead to", "cat": 2, "rank": 116, "ipa": "/ɪnˈdjuːs/", "tip": ""},
+{"id": 116, "w": "stable", "cn": "adj. 稳定的", "syn": "constant; unchanged", "cat": 2, "rank": 117, "ipa": "/ˈsteɪbl/", "tip": ""},
+{"id": 117, "w": "integrate", "cn": "v. 使……成整体", "syn": "combine; whole", "cat": 2, "rank": 118, "ipa": "/ˈɪntɪɡreɪt/", "tip": ""},
+{"id": 118, "w": "equal", "cn": "adj. 平等的；相等的；胜任的", "syn": "fair; even", "cat": 2, "rank": 119, "ipa": "/ˈiːkwəl/", "tip": ""},
+{"id": 119, "w": "grant", "cn": "v. 拨款；授予", "syn": "offer", "cat": 2, "rank": 120, "ipa": "", "tip": ""},
+{"id": 120, "w": "accumulate", "cn": "v. 积累，积聚", "syn": "gather", "cat": 3, "rank": 0, "ipa": "/əˈkjuːmjəleɪt/", "tip": ""},
+{"id": 121, "w": "addictive", "cn": "adj. 上瘾的", "syn": "habit", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 122, "w": "adversity", "cn": "n. 逆境，不幸", "syn": "trouble", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 123, "w": "aggression", "cn": "n. 侵犯，侵害", "syn": "attack", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 124, "w": "agreeable", "cn": "adj. 令人愉快的；和蔼的", "syn": "pleasant", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 125, "w": "aid", "cn": "n. 援助，帮助", "syn": "help", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 126, "w": "allergic", "cn": "adj. 过敏的；极讨厌的", "syn": "irritate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 127, "w": "altitude", "cn": "n. 高度，海拔", "syn": "height", "cat": 3, "rank": 0, "ipa": "/ˈæltɪtjuːd/", "tip": ""},
+{"id": 128, "w": "application", "cn": "n. 应用", "syn": "utilization", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 129, "w": "approve", "cn": "v. 批准", "syn": "agree", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 130, "w": "array", "cn": "n. 排列，大批", "syn": "order", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 131, "w": "assign", "cn": "v. 分配，指派", "syn": "allocate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 132, "w": "association", "cn": "n. 协会，联盟；联系", "syn": "union", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 133, "w": "attitude", "cn": "n. 看法，态度", "syn": "opinion", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 134, "w": "authority", "cn": "n. 当局，权威", "syn": "government", "cat": 3, "rank": 0, "ipa": "/ɔːˈθɒrəti/", "tip": ""},
+{"id": 135, "w": "be consistent with", "cn": "与……一致", "syn": "compatible", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 136, "w": "bear", "cn": "v. 承担；忍受", "syn": "tolerate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 137, "w": "blight", "cn": "v. 损害；枯萎", "syn": "destroy", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 138, "w": "boundary", "cn": "n. 边界；底线", "syn": "barrier", "cat": 3, "rank": 0, "ipa": "/ˈbaʊndri/", "tip": ""},
+{"id": 139, "w": "bungle", "cn": "v. 搞糟，拙劣地工作", "syn": "mishandle", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 140, "w": "burden", "cn": "n. 负担", "syn": "load", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 141, "w": "calamity", "cn": "n. 灾难", "syn": "disaster", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 142, "w": "capacity", "cn": "n. 容量", "syn": "volume", "cat": 3, "rank": 0, "ipa": "/kəˈpæsəti/", "tip": ""},
+{"id": 143, "w": "catastrophic", "cn": "adj. 灾难的", "syn": "disastrous", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 144, "w": "cater", "cn": "v. 迎合；满足需求", "syn": "serve", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 145, "w": "certify", "cn": "v. 证明，保证", "syn": "verify", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 146, "w": "civic", "cn": "adj. 城市的；市民的，公民的", "syn": "municipal", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 147, "w": "comment", "cn": "n./v. 评论；意见", "syn": "remark", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 148, "w": "commitment", "cn": "n. 承诺，义务；致力", "syn": "engagement", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 149, "w": "communal", "cn": "adj. 公共的，公社的", "syn": "public", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 150, "w": "commute", "cn": "v. 通勤；交换", "syn": "travel", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 151, "w": "compare", "cn": "v. 与……相比较", "syn": "contrast", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 152, "w": "conceal", "cn": "v. 隐藏；隐瞒", "syn": "hide", "cat": 3, "rank": 0, "ipa": "/kənˈsiːl/", "tip": ""},
+{"id": 153, "w": "concentrate", "cn": "v. 专心于；集中", "syn": "focus", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 154, "w": "concur", "cn": "v. 同意", "syn": "agree", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 155, "w": "confer", "cn": "v. 授予，给予", "syn": "grant", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 156, "w": "conflict", "cn": "n. 冲突，矛盾", "syn": "unharmonious", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 157, "w": "confuse", "cn": "v. 使混乱，使迷惑", "syn": "puzzle", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 158, "w": "conservative", "cn": "adj. 保守的", "syn": "traditional", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 159, "w": "considerable", "cn": "adj. 相当大的，重要的", "syn": "significant", "cat": 3, "rank": 0, "ipa": "/kənˈsɪdərəbl/", "tip": ""},
+{"id": 160, "w": "contingent", "cn": "adj. 因情况而异的", "syn": "uncertain", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 161, "w": "controversial", "cn": "adj. 有争论的", "syn": "disputable", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 162, "w": "correlation", "cn": "n. 相关，关联", "syn": "link", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 163, "w": "courtship", "cn": "n. 求爱（时期）", "syn": "mate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 164, "w": "crash", "cn": "n. 碰撞", "syn": "collapse", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 165, "w": "credibility", "cn": "n. 可信性", "syn": "reliance", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 166, "w": "criminal", "cn": "n. 罪犯，犯人", "syn": "conviction", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 167, "w": "crisis", "cn": "n. 危机", "syn": "risk", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 168, "w": "criticism", "cn": "n. 评论，批评", "syn": "condemn", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 169, "w": "curb", "cn": "v. 限制，抑制", "syn": "restrict", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 170, "w": "damp", "cn": "adj. 潮湿的", "syn": "wet", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 171, "w": "dazzle", "cn": "v. 使目眩；使眼花", "syn": "flash", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 172, "w": "deadline", "cn": "n. 最后期限", "syn": "limit", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 173, "w": "delay", "cn": "n. 延期，耽搁", "syn": "postpone", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 174, "w": "democratic", "cn": "adj. 民主的", "syn": "republic", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 175, "w": "demographic", "cn": "adj. 人口统计学的", "syn": "population statistic", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 176, "w": "dental", "cn": "adj. 牙科的，牙齿的", "syn": "teeth", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 177, "w": "depression", "cn": "n. 抑郁，沮丧", "syn": "frustration", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 178, "w": "designate", "cn": "v. 指定；指派，标出", "syn": "appoint", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 179, "w": "detain", "cn": "v. 留住，拘留", "syn": "hold", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 180, "w": "devastate", "cn": "v. 毁坏，毁灭", "syn": "wreck", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 181, "w": "disclose", "cn": "v. 公开；揭露", "syn": "expose", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 182, "w": "disparate", "cn": "adj. 不同的", "syn": "different", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 183, "w": "display", "cn": "n./v. 显示", "syn": "show", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 184, "w": "disrupt", "cn": "v. 破坏，扰乱", "syn": "destroy", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 185, "w": "distract", "cn": "v. 转移，分心", "syn": "divert", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 186, "w": "distribute", "cn": "v. 分配，分发", "syn": "spread", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 187, "w": "documentation", "cn": "n. 文件；文献", "syn": "record", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 188, "w": "domain", "cn": "n. 领域", "syn": "field", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 189, "w": "dominant", "cn": "adj. 占优势的，占支配地位的", "syn": "overbearing", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 190, "w": "dramatic", "cn": "adj. 戏剧化的；引人注意的", "syn": "striking", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 191, "w": "drought", "cn": "n. 干旱", "syn": "dry", "cat": 3, "rank": 0, "ipa": "/draʊt/", "tip": ""},
+{"id": 192, "w": "durable", "cn": "adj. 持久的", "syn": "lasting", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 193, "w": "eco-friendly", "cn": "adj. 生态友好的，环保的", "syn": "environmentally-friendly", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 194, "w": "elaborate", "cn": "v. 详细阐述", "syn": "illustrate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 195, "w": "elderly", "cn": "adj. 高龄的", "syn": "aged", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 196, "w": "eliminate", "cn": "v. 消除，排除", "syn": "dispose", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 197, "w": "elusive", "cn": "adj. 难懂的，难捉摸的", "syn": "hard", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 198, "w": "encyclopaedia", "cn": "n. 百科全书", "syn": "entire range of knowledge", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 199, "w": "entrepreneur", "cn": "n. 企业家", "syn": "boss", "cat": 3, "rank": 0, "ipa": "/ˌɒntrəprəˈnɜː(r)/", "tip": ""},
+{"id": 200, "w": "equator", "cn": "n. 赤道", "syn": "geography", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 201, "w": "erratically", "cn": "adv. 不定地，无规律地", "syn": "unpredictably", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 202, "w": "established", "cn": "adj. 确定的；已建立的", "syn": "built", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 203, "w": "estate", "cn": "n. 房地产", "syn": "property", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 204, "w": "ethical", "cn": "adj. 道德的", "syn": "moral", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 205, "w": "eventually", "cn": "adv. 最后，终于", "syn": "finally", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 206, "w": "evidence", "cn": "n. 迹象；证据", "syn": "proof", "cat": 3, "rank": 0, "ipa": "/ˈevɪdəns/", "tip": ""},
+{"id": 207, "w": "evolve", "cn": "v. 进化，发展", "syn": "develop", "cat": 3, "rank": 0, "ipa": "/iˈvɒlv/", "tip": ""},
+{"id": 208, "w": "exhausted", "cn": "adj. 疲惫的，耗尽的", "syn": "fatigue", "cat": 3, "rank": 0, "ipa": "/ɪɡˈzɔːstɪd/", "tip": ""},
+{"id": 209, "w": "experiment", "cn": "n./v. 试验，实验", "syn": "test", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 210, "w": "exceptional", "cn": "adj. 异常的，特别出色的", "syn": "extreme; utmost", "cat": 3, "rank": 0, "ipa": "", "tip": "except(例外)+ional→例外地好→异常的、特别出色的。"},
+{"id": 211, "w": "explicit", "cn": "adj. 明确的", "syn": "clear", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 212, "w": "exploit", "cn": "v. 开发，利用", "syn": "use", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 213, "w": "extend", "cn": "v. 扩展，延伸", "syn": "expand", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 214, "w": "extract", "cn": "n. 摘录；v. 提取", "syn": "quotation", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 215, "w": "famine", "cn": "n. 饥荒", "syn": "hunger", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 216, "w": "finite", "cn": "adj. 有限的", "syn": "limited", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 217, "w": "fitness", "cn": "n. 健康", "syn": "health", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 218, "w": "foe", "cn": "n. 敌人，危害物", "syn": "enemy", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 219, "w": "format", "cn": "n. 格式", "syn": "structure", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 220, "w": "fragment", "cn": "n. 碎片", "syn": "piece", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 221, "w": "freeze", "cn": "n./v. 冰冻，冻结", "syn": "chill", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 222, "w": "fulfill", "cn": "v. 满足，实现", "syn": "execute", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 223, "w": "gene", "cn": "n. 基因", "syn": "factor", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 224, "w": "gifted", "cn": "adj. 有天赋的，有才华的", "syn": "talented", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 225, "w": "graphic", "cn": "adj. 形象的；图解的", "syn": "picture", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 226, "w": "habitat", "cn": "n. 栖息地，住所", "syn": "residence", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 227, "w": "harbor", "cn": "v. 怀有；n. 海港", "syn": "hold", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 228, "w": "hardship", "cn": "n. 困苦；苦难", "syn": "difficult", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 229, "w": "harsh", "cn": "adj. 艰难的；严酷的", "syn": "rough", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 230, "w": "hypothesis", "cn": "n. 假设", "syn": "assumption", "cat": 3, "rank": 0, "ipa": "/haɪˈpɒθəsɪs/", "tip": ""},
+{"id": 231, "w": "impact", "cn": "n. 影响", "syn": "influence", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 232, "w": "impressive", "cn": "adj. 感人的；印象深刻的", "syn": "touching", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 233, "w": "in accordance with", "cn": "依照；与……一致", "syn": "conform", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 234, "w": "inaccurate", "cn": "adj. 错误的", "syn": "incorrect", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 235, "w": "inactive", "cn": "adj. 不活跃的", "syn": "passive", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 236, "w": "inappropriate", "cn": "adj. 不适当的", "syn": "hard", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 237, "w": "indulge", "cn": "v. 沉溺（于）", "syn": "spoil", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 238, "w": "infest", "cn": "v. 侵害；寄生于", "syn": "plague", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 239, "w": "installment", "cn": "n. 安装；分期付款", "syn": "payment on its completion", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 240, "w": "intelligence", "cn": "n. 智力", "syn": "mind", "cat": 3, "rank": 0, "ipa": "/ɪnˈtelɪdʒəns/", "tip": ""},
+{"id": 241, "w": "intense", "cn": "adj. 强烈的；紧张的", "syn": "strong", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 242, "w": "interaction", "cn": "n. 相互作用，交流互动", "syn": "social activities", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 243, "w": "interference", "cn": "n. 干涉", "syn": "interdependence", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 244, "w": "interior", "cn": "n. 内部；adj. 内部的", "syn": "inner", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 245, "w": "interrupt", "cn": "v. 中断", "syn": "stop", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 246, "w": "introverted", "cn": "adj. 内向的，含蓄的", "syn": "shyness", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 247, "w": "involve", "cn": "v. 包含，牵涉", "syn": "associate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 248, "w": "keen", "cn": "adj. 热切的；强烈的", "syn": "strong", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 249, "w": "label", "cn": "v. 打上标签", "syn": "display", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 250, "w": "lack", "cn": "v. 缺乏；不足", "syn": "shortage", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 251, "w": "landscape", "cn": "n. 风景", "syn": "scene", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 252, "w": "likelihood", "cn": "n. 可能性", "syn": "chance", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 253, "w": "limb", "cn": "n. 四肢", "syn": "arm or leg", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 254, "w": "linguistic", "cn": "adj. 语言（学）的", "syn": "language", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 255, "w": "log", "cn": "v. 记录；n. 原木", "syn": "record", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 256, "w": "look-in", "cn": "n. 成功的机会", "syn": "opportunity; chance", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 257, "w": "lopsided", "cn": "adj. 不平衡的", "syn": "uneven", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 258, "w": "mainly", "cn": "adv. 主要地，大体上", "syn": "primarily", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 259, "w": "malfunction", "cn": "v. 发生故障；不起作用", "syn": "breakdown", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 260, "w": "mammal", "cn": "n. 哺乳动物", "syn": "creature", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 261, "w": "manage to do", "cn": "设法完成某事", "syn": "success", "cat": 3, "rank": 0, "ipa": "", "tip": "注意是 manage to do（不是 mange）→'设法做成了某事'，强调结果成功。"},
+{"id": 262, "w": "manifest", "cn": "v. 出现，表现", "syn": "obvious", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 263, "w": "manufacture", "cn": "n./v. 生产", "syn": "produce", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 264, "w": "marine", "cn": "adj. 海产的；航海的", "syn": "sea", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 265, "w": "mate", "cn": "n. 配偶", "syn": "spouse", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 266, "w": "mechanism", "cn": "n. 机制，原理", "syn": "method", "cat": 3, "rank": 0, "ipa": "/ˈmekənɪzəm/", "tip": ""},
+{"id": 267, "w": "mental", "cn": "adj. 精神的，心理的", "syn": "intelligent", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 268, "w": "mercury", "cn": "n. 汞，水银", "syn": "liquid metal", "cat": 3, "rank": 0, "ipa": "/ˈmɜːkjəri/", "tip": ""},
+{"id": 269, "w": "meteorological", "cn": "adj. 气象学的", "syn": "weather", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 270, "w": "monitor", "cn": "v. 监控", "syn": "surveillance", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 271, "w": "motif", "cn": "n. 主题；图形", "syn": "theme", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 272, "w": "mould", "cn": "v. 模压，塑造", "syn": "form", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 273, "w": "native", "cn": "adj. 本国的，土著的；天然的", "syn": "original", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 274, "w": "nocturnal", "cn": "adj. 夜间的，夜间发生的", "syn": "night", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 275, "w": "norm", "cn": "n. 规范", "syn": "regulation", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 276, "w": "notoriety", "cn": "n. 名声（多含贬义）", "syn": "famous", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 277, "w": "objective", "cn": "n. 目标，目的；adj. 客观的", "syn": "goal", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 278, "w": "obligation", "cn": "n. 义务", "syn": "responsibility", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 279, "w": "obscure", "cn": "v. 掩盖，使模糊", "syn": "hide", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 280, "w": "obtain", "cn": "v. 获得", "syn": "get", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 281, "w": "odd", "cn": "adj. 古怪的", "syn": "strange", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 282, "w": "odour", "cn": "n. 气味", "syn": "smell", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 283, "w": "offensive", "cn": "adj. 冒犯的，无礼的", "syn": "hostile", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 284, "w": "official", "cn": "n. 官员；adj. 官方的", "syn": "authority", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 285, "w": "optimum", "cn": "n. 最佳效果；adj. 最适宜的", "syn": "best", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 286, "w": "ordinary", "cn": "adj. 普通的；平凡的", "syn": "common", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 287, "w": "organ", "cn": "n. 器官；机构", "syn": "a part of a body", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 288, "w": "out of the question", "cn": "不可能", "syn": "impossible", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 289, "w": "overcome", "cn": "v. 克服", "syn": "defeat", "cat": 3, "rank": 0, "ipa": "", "tip": "over(越过)+come→越过困难→克服，等于 defeat。"},
+{"id": 290, "w": "overtake", "cn": "v. 赶上，超过", "syn": "surpass", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 291, "w": "paralyse", "cn": "v. 使麻痹；使瘫痪", "syn": "cannot move", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 292, "w": "paramount", "cn": "adj. 最重要的，主要的", "syn": "principal", "cat": 3, "rank": 0, "ipa": "/ˈpærəmaʊnt/", "tip": "para+mount(山)→比山还高→最重要的，等于 principal / supreme。"},
+{"id": 293, "w": "participate", "cn": "v. 参加", "syn": "join", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 294, "w": "patient", "cn": "adj. 有耐性的；n. 病人，患者", "syn": "tolerant", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 295, "w": "peak", "cn": "n. 最高峰，顶点", "syn": "top", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 296, "w": "persuade", "cn": "v. 说服，劝说", "syn": "influence", "cat": 3, "rank": 0, "ipa": "/pəˈsweɪd/", "tip": ""},
+{"id": 297, "w": "pessimistic", "cn": "adj. 悲观的", "syn": "negative", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 298, "w": "phase", "cn": "n. 阶段", "syn": "process", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 299, "w": "physical", "cn": "adj. 身体上的；物质的", "syn": "body", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 300, "w": "plagiarise", "cn": "v. 抄袭", "syn": "copy", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 301, "w": "plenty of", "cn": "大量的", "syn": "many", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 302, "w": "plot", "cn": "v. 密谋", "syn": "plan", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 303, "w": "pose", "cn": "v. 提出，造成，形成", "syn": "cause", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 304, "w": "portable", "cn": "adj. 可携带的", "syn": "conveyable", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 305, "w": "poverty", "cn": "n. 贫穷", "syn": "poor", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 306, "w": "praise", "cn": "n./v. 赞扬", "syn": "commend", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 307, "w": "predict", "cn": "v. 预测，预知", "syn": "expect", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 308, "w": "pressing", "cn": "adj. 迫切的", "syn": "urgent", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 309, "w": "private", "cn": "adj. 私人的；私下的", "syn": "personal", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 310, "w": "prohibit", "cn": "v. 禁止", "syn": "not allowed", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 311, "w": "prolong", "cn": "v. 拉长，延长", "syn": "extend", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 312, "w": "promote", "cn": "v. 促进，推销", "syn": "improve", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 313, "w": "prosper", "cn": "v. 使成功，使繁荣", "syn": "success", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 314, "w": "purify", "cn": "v. 净化", "syn": "clean", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 315, "w": "qualify", "cn": "v. 取得资格", "syn": "fulfill", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 316, "w": "radical", "cn": "adj. 彻底的，根本的", "syn": "utmost", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 317, "w": "range", "cn": "n. 范围；幅度", "syn": "scope", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 318, "w": "rare", "cn": "adj. 稀有的", "syn": "unusual", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 319, "w": "rate", "cn": "n. 等级；v. 评估", "syn": "rank; measure", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 320, "w": "react", "cn": "v. 反应", "syn": "respond", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 321, "w": "recreation", "cn": "n. 娱乐，消遣", "syn": "entertainment", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 322, "w": "reduction", "cn": "n. 下降，减少", "syn": "decrease", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 323, "w": "refer to", "cn": "指（的是），涉及，提及", "syn": "talk about", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 324, "w": "rehearsal", "cn": "n. 排演；练习", "syn": "preparation", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 325, "w": "reject", "cn": "v. 拒绝，排斥", "syn": "exclude", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 326, "w": "relevant", "cn": "adj. 相关的", "syn": "relative", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 327, "w": "religious", "cn": "adj. 宗教的；虔诚的", "syn": "sacred", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 328, "w": "reluctant", "cn": "adj. 不情愿的", "syn": "unwilling", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 329, "w": "reproduce", "cn": "v. 繁殖", "syn": "breed", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 330, "w": "responsible", "cn": "adj. 负责的，可靠的", "syn": "liable", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 331, "w": "revision", "cn": "n. 修正", "syn": "editing", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 332, "w": "revive", "cn": "v. 使复苏，恢复", "syn": "renaissance", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 333, "w": "ruin", "cn": "v. 毁灭", "syn": "destroy", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 334, "w": "scenic", "cn": "adj. 风景优美的", "syn": "beautiful", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 335, "w": "shade", "cn": "n. 遮阳；阴影", "syn": "shelter", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 336, "w": "skepticism", "cn": "n. 怀疑", "syn": "doubt", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 337, "w": "soar", "cn": "v. 激增", "syn": "increase", "cat": 3, "rank": 0, "ipa": "", "tip": "想象鸟向上'嗖(soar)'地冲→激增、猛升，等于 increase（强调快而高）。"},
+{"id": 338, "w": "solely", "cn": "adv. 唯一地", "syn": "alone", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 339, "w": "solicitor", "cn": "n. 律师", "syn": "lawyer", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 340, "w": "steer", "cn": "v. 控制，引导", "syn": "manage", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 341, "w": "stimulate", "cn": "v. 刺激，激励", "syn": "motivate", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 342, "w": "stride", "cn": "n. 进展", "syn": "progress", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 343, "w": "succumb", "cn": "v. 屈服", "syn": "yield", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 344, "w": "subdivide", "cn": "v. 把……细分", "syn": "break down", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 345, "w": "subtle", "cn": "adj. 微妙的", "syn": "delicate", "cat": 3, "rank": 0, "ipa": "/ˈsʌtl/", "tip": "b 不发音，读 /ˈsʌtl/。意思是'微妙的、不易察觉的'，等于 delicate。"},
+{"id": 346, "w": "substance", "cn": "n. 物质；实质", "syn": "matter", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 347, "w": "sufficiency", "cn": "n. 足量，充足", "syn": "enough", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 348, "w": "supersede", "cn": "v. 取代，代替", "syn": "replace", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 349, "w": "suppress", "cn": "v. 抑制，隐瞒", "syn": "hold", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 350, "w": "supremacy", "cn": "n. 至高无上，很高的地位", "syn": "priority", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 351, "w": "suspicious", "cn": "adj. 可疑的", "syn": "odd", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 352, "w": "sustainable", "cn": "adj. 可持续的", "syn": "long-term", "cat": 3, "rank": 0, "ipa": "/səˈsteɪnəbl/", "tip": ""},
+{"id": 353, "w": "symptom", "cn": "n. 症状，征兆", "syn": "sign", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 354, "w": "tension", "cn": "n. 紧张，不安", "syn": "upset", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 355, "w": "term", "cn": "n. 术语", "syn": "word", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 356, "w": "throughout", "cn": "adv. 自始至终，到处", "syn": "anywhere", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 357, "w": "toll", "cn": "n. 通行费；v. 征收", "syn": "charge", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 358, "w": "trace", "cn": "n. 追溯；痕迹", "syn": "track", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 359, "w": "transit", "cn": "n. 运输；经过", "syn": "send", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 360, "w": "tremendous", "cn": "adj. 巨大的，惊人的", "syn": "vast", "cat": 3, "rank": 0, "ipa": "/trəˈmendəs/", "tip": ""},
+{"id": 361, "w": "trigger", "cn": "v. 触发，引发", "syn": "begin", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 362, "w": "tropical", "cn": "adj. 热带的", "syn": "hot", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 363, "w": "unbiased", "cn": "adj. 公正的，无偏见的", "syn": "fair", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 364, "w": "uniform", "cn": "adj. 始终如一的", "syn": "consistent", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 365, "w": "valuable", "cn": "adj. 宝贵的，有价值的", "syn": "benefit", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 366, "w": "versatile", "cn": "adj. 多功能的，多才多艺的", "syn": "all-around", "cat": 3, "rank": 0, "ipa": "/ˈvɜːsətaɪl/", "tip": ""},
+{"id": 367, "w": "view", "cn": "v. 看", "syn": "overlook", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 368, "w": "violent", "cn": "adj. 暴力的；猛烈的", "syn": "fierce", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 369, "w": "visible", "cn": "adj. 明显的，看得见的", "syn": "see", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 370, "w": "visual", "cn": "adj. 视觉的", "syn": "image", "cat": 3, "rank": 0, "ipa": "", "tip": ""},
+{"id": 371, "w": "well-being", "cn": "n. 健康，福祉", "syn": "health", "cat": 3, "rank": 0, "ipa": "", "tip": ""}
+];
+const LISTENING = [
+{"id": 0, "w": "reserve", "cn": "v. 预订", "syn": "book", "cat": 0, "rank": 1, "ipa": "/rɪˈzɜːv/", "tip": ""},
+{"id": 1, "w": "in advance", "cn": "提前", "syn": "ahead; before", "cat": 0, "rank": 2, "ipa": "", "tip": ""},
+{"id": 2, "w": "have to", "cn": "必须", "syn": "must; should; need; require; necessary; be supposed to; demand; order", "cat": 0, "rank": 3, "ipa": "", "tip": ""},
+{"id": 3, "w": "adjust", "cn": "v. 调整；改变", "syn": "change; alter; modify; shift; revert", "cat": 0, "rank": 4, "ipa": "/əˈdʒʌst/", "tip": ""},
+{"id": 4, "w": "and", "cn": "conj. 和", "syn": "and also; as well as; with; in addition", "cat": 0, "rank": 5, "ipa": "/ənd/", "tip": ""},
+{"id": 5, "w": "but", "cn": "conj. 但是", "syn": "however; yet; instead", "cat": 0, "rank": 6, "ipa": "/bət/", "tip": ""},
+{"id": 6, "w": "because", "cn": "conj. 因为", "syn": "why; as a result; therefore; cause", "cat": 0, "rank": 7, "ipa": "/bɪˈkɒz/", "tip": ""},
+{"id": 7, "w": "diversity", "cn": "n. 多样性", "syn": "a variety of; a number of; a range of; various; different", "cat": 0, "rank": 8, "ipa": "/daɪˈvɜːsətɪ/", "tip": ""},
+{"id": 8, "w": "fee", "cn": "n. 费用，花销", "syn": "money; cost; price; expense; budget; fund; financial; economic", "cat": 0, "rank": 9, "ipa": "/fiː/", "tip": ""},
+{"id": 9, "w": "establish", "cn": "v. 建造", "syn": "build; create; construct; set up; install", "cat": 0, "rank": 10, "ipa": "/ɪˈstæblɪʃ/", "tip": ""},
+{"id": 10, "w": "transfer", "cn": "v. 搬，移动", "syn": "move; relocate", "cat": 0, "rank": 11, "ipa": "/trænsˈfɜː(r)/", "tip": ""},
+{"id": 11, "w": "habitat", "cn": "n. 栖息地", "syn": "live; territory", "cat": 0, "rank": 12, "ipa": "/ˈhæbɪtæt/", "tip": ""},
+{"id": 12, "w": "international", "cn": "adj. 国际的", "syn": "countries; continents; global", "cat": 0, "rank": 13, "ipa": "/ˌɪntəˈnæʃnəl/", "tip": ""},
+{"id": 13, "w": "export", "cn": "v. 出口", "syn": "abroad; overseas", "cat": 0, "rank": 14, "ipa": "/ɪkˈspɔːt/", "tip": ""},
+{"id": 14, "w": "vegetation", "cn": "n. 植被", "syn": "plant; tree; forest; botanic", "cat": 0, "rank": 15, "ipa": "/ˌvedʒəˈteɪʃn/", "tip": ""},
+{"id": 15, "w": "animal", "cn": "n. 动物", "syn": "mammal; wildlife; creature; species", "cat": 0, "rank": 16, "ipa": "/ˈænɪml/", "tip": ""},
+{"id": 16, "w": "feature", "cn": "n. 特点", "syn": "characteristic; trait; property", "cat": 0, "rank": 17, "ipa": "/ˈfiːtʃə(r)/", "tip": ""},
+{"id": 17, "w": "emigrate", "cn": "v. 迁徙", "syn": "move; go away", "cat": 0, "rank": 18, "ipa": "/ˈemɪgreɪt/", "tip": ""},
+{"id": 18, "w": "food", "cn": "n. 食物", "syn": "feed on; eat", "cat": 0, "rank": 19, "ipa": "/fuːd/", "tip": ""},
+{"id": 19, "w": "allergic", "cn": "adj. 过敏的", "syn": "can't eat", "cat": 0, "rank": 20, "ipa": "/əˈlɜːdʒɪk/", "tip": ""},
+{"id": 20, "w": "fitness", "cn": "n. 健康", "syn": "health; medical; sickness; illness; gym", "cat": 0, "rank": 21, "ipa": "/ˈfɪtnəs/", "tip": ""},
+{"id": 21, "w": "tradition", "cn": "n. 传统", "syn": "custom; convention; local culture; lifestyle", "cat": 0, "rank": 22, "ipa": "/trəˈdɪʃn/", "tip": ""},
+{"id": 22, "w": "entertainment", "cn": "n. 娱乐", "syn": "recreation; leisure", "cat": 0, "rank": 23, "ipa": "/ˌentəˈteɪnmənt/", "tip": ""},
+{"id": 23, "w": "press", "cn": "n. 媒体", "syn": "media; TV; newspaper; radio", "cat": 0, "rank": 24, "ipa": "/pres/", "tip": ""},
+{"id": 24, "w": "online", "cn": "n. 网络", "syn": "Internet; website", "cat": 0, "rank": 25, "ipa": "/ˌɒnˈlaɪn/", "tip": ""},
+{"id": 25, "w": "publicity", "cn": "n. 宣传", "syn": "website; media; news; marketing", "cat": 0, "rank": 26, "ipa": "/pʌbˈlɪsətɪ/", "tip": ""},
+{"id": 26, "w": "picture", "cn": "n. 照片", "syn": "photo; photograph; camera; image", "cat": 0, "rank": 27, "ipa": "/ˈpɪktʃə(r)/", "tip": ""},
+{"id": 27, "w": "jewellery", "cn": "n. 珠宝", "syn": "rings; bracelets; necklaces; precious stones; gem; diamond; luxurious", "cat": 0, "rank": 28, "ipa": "/ˈdʒuːəlrɪ/", "tip": ""},
+{"id": 28, "w": "artwork", "cn": "n. 艺术品", "syn": "painting; drawing; craft", "cat": 0, "rank": 29, "ipa": "/ˈɑːtwɜːk/", "tip": ""},
+{"id": 29, "w": "statue", "cn": "n. 雕像", "syn": "sculpture; carving", "cat": 0, "rank": 30, "ipa": "/ˈstætʃuː/", "tip": ""},
+{"id": 30, "w": "movie", "cn": "n. 电影", "syn": "film; documentary; cinema", "cat": 0, "rank": 31, "ipa": "/ˈmuːvɪ/", "tip": ""},
+{"id": 31, "w": "geology", "cn": "n. 地质学；地质情况", "syn": "cliff; fossil; rock; landscape", "cat": 0, "rank": 32, "ipa": "/dʒɪˈɒlədʒɪ/", "tip": ""},
+{"id": 32, "w": "countryside", "cn": "adj. 乡村的", "syn": "rural area", "cat": 0, "rank": 33, "ipa": "/ˈkʌntrɪsaɪd/", "tip": ""},
+{"id": 33, "w": "urban", "cn": "adj. 城市的", "syn": "city; metropolitan", "cat": 0, "rank": 34, "ipa": "/ˈɜːbən/", "tip": ""},
+{"id": 34, "w": "coastline", "cn": "n. 海岸线", "syn": "shore; seaside", "cat": 0, "rank": 35, "ipa": "/ˈkəʊstlaɪn/", "tip": ""},
+{"id": 35, "w": "environment", "cn": "n. 周围环境", "syn": "neighbourhood; surrounding", "cat": 0, "rank": 36, "ipa": "/ɪnˈvaɪrənmənt/", "tip": ""},
+{"id": 36, "w": "noisy", "cn": "adj. 吵闹的", "syn": "disturbing; not quiet", "cat": 0, "rank": 37, "ipa": "/ˈnɔɪzɪ/", "tip": ""},
+{"id": 37, "w": "capacity", "cn": "n. 容量", "syn": "volume; room; space; size", "cat": 0, "rank": 38, "ipa": "/kəˈpæsətɪ/", "tip": ""},
+{"id": 38, "w": "outdoor", "cn": "adj. 户外的", "syn": "gardens; park; open air", "cat": 0, "rank": 39, "ipa": "/ˈaʊtdɔː(r)/", "tip": ""},
+{"id": 39, "w": "accommodation", "cn": "n. 住宿", "syn": "living; dwelling; dorm", "cat": 0, "rank": 40, "ipa": "/əˌkɒməˈdeɪʃn/", "tip": ""},
+{"id": 40, "w": "place", "cn": "n. 地点", "syn": "where; spot; location; area", "cat": 0, "rank": 41, "ipa": "/pleɪs/", "tip": ""},
+{"id": 41, "w": "near", "cn": "adj. 附近的", "syn": "close; not far from; nearby", "cat": 0, "rank": 42, "ipa": "/nɪə(r)/", "tip": ""},
+{"id": 42, "w": "remote", "cn": "adj. 偏远的", "syn": "isolated; distant", "cat": 0, "rank": 43, "ipa": "/rɪˈməʊt/", "tip": ""},
+{"id": 43, "w": "advantage", "cn": "n. 优点", "syn": "benefit; positive; good thing; strength", "cat": 0, "rank": 44, "ipa": "/ədˈvɑːntɪdʒ/", "tip": ""},
+{"id": 44, "w": "disadvantage", "cn": "n. 缺点", "syn": "drawback; shortcoming; negative; problem", "cat": 0, "rank": 45, "ipa": "/ˌdɪsədˈvɑːntɪdʒ/", "tip": ""},
+{"id": 45, "w": "education", "cn": "n. 教育", "syn": "schools; colleges; institution", "cat": 0, "rank": 46, "ipa": "/ˌedʒʊˈkeɪʃn/", "tip": ""},
+{"id": 46, "w": "ordinary people", "cn": "公众", "syn": "people; inhabitants; the public; men and women", "cat": 0, "rank": 47, "ipa": "", "tip": ""},
+{"id": 47, "w": "student", "cn": "n. 学生", "syn": "pupil; undergraduate; postgraduate", "cat": 0, "rank": 48, "ipa": "/ˈstjuːdnt/", "tip": ""},
+{"id": 48, "w": "purpose", "cn": "n. 目标", "syn": "aim; goal; target; key areas", "cat": 0, "rank": 49, "ipa": "/ˈpɜːpəs/", "tip": ""},
+{"id": 49, "w": "learn", "cn": "v. 学习", "syn": "acquire; get; obtain", "cat": 0, "rank": 50, "ipa": "/lɜːn/", "tip": ""},
+{"id": 50, "w": "structure", "cn": "n. 结构大纲", "syn": "outline; framework", "cat": 0, "rank": 51, "ipa": "/ˈstrʌktʃə(r)/", "tip": ""},
+{"id": 51, "w": "reference materials", "cn": "参考资料", "syn": "books; journals; magazines", "cat": 0, "rank": 52, "ipa": "", "tip": ""},
+{"id": 52, "w": "extensive", "cn": "广泛", "syn": "comprehensive; a lot of; many", "cat": 0, "rank": 53, "ipa": "/ɪkˈstensɪv/", "tip": ""},
+{"id": 53, "w": "expertise", "cn": "n. 能力，专长", "syn": "ability; skill", "cat": 0, "rank": 54, "ipa": "/ˌekspɜːˈtiːz/", "tip": ""},
+{"id": 54, "w": "group", "cn": "n. 团队", "syn": "team", "cat": 0, "rank": 55, "ipa": "/gruːp/", "tip": ""},
+{"id": 55, "w": "associate", "cn": "v. 与……相关", "syn": "relate to; connect; link", "cat": 0, "rank": 56, "ipa": "/əˈsəʊʃɪeɪt/", "tip": ""},
+{"id": 56, "w": "approach", "cn": "n. 方法", "syn": "way; how; method", "cat": 0, "rank": 57, "ipa": "/əˈprəʊtʃ/", "tip": ""},
+{"id": 57, "w": "motivate", "cn": "v. 鼓励，促进", "syn": "encourage; stimulate; keep active; boost; help", "cat": 0, "rank": 58, "ipa": "/ˈməʊtɪveɪt/", "tip": ""},
+{"id": 58, "w": "improve", "cn": "v. 提升", "syn": "develop; promote", "cat": 0, "rank": 59, "ipa": "/ɪmˈpruːv/", "tip": ""},
+{"id": 59, "w": "overlook", "cn": "v. 低估", "syn": "underestimate; neglect", "cat": 0, "rank": 60, "ipa": "/ˌəʊvəˈlʊk/", "tip": ""},
+{"id": 60, "w": "omit", "cn": "v. 省掉", "syn": "leave out; cancel", "cat": 0, "rank": 61, "ipa": "/əˈmɪt/", "tip": ""},
+{"id": 61, "w": "find", "cn": "v. 发现", "syn": "discover; detect; spot; see; sight", "cat": 0, "rank": 62, "ipa": "/faɪnd/", "tip": ""},
+{"id": 62, "w": "opportunity", "cn": "n. 机会", "syn": "chance; odds; hope", "cat": 0, "rank": 63, "ipa": "/ˌɒpəˈtjuːnətɪ/", "tip": ""},
+{"id": 63, "w": "difficult", "cn": "adj. 困难的", "syn": "problem; hard; not easy; not simple", "cat": 0, "rank": 64, "ipa": "/ˈdɪfɪkəlt/", "tip": ""},
+{"id": 64, "w": "prevent", "cn": "v. 阻止，避免", "syn": "avoid; stop; escape; forbid; out of bounds", "cat": 0, "rank": 65, "ipa": "/prɪˈvent/", "tip": ""},
+{"id": 65, "w": "misunderstand", "cn": "v. 理解错误", "syn": "wrong idea; confuse; puzzle; perplex", "cat": 0, "rank": 66, "ipa": "/ˌmɪsʌndəˈstænd/", "tip": ""},
+{"id": 66, "w": "try hard", "cn": "努力", "syn": "make efforts; hard working", "cat": 0, "rank": 67, "ipa": "", "tip": ""},
+{"id": 67, "w": "feedback", "cn": "n. 反馈", "syn": "response; reaction; reply", "cat": 0, "rank": 68, "ipa": "/ˈfɪːdbæk/", "tip": ""},
+{"id": 68, "w": "affect", "cn": "v. 影响", "syn": "impact; influence; effect", "cat": 0, "rank": 69, "ipa": "/əˈfekt/", "tip": ""},
+{"id": 69, "w": "analysis", "cn": "n. 分析，认知", "syn": "perspective; understand; perceive; know", "cat": 0, "rank": 70, "ipa": "/əˈnæləsɪs/", "tip": ""},
+{"id": 70, "w": "result", "cn": "n. 结果", "syn": "outcome; consequence; conclusion", "cat": 0, "rank": 71, "ipa": "/rɪˈzʌlt/", "tip": ""},
+{"id": 71, "w": "handle", "cn": "v. 处理", "syn": "deal with; cope with; figure out; work out; take care of", "cat": 0, "rank": 72, "ipa": "/ˈhændl/", "tip": ""},
+{"id": 72, "w": "support", "cn": "n. 帮助", "syn": "help; assistance; aid; tip", "cat": 0, "rank": 73, "ipa": "/səˈpɔːt/", "tip": ""},
+{"id": 73, "w": "ideal", "cn": "adj. 完美的", "syn": "perfect", "cat": 0, "rank": 74, "ipa": "/aɪˈdiːəl/", "tip": ""},
+{"id": 74, "w": "rigorous", "cn": "adj. 严格的", "syn": "strict; demanding", "cat": 0, "rank": 75, "ipa": "/ˈrɪgərəs/", "tip": ""},
+{"id": 75, "w": "restrict", "cn": "v. 限制", "syn": "limit; not permit", "cat": 0, "rank": 76, "ipa": "/rɪˈstrɪkt/", "tip": ""},
+{"id": 76, "w": "similar", "cn": "adj. 相似的", "syn": "like; compare", "cat": 0, "rank": 77, "ipa": "/ˈsɪmələ(r)/", "tip": ""},
+{"id": 77, "w": "particular", "cn": "adj. 特别的", "syn": "special; in particular; especially", "cat": 0, "rank": 78, "ipa": "/pəˈtɪkjələ(r)/", "tip": ""},
+{"id": 78, "w": "copy", "cn": "v. 重复", "syn": "repeat; reproduce", "cat": 0, "rank": 79, "ipa": "/ˈkɒpɪ/", "tip": ""},
+{"id": 79, "w": "statistics", "cn": "n. 统计学", "syn": "data; figure", "cat": 0, "rank": 80, "ipa": "/stəˈtɪstɪks/", "tip": ""},
+{"id": 80, "w": "maximum", "cn": "n. 最大值", "syn": "up to; at most", "cat": 0, "rank": 81, "ipa": "/ˈmæksɪməm/", "tip": ""},
+{"id": 81, "w": "minimum", "cn": "n. 最小值", "syn": "at least", "cat": 0, "rank": 82, "ipa": "/ˈmɪnɪməm/", "tip": ""},
+{"id": 82, "w": "initial", "cn": "adj. 最初的，开始的", "syn": "at first; start; begin; early on; premiere", "cat": 0, "rank": 83, "ipa": "/ɪˈnɪʃl/", "tip": ""},
+{"id": 83, "w": "limited", "cn": "adj. 少量的", "syn": "just a few; a little; small; a small number of; not many; miniature", "cat": 0, "rank": 84, "ipa": "/ˈlɪmɪtɪd/", "tip": ""},
+{"id": 84, "w": "shorten", "cn": "v. 截短", "syn": "cut down", "cat": 0, "rank": 85, "ipa": "/ˈʃɔːtn/", "tip": ""},
+{"id": 85, "w": "decrease", "cn": "v. 降低", "syn": "lower; reduce; fewer; drop; fall", "cat": 0, "rank": 86, "ipa": "/dɪˈkriːs/", "tip": ""},
+{"id": 86, "w": "lack", "cn": "n./v. 缺乏", "syn": "shortage; insufficient; fewer; not enough", "cat": 0, "rank": 87, "ipa": "/læk/", "tip": ""},
+{"id": 87, "w": "large", "cn": "adj. 大的", "syn": "big; huge", "cat": 0, "rank": 88, "ipa": "/lɑːdʒ/", "tip": ""},
+{"id": 88, "w": "amount of", "cn": "大量", "syn": "lots of; large quantities of; loads of", "cat": 0, "rank": 89, "ipa": "", "tip": ""},
+{"id": 89, "w": "majority", "cn": "n. 绝大部分", "syn": "most", "cat": 0, "rank": 90, "ipa": "/məˈdʒɒrətɪ/", "tip": ""},
+{"id": 90, "w": "double", "cn": "v. 两倍", "syn": "twice", "cat": 0, "rank": 91, "ipa": "/ˈdʌbl/", "tip": ""},
+{"id": 91, "w": "more than", "cn": "超过", "syn": "over; beyond; exceed; above", "cat": 0, "rank": 92, "ipa": "", "tip": ""},
+{"id": 92, "w": "at present", "cn": "当前", "syn": "already; existing; currently; nowadays", "cat": 0, "rank": 93, "ipa": "", "tip": ""},
+{"id": 93, "w": "update", "cn": "v. 更新", "syn": "upgrade; up to date; more current; modern", "cat": 0, "rank": 94, "ipa": "/ˌʌpˈdeɪt/", "tip": ""},
+{"id": 94, "w": "newest", "cn": "adj. 最新的", "syn": "latest", "cat": 0, "rank": 95, "ipa": "/ˈnjuːɪst/", "tip": ""},
+{"id": 95, "w": "soon", "cn": "adv. 将来", "syn": "later; in the future", "cat": 0, "rank": 96, "ipa": "/suːn/", "tip": ""},
+{"id": 96, "w": "out of date", "cn": "过时的", "syn": "old fashioned", "cat": 0, "rank": 97, "ipa": "", "tip": ""},
+{"id": 97, "w": "ancient", "cn": "adj. 古老的，过去的", "syn": "medieval; in the past; once; historical; old; former", "cat": 0, "rank": 98, "ipa": "/ˈeɪnʃənt/", "tip": ""},
+{"id": 98, "w": "temporary", "cn": "adj. 暂时的", "syn": "a short time", "cat": 0, "rank": 99, "ipa": "/ˈtemprərɪ/", "tip": ""},
+{"id": 99, "w": "deadline", "cn": "n. 截止时间", "syn": "time pressure; on time", "cat": 0, "rank": 100, "ipa": "/ˈdedlaɪn/", "tip": ""},
+{"id": 100, "w": "permanent", "cn": "adj. 长久的", "syn": "long-lasting", "cat": 0, "rank": 101, "ipa": "/ˈpɜːmənənt/", "tip": ""},
+{"id": 101, "w": "more often", "cn": "频繁", "syn": "frequent", "cat": 0, "rank": 102, "ipa": "", "tip": ""},
+{"id": 102, "w": "annual", "cn": "adj. 年度的", "syn": "every year", "cat": 0, "rank": 103, "ipa": "/ˈænjʊəl/", "tip": ""},
+{"id": 103, "w": "every month", "cn": "每个月", "syn": "monthly; four weeks", "cat": 0, "rank": 104, "ipa": "", "tip": ""},
+{"id": 104, "w": "every day", "cn": "每天", "syn": "daily", "cat": 0, "rank": 105, "ipa": "", "tip": ""},
+{"id": 105, "w": "classify", "cn": "v. 分类", "syn": "category; sort; type; kind", "cat": 0, "rank": 106, "ipa": "/ˈklæsɪfaɪ/", "tip": ""},
+{"id": 106, "w": "entrance", "cn": "n. 入口", "syn": "access; main gate; door", "cat": 0, "rank": 107, "ipa": "/ˈentrəns/", "tip": ""},
+{"id": 107, "w": "behind", "cn": "prep. 在……后面", "syn": "back; rear", "cat": 0, "rank": 108, "ipa": "/bɪˈhaɪnd/", "tip": ""},
+{"id": 108, "w": "below", "cn": "prep. 在……下面", "syn": "under", "cat": 0, "rank": 109, "ipa": "/bɪˈləʊ/", "tip": ""},
+{"id": 109, "w": "beside", "cn": "prep. 在……旁边", "syn": "next to; near; border", "cat": 0, "rank": 110, "ipa": "/bɪˈsaɪd/", "tip": ""},
+{"id": 110, "w": "available", "cn": "adj. 可用的", "syn": "have; accessible; not close; open", "cat": 0, "rank": 111, "ipa": "/əˈveɪləbl/", "tip": ""},
+{"id": 111, "w": "boring", "cn": "adj. 无趣的", "syn": "not interesting; boredom", "cat": 0, "rank": 112, "ipa": "/ˈbɔːrɪŋ/", "tip": ""},
+{"id": 112, "w": "trend", "cn": "n. 倾向", "syn": "possibility; likely; tendency", "cat": 0, "rank": 113, "ipa": "/trend/", "tip": ""},
+{"id": 113, "w": "risky", "cn": "adj. 危险的", "syn": "dangerous; not safe; hazard", "cat": 0, "rank": 114, "ipa": "/ˈrɪskɪ/", "tip": ""},
+{"id": 114, "w": "poisonous", "cn": "adj. 有毒的", "syn": "toxic; dangerous", "cat": 0, "rank": 115, "ipa": "/ˈpɔɪzənəs/", "tip": ""},
+{"id": 115, "w": "warning", "cn": "n. 警报", "syn": "alarm; alert", "cat": 0, "rank": 116, "ipa": "/ˈwɔːnɪŋ/", "tip": ""},
+{"id": 116, "w": "care", "cn": "v. 谨慎", "syn": "caution", "cat": 0, "rank": 117, "ipa": "/keə(r)/", "tip": ""},
+{"id": 117, "w": "steal", "cn": "v. 偷窃", "syn": "theft", "cat": 0, "rank": 118, "ipa": "/stiːl/", "tip": ""},
+{"id": 118, "w": "protect", "cn": "v. 保护", "syn": "safeguard; shelter; preserve", "cat": 0, "rank": 119, "ipa": "/prəˈtekt/", "tip": ""},
+{"id": 119, "w": "injury", "cn": "n. 伤害", "syn": "harm; hurt; damage; frighten", "cat": 0, "rank": 120, "ipa": "/ˈɪndʒərɪ/", "tip": ""},
+{"id": 120, "w": "military", "cn": "adj. 军事的", "syn": "battle; weapon; not peaceful", "cat": 0, "rank": 121, "ipa": "/ˈmɪlətrɪ/", "tip": ""},
+{"id": 121, "w": "tactics", "cn": "n. 策略", "syn": "strategy; method", "cat": 0, "rank": 122, "ipa": "/ˈtæktɪks/", "tip": ""},
+{"id": 122, "w": "rely on", "cn": "依靠", "syn": "depend on; count on", "cat": 0, "rank": 123, "ipa": "", "tip": ""},
+{"id": 123, "w": "travel", "cn": "n. 旅行", "syn": "tourism; trip; passenger; flight", "cat": 0, "rank": 124, "ipa": "/ˈtrævl/", "tip": ""},
+{"id": 124, "w": "space travel", "cn": "空间旅行", "syn": "aircraft; rocket; satellite", "cat": 0, "rank": 125, "ipa": "", "tip": ""},
+{"id": 125, "w": "transport", "cn": "n. 交通", "syn": "vehicle; bus; train; boat; ship; ferry; subway", "cat": 0, "rank": 126, "ipa": "/ˈtrænspɔːt/", "tip": ""},
+{"id": 126, "w": "specific", "cn": "adj. 具体的", "syn": "detail; particular; example", "cat": 0, "rank": 127, "ipa": "/spəˈsɪfɪk/", "tip": ""},
+{"id": 127, "w": "request", "cn": "v. 询问", "syn": "ask for; inquiry", "cat": 0, "rank": 128, "ipa": "/rɪˈkwest/", "tip": ""},
+{"id": 128, "w": "clear", "cn": "adj. 清晰地", "syn": "definitive", "cat": 0, "rank": 129, "ipa": "/klɪə(r)/", "tip": ""},
+{"id": 129, "w": "freeze", "cn": "v. 结冰", "syn": "froze; ice; chill; cold", "cat": 0, "rank": 130, "ipa": "/ˈfriːz/", "tip": ""},
+{"id": 130, "w": "organization", "cn": "n. 公司", "syn": "business; company; corporation", "cat": 0, "rank": 131, "ipa": "/ˌɔːgənaɪˈzeɪʃn/", "tip": ""},
+{"id": 131, "w": "organize", "cn": "v. 组织，安排", "syn": "arrange; plan", "cat": 0, "rank": 132, "ipa": "/ˈɔːgənaɪz/", "tip": ""},
+{"id": 132, "w": "produce", "cn": "v. 产生", "syn": "generate; make", "cat": 0, "rank": 133, "ipa": "/prəˈdjuːs/", "tip": ""},
+{"id": 133, "w": "administer", "cn": "v. 管理，治理", "syn": "manage", "cat": 0, "rank": 134, "ipa": "/ədˈmɪnɪstə(r)/", "tip": ""},
+{"id": 134, "w": "occupation", "cn": "n. 职位", "syn": "profession; job", "cat": 0, "rank": 135, "ipa": "/ˌɒkjʊˈpeɪʃn/", "tip": ""},
+{"id": 135, "w": "all ages", "cn": "所有年龄的人", "syn": "young and old", "cat": 0, "rank": 136, "ipa": "", "tip": ""},
+{"id": 136, "w": "youth", "cn": "n. 年轻", "syn": "young; boy; child; teenager", "cat": 0, "rank": 137, "ipa": "/juːθ/", "tip": ""},
+{"id": 137, "w": "mate", "cn": "n. 伙伴", "syn": "friend; peer", "cat": 0, "rank": 138, "ipa": "/meɪt/", "tip": ""},
+{"id": 138, "w": "staff", "cn": "n. 员工", "syn": "recruit; worker; employee", "cat": 0, "rank": 139, "ipa": "/stɑːf/", "tip": ""},
+{"id": 139, "w": "sale", "cn": "v. 销售", "syn": "retail", "cat": 0, "rank": 140, "ipa": "/seɪl/", "tip": ""},
+{"id": 140, "w": "cheap", "cn": "adj. 便宜的", "syn": "low price", "cat": 0, "rank": 141, "ipa": "/tʃiːp/", "tip": ""},
+{"id": 141, "w": "discount", "cn": "n. 打折", "syn": "10% off; on sale", "cat": 0, "rank": 142, "ipa": "/ˈdɪskaʊnt/", "tip": ""},
+{"id": 142, "w": "round", "cn": "n. 圆", "syn": "curve; circle", "cat": 0, "rank": 143, "ipa": "/raʊnd/", "tip": ""},
+{"id": 143, "w": "order", "cn": "n. 顺序", "syn": "sequence", "cat": 0, "rank": 144, "ipa": "/ˈɔːdə(r)/", "tip": ""},
+{"id": 144, "w": "renovate", "cn": "v. 修理；翻新", "syn": "fix; repair", "cat": 0, "rank": 145, "ipa": "/ˈrenəveɪt/", "tip": ""},
+{"id": 145, "w": "alone", "cn": "adj. 单独的", "syn": "single; by themselves", "cat": 0, "rank": 146, "ipa": "/əˈləʊn/", "tip": ""},
+{"id": 146, "w": "hospitality", "cn": "n. 招待", "syn": "treatment; prepare refreshment", "cat": 0, "rank": 147, "ipa": "/ˌhɒspɪˈtælətɪ/", "tip": ""},
+{"id": 147, "w": "shape like", "cn": "像", "syn": "look like; seem", "cat": 0, "rank": 148, "ipa": "", "tip": ""},
+{"id": 148, "w": "depress", "cn": "v. 失望，使沮丧", "syn": "disappoint; dispirit; frustrate; discourage", "cat": 0, "rank": 149, "ipa": "/dɪˈpres/", "tip": ""},
+{"id": 149, "w": "well-known", "cn": "adj. 有名的", "syn": "famous; fame", "cat": 0, "rank": 150, "ipa": "/ˌwelˈnəʊn/", "tip": ""},
+{"id": 150, "w": "specialize in", "cn": "专注于", "syn": "focus; emphasis; concentrate", "cat": 0, "rank": 151, "ipa": "", "tip": ""},
+{"id": 151, "w": "part", "cn": "n. 部分", "syn": "component; proportion; percent; section; element; ingredient", "cat": 0, "rank": 152, "ipa": "/pɑːt/", "tip": ""},
+{"id": 152, "w": "typical", "cn": "adj. 典型的；普通的", "syn": "representative; common; average", "cat": 0, "rank": 153, "ipa": "/ˈtɪpɪkl/", "tip": ""},
+{"id": 153, "w": "uncommon", "cn": "adj. 特别的", "syn": "special; unique; unusual; rare", "cat": 0, "rank": 154, "ipa": "/ʌnˈkɒmən/", "tip": ""},
+{"id": 154, "w": "accurately", "cn": "adv. 精确地", "syn": "precisely", "cat": 0, "rank": 155, "ipa": "/ˈækjərətlɪ/", "tip": ""},
+{"id": 155, "w": "expand", "cn": "v. 扩建；扩张", "syn": "add; enlarge; increase spaces", "cat": 0, "rank": 156, "ipa": "/ɪkˈspænd/", "tip": ""},
+{"id": 156, "w": "climb", "cn": "v. 上升", "syn": "go up; increase", "cat": 0, "rank": 157, "ipa": "/klaɪm/", "tip": ""},
+{"id": 157, "w": "enhance", "cn": "v. 增强", "syn": "improve; increase", "cat": 0, "rank": 158, "ipa": "/ɪnˈhɑːns/", "tip": ""},
+{"id": 158, "w": "power", "cn": "n. 力量", "syn": "force; energy", "cat": 0, "rank": 159, "ipa": "/ˈpaʊə(r)/", "tip": ""},
+{"id": 159, "w": "fuel", "cn": "n. 燃料", "syn": "coal; firewood; petrol; gas", "cat": 0, "rank": 160, "ipa": "/ˈfjuːəl/", "tip": ""},
+{"id": 160, "w": "refurbish", "cn": "v. 重新装修", "syn": "redecorate", "cat": 0, "rank": 161, "ipa": "/ˌriːˈfɜːbɪʃ/", "tip": ""},
+{"id": 161, "w": "preference", "cn": "n. 偏爱；优先权", "syn": "like; priority", "cat": 0, "rank": 162, "ipa": "/ˈprefrəns/", "tip": ""},
+{"id": 162, "w": "trust", "cn": "v. 信任", "syn": "less suspicious; believe", "cat": 0, "rank": 163, "ipa": "/trʌst/", "tip": ""},
+{"id": 163, "w": "computer", "cn": "n. 电脑", "syn": "laptop", "cat": 0, "rank": 164, "ipa": "/kəmˈpjuːtə(r)/", "tip": ""},
+{"id": 164, "w": "handy", "cn": "adj. 方便的", "syn": "convenient", "cat": 0, "rank": 165, "ipa": "/ˈhændɪ/", "tip": ""},
+{"id": 165, "w": "demonstrate", "cn": "v. 展示", "syn": "display; show; exhibition", "cat": 0, "rank": 166, "ipa": "/ˈdemənstreɪt/", "tip": ""},
+{"id": 166, "w": "important", "cn": "adj. 主要的", "syn": "significant; major; main; primary", "cat": 0, "rank": 167, "ipa": "/ɪmˈpɔːtnt/", "tip": ""},
+{"id": 167, "w": "straightforward", "cn": "adj. 简单直接的", "syn": "direct; first-hand; simple", "cat": 0, "rank": 168, "ipa": "/ˌstreɪtˈfɔːwəd/", "tip": ""},
+{"id": 168, "w": "disused", "cn": "adj. 废弃的", "syn": "empty; abandoned", "cat": 0, "rank": 169, "ipa": "/ˌdɪsˈjuːzd/", "tip": ""},
+{"id": 169, "w": "donate", "cn": "v. 捐赠", "syn": "charity; give", "cat": 0, "rank": 170, "ipa": "/dəʊˈneɪt/", "tip": ""},
+{"id": 170, "w": "work", "cn": "n. 作品", "syn": "item", "cat": 0, "rank": 171, "ipa": "/wɜːk/", "tip": ""},
+{"id": 171, "w": "turn", "cn": "v. 转动", "syn": "switch", "cat": 0, "rank": 172, "ipa": "/tɜːn/", "tip": ""},
+{"id": 172, "w": "information", "cn": "n. 信息", "syn": "details; data; graph; chart", "cat": 0, "rank": 173, "ipa": "/ˌɪnfəˈmeɪʃn/", "tip": ""},
+{"id": 173, "w": "visualize", "cn": "v. 想象", "syn": "imagine", "cat": 0, "rank": 174, "ipa": "/ˈvɪʒʊəlaɪz/", "tip": ""},
+{"id": 174, "w": "repetition", "cn": "n. 重复", "syn": "over and over", "cat": 0, "rank": 175, "ipa": "/ˌrepəˈtɪʃn/", "tip": ""},
+{"id": 175, "w": "poor", "cn": "adj. 弱的", "syn": "weak", "cat": 0, "rank": 176, "ipa": "/pɔː(r)/", "tip": ""},
+{"id": 176, "w": "durable", "cn": "adj. 耐用的", "syn": "stronger; longer", "cat": 0, "rank": 177, "ipa": "/ˈdjʊərəbl/", "tip": ""},
+{"id": 177, "w": "pollutant", "cn": "n. 污染物", "syn": "contaminant", "cat": 0, "rank": 178, "ipa": "/pəˈluːtənt/", "tip": ""},
+{"id": 178, "w": "continue", "cn": "v. 继续", "syn": "ahead; go on; keep doing", "cat": 0, "rank": 179, "ipa": "/kənˈtɪnjuː/", "tip": ""}
+];
+const LIBRARIES = {
+  reading:   { id:"reading",   name:"雅思阅读 538", short:"阅读 538", skill:"阅读", words:READING,   tiers:true,  stories:true,  defDays:5, source:"剑桥雅思阅读考点词真经" },
+  listening: { id:"listening", name:"雅思听力 179", short:"听力 179", skill:"听力", words:LISTENING, tiers:false, stories:false, defDays:4, source:"剑桥雅思听力考点词真经" }
+};
+var CURLIB = LIBRARIES.reading;
+var WORDS = [], N = 0, byId = {}, byWord = {}, SYN_POOL = [];
+const STORIES = [
+{title:"The Crow That Could Count", emoji:"🐦", zh:"乌鸦的聪明 · 认知与本能",
+ text:"In a quiet park, a crow named Pip behaved in a way that seemed almost human. Pip could [[recognize|recognise]] the faces of people who had once fed her, and she would [[ignore]] strangers completely. Curious, scientists ran a careful [[experiment]] to [[detect]] whether her clever [[trait|traits]] were learned or [[innate]]. They set out two boxes; only one held food, and Pip soon learned to [[distinguish]] them by a small [[signal]] painted on the lid. Crows, it turns out, can [[adapt to|adapt to]] new puzzles with a [[swift]] mind, and they readily [[imitate]] one another. Some even drop hard nuts onto busy roads and let the passing wheels do the cracking — a clever [[mechanism]] no one ever taught them. The growing [[evidence]] suggests that the gap between a bird's brain and our own may [[resemble]] a narrow stream far more than a wide ocean."},
+{title:"The City That Listens", emoji:"🌆", zh:"会思考的城市 · 科技与环保",
+ text:"Singapore took a bold [[approach]] to a [[fundamental]] city problem: heat. Engineers chose to [[integrate]] thousands of tiny sensors into the lamp posts. These quietly [[monitor]] temperature, traffic and air, and the system then [[adjust|adjusts]] the street lighting to the [[optimum]] level. The aim is a [[sustainable]] city that can [[minimize]] wasted power. When the sensors [[detect]] a sudden crowd, the network can [[distribute]] buses far more evenly. Some critics worry that so much [[artificial]] intelligence might [[threaten]] privacy, while others call the [[reduction|reductions]] in energy use truly [[impressive]]. The hardware itself is [[durable]] and [[eco-friendly]], built to last for decades. Whatever your view, one [[trait]] of the modern city is now clear: it no longer simply sits there — it [[react|reacts]]."},
+{title:"Doctor of the Reef", emoji:"🐠", zh:"珊瑚医生 · 海洋与医学",
+ text:"Coral reefs are far more [[fragile]] than they look. Warming seas [[threaten]] them, and bleaching spreads like a [[chronic]] illness across whole reefs. Dr. Mehta works to [[revive]] dying coral in her [[marine]] lab. She noticed an odd [[symptom]]: stressed coral [[secrete|secretes]] less of the mucus that normally guards it from harmful [[bacteria]]. Her [[therapy]] is unusual — she breeds coral with stronger [[immunity]] and returns them to their [[habitat]], hoping the tougher [[trait|traits]] will [[transmit]] to the next generation. Progress is slow, and a single hot summer can [[ruin]] years of work. Yet some patches now [[survive]] heat that once killed them. 'We cannot [[ignore]] the ocean,' she says. 'If the reefs [[vanish]], a quarter of all sea life loses its home.'"},
+{title:"The Word-Maker", emoji:"✒️", zh:"造词的人 · 语言与传记",
+ text:"Very few people [[coin]] a word that lasts, yet Shakespeare did it hundreds of times. When ordinary [[term|terms]] failed him, he simply invented new ones. Some critics of his day were quick to [[exaggerate]] his faults and accuse him of borrowing — even of [[plagiarise|plagiarising]] older plays. The [[criticism]] did not stop him. His [[original]] phrases slowly stopped sounding [[obscure]] and became [[legitimate]] English. What [[prompt|prompted]] such invention? Perhaps a deep need to capture feelings that [[ancient]] words could not. [[eventually|Eventually]], his style helped the language [[prosper]], spreading far beyond his small theatre. It takes an [[exceptional]] mind to [[persuade]] a whole nation to speak a little differently — and to make that change [[survive]] for four hundred years."},
+{title:"The Reluctant Farmer", emoji:"🌾", zh:"不情愿的农夫 · 历史与农业",
+ text:"A [[reluctant]] young farmer named Tomas [[inherit|inherited]] a dry [[domestic|family]] plot, where every [[drought]] raised the threat of [[famine]]. His neighbours trusted an [[ancient]] habit — burning the fields each spring — but Tomas grew [[suspicious]] of it. After real [[hardship]], he tried a new [[approach]]: he spread animal waste as a natural [[fertiliser]] and let his tired fields rest. The results were deeply [[beneficial]]. Healthy soil began to [[accumulate]], and his harvests reached [[sufficiency]] even in the hard years. [[eventually|Eventually]], the once-barren farm began to [[prosper]]. Tomas had used no [[radical]] machine and no costly [[supplement]]; he had simply [[recognize|recognised]] that land, much like people, needs time to rest and [[revive]]."}
+];
+
+/* ===================== 基础工具 ===================== */
+const SK = "ielts538_v3";
+const SK2 = "ielts538_v2";
+const SK1 = "ielts538_v1";
+function curDays(){ return (S&&S.days)||(CURLIB&&CURLIB.defDays)||5; }
+function perDay(){ return Math.ceil(N / curDays()); }
+function assignDays(){ var TD=curDays(); WORDS.forEach(function(w,i){ w.idx=i; w.day=Math.min(TD, Math.floor(i*TD/Math.max(N,1))+1); }); }
+function useLib(id){
+  CURLIB = LIBRARIES[id] || LIBRARIES.reading;
+  ROOT.active = CURLIB.id;
+  S = ROOT.libs[CURLIB.id];
+  if(!S.days) S.days = CURLIB.defDays;
+  if(!S.start) S.start = todayStr();
+  WORDS = CURLIB.words; N = WORDS.length;
+  assignDays();
+  byId = {}; WORDS.forEach(function(w){ byId[w.id]=w; });
+  byWord = {}; WORDS.forEach(function(w){ byWord[w.w.toLowerCase()]=w.id; });
+  var set={}; WORDS.forEach(function(w){ cleanSyns(w).forEach(function(s){ if(s.length<=18) set[s.toLowerCase()]=1; }); }); SYN_POOL = Object.keys(set);
+  if(typeof LIB!=='undefined' && LIB){ LIB.cat=0; LIB.status=-9; LIB.q=''; LIB.limit=60; }
+  save();
+}
+function replan(days){ S.days=days; S.start=todayStr(); assignDays(); save(); }
+
+function defProg(days){ return {start:null, days:days||5, mark:{}, fav:{}, wrong:{}, log:{}}; }
+function defRoot(){ return {v:3, active:"reading", libs:{ reading:defProg(LIBRARIES.reading.defDays), listening:defProg(LIBRARIES.listening.defDays) }, settings:{accent:"us"} }; }
+var ROOT = loadRoot();
+var S = null;
+function loadRoot(){
+  try{
+    var r=localStorage.getItem(SK);
+    if(r){ return normRoot(JSON.parse(r)); }
+    var v2=localStorage.getItem(SK2);
+    if(v2){ return fromOld(JSON.parse(v2)); }
+    var v1=localStorage.getItem(SK1);
+    if(v1){ var o1=JSON.parse(v1); return fromOld({start:o1.start, mark:o1.status, fav:o1.fav, wrong:o1.wrong, log:o1.log}); }
+  }catch(e){}
+  return defRoot();
+}
+function normRoot(o){
+  var d=defRoot();
+  if(o && o.libs){
+    d.active = (o.active==="listening")?"listening":"reading";
+    ["reading","listening"].forEach(function(k){ var p=Object.assign(defProg(LIBRARIES[k].defDays), o.libs[k]||{}); p.mark=p.mark||{}; p.fav=p.fav||{}; p.wrong=p.wrong||{}; p.log=p.log||{}; if(!p.days)p.days=LIBRARIES[k].defDays; d.libs[k]=p; });
+    d.settings = Object.assign({accent:"us"}, o.settings);
+  }
+  return d;
+}
+function fromOld(o){
+  var d=defRoot(), rp=d.libs.reading;
+  rp.start = o.start||null; rp.days = 5;
+  rp.mark = o.mark||{}; rp.fav = o.fav||{}; rp.wrong = o.wrong||{}; rp.log = o.log||{};
+  if(o.settings) d.settings = Object.assign({accent:"us"}, o.settings);
+  d.active="reading";
+  return d;
+}
+var SAVE_OK=true;
+function save(){
+  try{ localStorage.setItem(SK, JSON.stringify(ROOT)); if(!SAVE_OK){SAVE_OK=true;} }
+  catch(e){ if(SAVE_OK){ SAVE_OK=false; toast("⚠️ 此环境无法保存进度，请用 ⚙ 导出备份"); } }
+}
+function todayStr(d){ d=d||new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function daysSince(s){ var a=new Date(s+"T00:00:00"), b=new Date(todayStr()+"T00:00:00"); return Math.round((b-a)/86400000); }
+function curDay(){ return (S&&S.start)? Math.max(1, daysSince(S.start)+1) : 1; }
+function planDay(){ return Math.min(curDay(), curDays()); }
+function isSprint(){ return curDay() > curDays(); }
+
+/* mark: -1 未评 / 0 不认识 / 1 模糊 / 2 记得(掌握) */
+function markOf(id){ return (id in S.mark)? S.mark[id] : -1; }
+function setMark(id,v){ if(v<0) delete S.mark[id]; else S.mark[id]=v; }
+function known(id){ return markOf(id)===2; }
+function isFav(id){ return !!S.fav[id]; }
+function toggleFav(id){ if(S.fav[id]) delete S.fav[id]; else S.fav[id]=1; save(); }
+function logToday(){ var d=todayStr(); S.log[d]=S.log[d]||{studied:[],correct:0,wrong:0}; return S.log[d]; }
+function markStudied(id){ var l=logToday(); if(l.studied.indexOf(id)<0) l.studied.push(id); }
+function knownCount(){ return WORDS.filter(function(w){return known(w.id);}).length; }
+function todayNew(){ var d=planDay(); return WORDS.filter(function(w){return w.day===d && !known(w.id);}); }
+function overdue(){ var d=planDay(); return WORDS.filter(function(w){return w.day<d && !known(w.id);}); }
+function todayTargets(){ return overdue().concat(todayNew()); }
+function favList(){ return WORDS.filter(function(w){return isFav(w.id);}); }
+function wrongListA(){ return WORDS.filter(function(w){return S.wrong[w.id];}); }
+function unfinished(){ return WORDS.filter(function(w){return !known(w.id);}); }
+function markList(v){ return WORDS.filter(function(w){return markOf(w.id)===v;}); }
+function dayWords(d){ return WORDS.filter(function(w){return w.day===d;}); }
+function dayDone(d){ return dayWords(d).filter(function(w){return known(w.id);}).length; }
+function streak(){ var s=0, d=new Date(); while(true){ var k=todayStr(d), l=S.log[k]; if(l&&l.studied&&l.studied.length>0){ s++; d.setDate(d.getDate()-1);} else break; } return s; }
+function synList(w){ return w.syn.split(/[;,]/).map(function(s){return s.trim();}).filter(function(s){return s && !/apply a to b/i.test(s);}); }
+function cleanSyns(w){ return synList(w).filter(function(s){return /^[a-z][a-z' -]*$/i.test(s);}); }
+/* SYN_POOL 由 useLib 按当前词库重新计算（见上） */
+
+/* ---- 发音：有道真人音频 + 合成兜底 ---- */
+var AU=null; try{ AU=new Audio(); AU.preload="none"; }catch(e){}
+var lastBtn=null;
+function playUI(btn){ if(lastBtn){lastBtn.classList.remove("playing");} if(btn){ btn.classList.add("playing"); lastBtn=btn; setTimeout(function(){ if(btn)btn.classList.remove("playing"); },1200);} }
+function speak(text, btn){
+  var word=String(text).replace(/\.\.\./g,'').trim();
+  if(!word) return;
+  if(btn) playUI(btn);
+  var type = (ROOT.settings.accent==="uk")?1:2;
+  if(AU){
+    try{
+      AU.onerror=function(){ tts(word); };
+      AU.src="https://dict.youdao.com/dictvoice?audio="+encodeURIComponent(word)+"&type="+type;
+      var p=AU.play();
+      if(p && p.catch){ p.catch(function(){ tts(word); }); }
+      return;
+    }catch(e){}
+  }
+  tts(word);
+}
+function tts(word){
+  try{
+    if(!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(word);
+    u.lang=(ROOT.settings.accent==="uk")?"en-GB":"en-US"; u.rate=.85;
+    var vs=speechSynthesis.getVoices();
+    var pref=(ROOT.settings.accent==="uk")?/en[-_]GB/i:/en[-_]US/i;
+    var v=vs.filter(function(x){return pref.test(x.lang);})[0]||vs.filter(function(x){return /^en/i.test(x.lang);})[0];
+    if(v)u.voice=v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+if('speechSynthesis' in window){ try{speechSynthesis.getVoices();}catch(e){} }
+
+function youdao(w){ return "https://www.youdao.com/result?word="+encodeURIComponent(w)+"&lang=en"; }
+function bing(w){ return "https://cn.bing.com/dict/search?q="+encodeURIComponent(w); }
+function badge(w){ return w.cat===0?'<span class="badge b0">听力高频考点</span>':w.cat===1?'<span class="badge b1">第1类·超高频</span>':w.cat===2?'<span class="badge b2">第2类·重要</span>':'<span class="badge b3">第3类·考查过</span>'; }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]);}); }
+function jx(s){ return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+function pick(arr,n,exclude){ var ex={}; (exclude||[]).forEach(function(x){ex[String(x).toLowerCase()]=1;}); var pool=arr.filter(function(x){return !ex[String(x).toLowerCase()];}); var out=[], cp=pool.slice(); while(out.length<n && cp.length){ out.push(cp.splice(Math.floor(Math.random()*cp.length),1)[0]); } return out; }
+function shuffle(a){ a=a.slice(); for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; } return a; }
+function fmtTime(ms){ var s=Math.round(ms/1000); return Math.floor(s/60)+":"+String(s%60).padStart(2,"0"); }
+
+var toastT;
+function toast(msg){ var t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(function(){t.classList.remove('show');},1900); }
+
+/* ===================== 路由 ===================== */
+var TAB='home';
+const view=document.getElementById('view');
+function go(tab){ TAB=tab; document.querySelectorAll('.tab').forEach(function(b){ b.classList.toggle('on',b.dataset.tab===tab); }); window.scrollTo(0,0); ({home:renderHome,study:renderStudyHub,play:renderPlay,lib:renderLib,me:renderMe}[tab])(); }
+document.querySelectorAll('.tab').forEach(function(b){ b.addEventListener('click',function(){ SESS=null;QZ=null;MG=null;SP=null;DC=null; go(b.dataset.tab); }); });
+function ringSVG(pct,size){ size=size||118; var r=(size-14)/2, c=2*Math.PI*r, off=c*(1-pct/100); return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'"><circle cx="'+size/2+'" cy="'+size/2+'" r="'+r+'" fill="none" stroke="var(--line-2)" stroke-width="11"/><circle cx="'+size/2+'" cy="'+size/2+'" r="'+r+'" fill="none" stroke="var(--honey)" stroke-width="11" stroke-linecap="round" stroke-dasharray="'+c.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"/></svg>'; }
+
+/* ===================== 词库切换 / 周期 ===================== */
+function dayList(){ var a=[]; for(var d=1;d<=curDays();d++)a.push(d); return a; }
+function libKnown(k){ var m=ROOT.libs[k].mark||{},c=0; for(var id in m){ if(m[id]===2)c++; } return c; }
+function updateChrome(){ var b=document.querySelector('.brand'); if(b) b.innerHTML='<span class="dot"></span>'+CURLIB.name+'<small>'+curDays()+' 天背词</small>'; }
+function libSwitcherHTML(){
+  return '<div class="libsw">'+["reading","listening"].map(function(k){
+    var L=LIBRARIES[k], on=(k===CURLIB.id);
+    return '<button class="libtab'+(on?' on':'')+'" onclick="switchLib(\''+k+'\')"><b>'+L.name+'</b><span>'+libKnown(k)+' / '+L.words.length+' 掌握</span></button>';
+  }).join('')+'</div>';
+}
+function switchLib(id){
+  if(!LIBRARIES[id]) return;
+  if(id===CURLIB.id){ if(TAB!=='home')go('home'); return; }
+  var fresh=!ROOT.libs[id].start;
+  SESS=null;QZ=null;MG=null;SP=null;DC=null;ME_VIEW=null;
+  useLib(id); updateChrome(); go('home');
+  if(fresh){ openCycle(); } else { toast('已切换到 '+CURLIB.name); }
+}
+function openCycle(){
+  var cur=curDays(), n=CURLIB.words.length;
+  var presets=[3,5,7,10,14,21,30];
+  var btns=presets.map(function(d){ return '<button class="cyopt'+(d===cur?' on':'')+'" onclick="applyCycle('+d+')">'+d+' 天<small>'+Math.ceil(n/d)+'/天</small></button>'; }).join('');
+  openModal(
+   '<div class="sec-t first">设置背词周期</div>'+
+   '<div class="note" style="margin-top:0">把 <b>'+CURLIB.name+'</b> 的 '+n+' 个词平均分到你选的天数里。更改后会<b>从今天重新排计划</b>，但你已背记录（三色词集 / 收藏 / 错题）<b>全部保留</b>。</div>'+
+   '<div class="cygrid">'+btns+'</div>'+
+   '<div class="row" style="align-items:center;gap:8px;margin-top:2px"><span class="muted" style="font-size:13px">自定义天数</span>'+
+     '<input id="cyNum" class="cynum" type="number" min="1" max="90" value="'+cur+'">'+
+     '<button class="btn honey sm" onclick="applyCycleCustom()">确定</button></div>'+
+   '<div class="note">💡 时间紧就选短周期（每天多背、强度大）；时间宽裕就选长周期（每天少背、记得更牢）。</div>'
+  );
+}
+function applyCycle(d){ replan(d); closeModal(); updateChrome(); ME_VIEW=null; go('home'); toast('已设为 '+d+' 天计划 🗓'); }
+function applyCycleCustom(){ var el=document.getElementById('cyNum'); var v=el?parseInt(el.value,10):0; if(!v||v<1){ toast('请输入有效天数'); return; } if(v>90)v=90; applyCycle(v); }
+
+/* ===================== 词库切换 / 学习周期 ===================== */
+function dayList(){ var a=[]; for(var d=1;d<=curDays();d++)a.push(d); return a; }
+function updateChrome(){ var b=document.querySelector('.brand'); if(b) b.innerHTML='<span class="dot"></span>'+CURLIB.name+'<small>'+curDays()+' 天背词</small>'; }
+function libSwitcherHTML(){
+  return '<div class="libsw">'+["reading","listening"].map(function(k){
+    var L=LIBRARIES[k], P=ROOT.libs[k], on=(k===CURLIB.id);
+    var kn=0, mk=P.mark||{}; for(var id in mk){ if(mk[id]===2)kn++; }
+    return '<button class="libtab'+(on?' on':'')+'" onclick="switchLib(\''+k+'\')"><b>'+L.name+'</b><span>'+kn+' / '+L.words.length+' 掌握</span></button>';
+  }).join('')+'</div>';
+}
+function switchLib(id){
+  if(!LIBRARIES[id]) return;
+  if(id===CURLIB.id){ if(TAB!=='home')go('home'); return; }
+  var fresh=!ROOT.libs[id].start;
+  SESS=null;QZ=null;MG=null;SP=null;DC=null;ME_VIEW=null;
+  useLib(id); updateChrome(); go('home');
+  if(fresh){ openCycle(); } else { toast('已切换到 '+CURLIB.name); }
+}
+function openCycle(){
+  var cur=curDays(), n=CURLIB.words.length;
+  var presets=[3,5,7,10,14,21,30];
+  var btns=presets.map(function(d){ return '<button class="cyopt'+(d===cur?' on':'')+'" onclick="applyCycle('+d+')">'+d+' 天<small>'+Math.ceil(n/d)+'/天</small></button>'; }).join('');
+  openModal(
+   '<div class="sec-t first">设置背词周期</div>'+
+   '<div class="note" style="margin-top:0">把 <b>'+CURLIB.name+'</b> 的 '+n+' 个词平均分到你选的天数里。更改后会<b>从今天重新排计划</b>，但你已背记录（三色词集 / 收藏 / 错题）<b>全部保留</b>。</div>'+
+   '<div class="cygrid">'+btns+'</div>'+
+   '<div class="row" style="align-items:center;gap:8px;margin-top:2px"><span class="muted" style="font-size:13px">自定义天数</span>'+
+     '<input id="cyNum" class="cynum" type="number" min="1" max="90" value="'+cur+'">'+
+     '<button class="btn honey sm" onclick="applyCycleCustom()">确定</button></div>'+
+   '<div class="note">💡 时间紧就选短周期（每天多背、强度大）；时间宽裕就选长周期（每天少背、记得更牢）。</div>'
+  );
+}
+function applyCycle(d){ replan(d); closeModal(); updateChrome(); ME_VIEW=null; go('home'); toast('已设为 '+d+' 天计划 🗓'); }
+function applyCycleCustom(){ var el=document.getElementById('cyNum'); var v=el?parseInt(el.value,10):0; if(!v||v<1){ toast('请输入有效天数'); return; } if(v>90)v=90; applyCycle(v); }
+
+/* ===================== 计划页 ===================== */
+function renderHome(){
+  var kn=knownCount(), pct=N?Math.round(kn/N*100):0;
+  var cd=curDay(), pd=planDay(), sprint=isSprint(), TD=curDays();
+  var ov=overdue().length, tn=todayNew().length, tDone=dayDone(pd);
+  var deadDays=TD-cd+1;
+  var nudge;
+  if(kn===N){ nudge='<div class="nudge go"><span class="em">🎉</span><div>全部 '+N+' 个'+CURLIB.skill+'考点词都掌握啦！去「闯关」多刷几轮同义替换和拼写就稳了。</div></div>'; }
+  else if(sprint){ nudge='<div class="nudge warn"><span class="em">⏰</span><div>已经是第 '+cd+' 天（计划 '+TD+' 天）。冲刺模式：还剩 <b>'+unfinished().length+'</b> 个没掌握，今天集中清掉「全部未掌握」吧！</div></div>'; }
+  else if(ov>0){ nudge='<div class="nudge warn"><span class="em">📌</span><div>有 <b>'+ov+'</b> 个词从前几天落下了。先补上它们再学新词——补背的都是见过的词，会快很多。</div></div>'; }
+  else if(tn>0){ nudge='<div class="nudge flat"><span class="em">📖</span><div>今天（第 '+cd+' 天）要背 <b>'+tn+'</b> 个新词，已完成 '+tDone+'/'+dayWords(pd).length+'。点下面「今日任务」开始。</div></div>'; }
+  else { nudge='<div class="nudge go"><span class="em">✅</span><div>今天的新词都背完了，太棒了！去「复习已掌握」巩固，或提前预习明天。</div></div>'; }
+  var days='';
+  for(var d=1; d<=TD; d++){ var dw=dayWords(d).length, dd=dayDone(d), p=dw?Math.round(dd/dw*100):0;
+    var cls='day'+(d===pd&&!sprint?' now':'')+(dd===dw&&dw>0?' doned':'');
+    days+='<button class="'+cls+'" onclick="startStudy(\'day'+d+'\')"><div class="dl">第'+d+'天</div><div class="dn">'+dd+'/'+dw+'</div><div class="db"><i style="width:'+p+'%"></i></div></button>'; }
+  var deadlineTxt = sprint? '已超期 '+(cd-TD)+' 天' : '距 '+TD+' 天目标还剩 '+deadDays+' 天';
+  view.innerHTML =
+   libSwitcherHTML()+
+   '<div class="card hero"><div class="ring">'+ringSVG(pct)+'<div class="pct"><b>'+pct+'%</b><span>已掌握</span></div></div>'+
+     '<div class="hero-info"><h2>'+kn+' / '+N+' 词</h2>'+
+       '<div class="big">第 <b>'+Math.min(cd,TD)+(sprint?'+':'')+'</b> 天 · 每天约 '+perDay()+' 词</div>'+
+       '<span class="deadline">⏳ '+deadlineTxt+'</span></div></div>'+
+   nudge+
+   '<div class="stat-grid">'+
+     '<div class="card stat j"><b>'+kn+'</b><span>已掌握</span></div>'+
+     '<div class="card stat h"><b>'+streak()+'</b><span>连续天数</span></div>'+
+     '<div class="card stat c"><b>'+wrongListA().length+'</b><span>错题本</span></div>'+
+   '</div>'+
+   '<div class="planhdr"><div class="sec-t" style="margin-bottom:0">'+TD+' 天计划进度</div><button class="cyedit" onclick="openCycle()">🗓 周期 '+TD+' 天 · 调整</button></div>'+
+   '<div class="days">'+days+'</div>'+
+   '<div class="sec-t">今天背哪些</div>'+
+   '<div class="scopelist">'+
+     scopeRow('study','today','🎯','bg-h','今日任务','落下的 '+ov+' 个 + 今天新词 '+tn+' 个', ov+tn)+
+     scopeRow('study','review','🔁','bg-j','复习已掌握','把背过的再过一遍，防遗忘', kn)+
+     scopeRow('study','wrong','🩹','bg-c','攻克错题本','测试做错的词，重点补', wrongListA().length)+
+     scopeRow('study','all','📚','bg-n','全部未掌握','一次性看所有还没掌握的词', unfinished().length)+
+   '</div>'+
+   '<div class="note">📅 计划从 <b>'+S.start+'</b> 开始，自动把 '+N+' 个'+CURLIB.skill+'考点词分到 '+TD+' 天。每天打开会自动结算「落下的词」并提醒补背，想改天数随时点上方「调整」。'+(CURLIB.tiers?'这些考点词各自带真题同义替换，合计约 538 个，正是雅思阅读最爱换的词。':'每个考点词都配真题里听到的同义说法，听力最常这样换着说。')+'</div>';
+}
+function scopeRow(tab,scope,ic,bg,title,sub,num){
+  var fn = tab==='study'?'startStudy':'startTest';
+  return '<button class="card scope" onclick="'+fn+'(\''+scope+'\')">'+
+    '<div class="si '+bg+'">'+ic+'</div><div class="stt"><b>'+title+'</b><span>'+esc(sub)+'</span></div>'+
+    (num!=null?'<div class="sn">'+num+'</div>':'')+'<div class="arrow">›</div></button>';
+}
+
+/* ===================== 背词 ===================== */
+function renderStudyHub(){
+  var kn=knownCount();
+  view.innerHTML =
+   '<div class="sec-t first">选择背词范围</div>'+
+   '<div class="scopelist">'+
+     scopeRow('study','today','🎯','bg-h','今日任务','落下的词 + 今天新词', todayTargets().length)+
+     scopeRow('study','new','🌱','bg-h','只背今天新词','不含补背', todayNew().length)+
+     scopeRow('study','review','🔁','bg-j','复习已掌握','防遗忘', kn)+
+     scopeRow('study','wrong','🩹','bg-c','攻克错题本','测试错的词', wrongListA().length)+
+     scopeRow('study','fav','⭐','bg-n','背收藏夹','你标星的词', favList().length)+
+     scopeRow('study','all','📚','bg-n','全部未掌握','所有没掌握的', unfinished().length)+
+   '</div>'+
+   '<div class="sec-t">按天背</div><div class="days">'+
+   dayList().map(function(d){ var dw=dayWords(d).length,dd=dayDone(d),p=dw?Math.round(dd/dw*100):0;
+     return '<button class="day'+(dd===dw&&dw>0?' doned':'')+'" onclick="startStudy(\'day'+d+'\')"><div class="dl">第'+d+'天</div><div class="dn">'+dd+'/'+dw+'</div><div class="db"><i style="width:'+p+'%"></i></div></button>';}).join('')+
+   '</div>'+
+   '<div class="note">💡 先看英文回想中文，<b>点卡片</b>翻面看释义和同义替换小卡（点小卡可跳有道查例句）。再如实选「不认识 / 模糊 / 记得」。选「记得」才算掌握；选「不认识」的词会在本轮稍后再出现，直到记住。三种选择会自动汇总到「我的 · 三色词集」。</div>';
+}
+function scopeWords(scope){
+  if(scope==='today') return todayTargets();
+  if(scope==='new') return todayNew();
+  if(scope==='review') return WORDS.filter(function(w){return known(w.id);});
+  if(scope==='wrong') return wrongListA();
+  if(scope==='fav') return favList();
+  if(scope==='all') return unfinished();
+  if(scope==='m0') return markList(0);
+  if(scope==='m1') return markList(1);
+  if(scope==='m2') return markList(2);
+  if(scope==='m12') return markList(1).concat(markList(2));
+  var dm=/^day(\d+)$/.exec(scope); if(dm) return dayWords(+dm[1]);
+  return [];
+}
+var SESS=null;
+function startStudy(scope){
+  var ws=scopeWords(scope);
+  if(!ws.length){ toast(scope==='fav'?'收藏夹还是空的，去词库点 ☆ 收藏吧':scope==='wrong'?'错题本是空的，太棒了！':'这里没有词了 🎉'); if(TAB!=='study')go('study'); return; }
+  SESS={ queue:shuffle(ws).map(function(w){return w.id;}), pos:0, flipped:false, scope:scope, gotKnown:0 };
+  SESS.total=SESS.queue.length;
+  renderCard();
+}
+function curWord(){ return byId[SESS.queue[SESS.pos]]; }
+/* 跨词库的全局单词索引（同义替换词若本身是考点词，可显示本地释义） */
+var GIDX=null;
+function gFind(word){
+  if(!GIDX){ GIDX={}; [READING,LISTENING].forEach(function(a){ a.forEach(function(w){ var k=w.w.toLowerCase(); if(!GIDX[k])GIDX[k]=w; }); }); }
+  return GIDX[String(word||'').toLowerCase()]||null;
+}
+/* —— 同义替换词的悬停/点按释义卡片 —— */
+var POP_T=null, POP_FOR=null;
+function synPopHTML(syn, headCn){
+  var g=gFind(syn);
+  var canDict=/^[a-z][a-z' .-]*$/i.test(syn);
+  var body;
+  if(g){
+    body=(g.ipa?'<div class="pp-ipa">'+esc(g.ipa)+'</div>':'')+
+         '<div class="pp-cn">'+esc(g.cn)+'</div>'+
+         '<div class="pp-tag">'+badge(g)+(g.rank?' <span class="chip" style="padding:1px 8px;font-size:11px">排名 '+g.rank+'</span>':'')+'</div>'+
+         '<div class="pp-note">它本身也是考点词 · 释义如上</div>';
+  } else {
+    body='<div class="pp-cn pp-rep">真题里作「'+esc(headCn)+'」的同义替换</div>'+
+         '<div class="pp-note">想看 <b>'+esc(syn)+'</b> 的精确中文，点下方词典 👇</div>';
+  }
+  return '<div class="pp-h"><span class="pp-w">'+esc(syn)+'</span>'+
+           '<button class="pp-sp" onmousedown="event.preventDefault()" onclick="event.stopPropagation();speak(\''+jx(syn)+'\',this)">🔊</button></div>'+
+         body+
+         (canDict?'<div class="pp-dict"><a href="'+youdao(syn)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">📕 有道</a><a href="'+bing(syn)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">📘 必应</a></div>':'');
+}
+function showPop(anchor){
+  var syn=anchor.getAttribute('data-syn')||'', hcn=anchor.getAttribute('data-cn')||'';
+  var p=document.getElementById('pop'); if(!p) return;
+  POP_FOR=anchor;
+  p.innerHTML='<div class="pop-arrow"></div><div class="pop-in">'+synPopHTML(syn,hcn)+'</div>';
+  p.classList.add('show');
+  var r=anchor.getBoundingClientRect();
+  var pw=p.offsetWidth, ph=p.offsetHeight, vw=window.innerWidth, vh=window.innerHeight;
+  var left=r.left + r.width/2 - pw/2;
+  left=Math.max(8, Math.min(left, vw-pw-8));
+  var top=r.top - ph - 11, below=false;
+  if(top<8){ top=r.bottom + 11; below=true; }
+  if(below && top+ph>vh-8){ top=Math.max(8, vh-ph-8); }
+  p.style.left=left+'px'; p.style.top=top+'px';
+  p.classList.toggle('below',below);
+  var ax=Math.max(14, Math.min(r.left + r.width/2 - left, pw-14));
+  p.style.setProperty('--ax', ax+'px');
+}
+function hidePop(){ var p=document.getElementById('pop'); if(p){ p.classList.remove('show'); } POP_FOR=null; }
+function synEnter(el){ if(POP_T){clearTimeout(POP_T);POP_T=null;} showPop(el); }
+function synLeave(){ if(POP_T)clearTimeout(POP_T); POP_T=setTimeout(hidePop,260); }
+function synTap(el,e){ if(e){e.stopPropagation();} if(POP_FOR===el){ hidePop(); } else { if(POP_T){clearTimeout(POP_T);POP_T=null;} showPop(el); } }
+/* 让鼠标可以移进卡片本身（点词典/发音）；移出再收起 */
+(function(){
+  var p=document.getElementById('pop');
+  if(p){ p.addEventListener('mouseenter',function(){ if(POP_T){clearTimeout(POP_T);POP_T=null;} }); p.addEventListener('mouseleave',hidePop); }
+  document.addEventListener('click',function(e){ if(POP_FOR && !e.target.closest('.syncard') && !e.target.closest('#pop')) hidePop(); }, true);
+  window.addEventListener('scroll',function(){ if(POP_FOR)hidePop(); }, true);
+})();
+function synCardsHTML(w){
+  var arr=synList(w);
+  if(!arr.length) return '<span class="muted" style="font-size:13px">（这个词没有列出同义替换）</span>';
+  return arr.map(function(s){
+    var canDict=/^[a-z][a-z' .-]*$/i.test(s);
+    return '<span class="syncard" data-syn="'+esc(s)+'" data-cn="'+esc(w.cn)+'" onmouseenter="synEnter(this)" onmouseleave="synLeave()" onclick="synTap(this,event)">'+
+      '<span class="sw">'+esc(s)+'</span>'+
+      '<button class="sp" title="发音" onclick="event.stopPropagation();speak(\''+jx(s)+'\',this)">🔊</button>'+
+      (canDict?'<a class="sgo" href="'+youdao(s)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">有道↗</a>':'')+
+    '</span>';
+  }).join('');
+}
+function cardBackHTML(w){
+  var longw=w.w.length>13?' long':'';
+  return '<div class="reveal">'+
+    '<div class="word'+longw+'" style="font-size:'+(w.w.length>13?'26px':'34px')+'">'+esc(w.w)+
+      ' <button class="speak mini" onclick="event.stopPropagation();speak(\''+jx(w.w)+'\',this)">🔊</button></div>'+
+    (w.ipa?'<div class="ipa" style="text-align:center">'+esc(w.ipa)+'</div>':'')+
+    '<div class="cn">'+esc(w.cn)+'</div>'+
+    '<div class="center" style="margin-bottom:4px">'+badge(w)+(w.rank?' <span class="chip" style="padding:2px 9px">排名 '+w.rank+'</span>':'')+'</div>'+
+    '<div class="kao"><div class="lab">⭐ '+CURLIB.skill+'考点 · 真题同义替换（雅思最爱这样换着考 · 点小卡查有道）</div><div class="synwrap">'+synCardsHTML(w)+'</div></div>'+
+    (w.tip?'<div class="tipbox">💡 '+esc(w.tip)+'</div>':'')+
+    '<div class="dictrow"><a href="'+youdao(w.w)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">📕 有道词典</a><a href="'+bing(w.w)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">📘 必应词典</a></div>'+
+    (rootOf(w.w)>=0?'<button class="rootchip" onclick="event.stopPropagation();openRootModal('+rootOf(w.w)+')">🌱 词根 '+esc(ROOTS[rootOf(w.w)].r)+'（'+esc(ROOTS[rootOf(w.w)].m)+'）· 看同根词</button>':'')+
+  '</div>';
+}
+function renderCard(){
+  if(!SESS || SESS.pos>=SESS.queue.length){ return studyDone(); }
+  var w=curWord(); var doneN=SESS.pos; var pctp=Math.round(doneN/SESS.queue.length*100);
+  var longw=w.w.length>13?' long':'';
+  var front=
+    '<div class="top-area">'+
+      '<div class="word'+longw+'">'+esc(w.w)+'</div>'+
+      (w.ipa?'<div class="ipa">'+esc(w.ipa)+'</div>':'')+
+      '<button class="speak" onclick="event.stopPropagation();speak(\''+jx(w.w)+'\',this)">🔊 听发音</button>'+
+    '</div>'+
+    '<div class="tap-hint">👆 点卡片看释义</div>';
+  view.innerHTML=
+    '<div class="session-top"><button class="x" onclick="exitStudy()">✕</button>'+
+      '<div class="pbar"><i style="width:'+pctp+'%"></i></div><div class="pcount">'+doneN+' / '+SESS.queue.length+'</div></div>'+
+    '<div class="card fcard" id="fcard">'+
+      '<div class="corner"><button class="fav'+(isFav(w.id)?' on':'')+'" id="favBtn" onclick="event.stopPropagation();favTap('+w.id+')">'+(isFav(w.id)?'★':'☆')+'</button></div>'+
+      (SESS.flipped?cardBackHTML(w):front)+
+    '</div>'+
+    (SESS.flipped?
+      '<div class="rate"><button class="again" onclick="rate(0)">不认识<small>稍后再背</small></button>'+
+      '<button class="vague" onclick="rate(1)">模糊<small>有点印象</small></button>'+
+      '<button class="knownb" onclick="rate(2)">记得<small>记住了</small></button></div>'
+      :'<button class="btn ghost" style="margin-top:14px" onclick="flip()">看释义</button>');
+  var fc=document.getElementById('fcard'); if(fc) fc.addEventListener('click',function(){ if(!SESS.flipped) flip(); });
+}
+function flip(){ SESS.flipped=true; renderCard(); if(ROOT.settings.accent!=="off"){ /* optional autoplay disabled */ } }
+function favTap(id){ toggleFav(id); var b=document.getElementById('favBtn'); if(b){ b.classList.toggle('on',isFav(id)); b.textContent=isFav(id)?'★':'☆'; } toast(isFav(id)?'已收藏 ⭐':'已取消收藏'); }
+function rate(level){
+  var w=curWord(); markStudied(w.id);
+  setMark(w.id,level);
+  if(level===2){ SESS.gotKnown++; if(S.wrong[w.id])delete S.wrong[w.id]; }
+  else if(level===1){ SESS.queue.push(w.id); }
+  else { SESS.queue.push(w.id); SESS.queue.push(w.id); }
+  save();
+  SESS.pos++; SESS.flipped=false;
+  renderCard();
+}
+function exitStudy(){ SESS=null; go(TAB==='home'?'home':'study'); }
+function studyDone(){
+  var got=SESS?SESS.gotKnown:0; SESS=null;
+  view.innerHTML='<div class="card summary"><div style="font-size:46px">🎊</div>'+
+    '<div class="lab" style="margin-top:6px">这一轮背完啦！本轮记住 <b style="color:var(--jade)">'+got+'</b> 个词</div>'+
+    '<div style="margin-top:18px;display:flex;flex-direction:column;gap:10px">'+
+      '<button class="btn honey" onclick="go(\'play\')">🎮 去闯关，趁热打铁</button>'+
+      '<button class="btn ghost" onclick="go(\'home\')">回到计划页</button>'+
+    '</div></div>';
+}
+
+/* ===================== 闯关（游戏 + 故事） ===================== */
+function renderPlay(){
+  view.innerHTML=
+   '<div class="sec-t first">边玩边记 · 测试与游戏</div>'+
+   '<div class="gamegrid">'+
+     '<button class="card gcard" onclick="gameSetup(\'match\')"><div class="ge">🃏</div><b>配对消除</b><span>考点词 ↔ 中文，限时连连看</span></button>'+
+     '<button class="card gcard" onclick="gameSetup(\'quiz\')"><div class="ge">✅</div><b>选择题</b><span>含「同义替换」雅思考法</span></button>'+
+     '<button class="card gcard" onclick="gameSetup(\'spell\')"><div class="ge">⌨️</div><b>拼写练习</b><span>看中文听音 拼出单词</span></button>'+
+     '<button class="card gcard" onclick="gameSetup(\'dict\')"><div class="ge">🎧</div><b>听写</b><span>只听发音 拼出单词</span></button>'+
+     '<button class="card gcard" onclick="renderRoots()"><div class="ge">🌱</div><b>词根记忆法</b><span>同根词 + 例句 成串记</span></button>'+
+     (CURLIB.stories?'<button class="card gcard" onclick="renderStories()"><div class="ge">📖</div><b>单词故事</b><span>'+STORIES.length+' 篇英文短文穿词</span></button>':'<button class="card gcard" onclick="switchLib(\'reading\')"><div class="ge">📖</div><b>单词故事</b><span>在「阅读 538」词库 · 点此前往</span></button>')+
+   '</div>'+
+   '<div class="note">🎧 听写专攻你标过「模糊 / 记得」的词：只放真人发音，你来拼。做错的词自动进「错题本」。🌱 词根记忆法把同词根的雅思词和例句串在一起，一个词根记一串。</div>';
+}
+
+/* 选择范围 + 模式 */
+var GScope=null, GPool=[];
+function gameSetup(kind){
+  GKind=kind;
+  var dictTip = kind==='dict'? '<div class="note" style="margin:0 0 12px">🎧 听写推荐选「模糊 + 记得」——专攻你已经背过、需要巩固拼写和听力的词。</div>' : '';
+  view.innerHTML='<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button><div style="flex:1;font-weight:800">选择词范围</div></div>'+
+   dictTip+
+   '<div class="scopelist">'+
+     (kind==='dict'? gscopeRow('m12','🟡🟢','模糊 + 记得（推荐）',markList(1).length+markList(2).length) : '')+
+     gscopeRow('today','🎯','今日任务',todayTargets().length||dayWords(planDay()).length)+
+     gscopeRow('m1','🟡','只「模糊」',markList(1).length)+
+     gscopeRow('m2','🟢','只「记得」',markList(2).length)+
+     gscopeRow('wrong','🩹','错题本',wrongListA().length)+
+     gscopeRow('fav','⭐','收藏夹',favList().length)+
+     gscopeRow('all','📚','全部 '+N+' 词',N)+
+   '</div>';
+}
+var GKind='match';
+function gscopeRow(scope,ic,title,num){
+  return '<button class="card scope" onclick="gamePick(\''+scope+'\')"><div class="si bg-h">'+ic+'</div><div class="stt"><b>'+title+'</b></div><div class="sn">'+num+'</div><div class="arrow">›</div></button>';
+}
+function gamePick(scope){
+  var ws = scope==='all'? WORDS.slice() : scopeWords(scope==='today'?(todayTargets().length?'today':('day'+planDay())):scope);
+  if(!ws.length){ toast(scope==='fav'?'收藏夹是空的':scope==='wrong'?'错题本是空的 🎉':(scope==='m12'||scope==='m1'||scope==='m2')?'还没有这类词，先去背词标记一下吧':'这里没有词'); return; }
+  GScope=scope; GPool=ws;
+  if(GKind==='match') chooseMatchMode();
+  else if(GKind==='quiz') chooseQuizMode();
+  else if(GKind==='dict') startDict();
+  else startSpell();
+}
+
+/* ---- 配对消除 ---- */
+function chooseMatchMode(){
+  view.innerHTML='<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button><div style="flex:1;font-weight:800">配对方式</div></div>'+
+   '<div class="scopelist">'+
+     '<button class="card scope" onclick="startMatch(\'cn\')"><div class="si bg-j">🀄</div><div class="stt"><b>词 ↔ 中文</b><span>最直接，巩固词义</span></div><div class="arrow">›</div></button>'+
+     '<button class="card scope" onclick="startMatch(\'syn\')"><div class="si bg-h">🔁</div><div class="stt"><b>词 ↔ 同义替换</b><span>⭐ 雅思阅读真正考法</span></div><div class="arrow">›</div></button>'+
+   '</div>';
+}
+var MG=null;
+function startMatch(mode){
+  var pool=GPool.slice();
+  if(mode==='syn') pool=pool.filter(function(w){return cleanSyns(w).length>0;});
+  if(pool.length<3){ toast('这批词太少或不适合该方式，换一个吧'); return; }
+  MG={mode:mode, all:shuffle(pool).map(function(w){return w.id;}), done:0, total:Math.min(pool.length,999), moves:0, start:Date.now(), sel:null, batch:[]};
+  nextMatchBatch();
+}
+function nextMatchBatch(){
+  var remain=MG.all.slice(MG.done);
+  var batch=remain.slice(0,Math.min(5,remain.length));
+  if(!batch.length){ return matchDone(); }
+  MG.batch=batch; MG.sel=null; MG.matchedInBatch=0;
+  var lefts=shuffle(batch.map(function(id){return {id:id,side:'L'};}));
+  var rights=shuffle(batch.map(function(id){return {id:id,side:'R'};}));
+  var rightText=function(id){ var w=byId[id]; return MG.mode==='cn'? w.cn : cleanSyns(w)[0]; };
+  function col(items,isLeft){
+    return '<div class="mcol">'+items.map(function(it){
+      var w=byId[it.id];
+      var txt= isLeft? esc(w.w) : esc(rightText(it.id));
+      return '<button class="mtile '+(isLeft?'en':'zh')+'" data-id="'+it.id+'" data-side="'+(isLeft?'L':'R')+'" onclick="matchTap('+it.id+',\''+(isLeft?'L':'R')+'\',this)">'+txt+'</button>';
+    }).join('')+'</div>';
+  }
+  view.innerHTML=
+    '<div class="gtop"><button class="gx" onclick="go(\'play\')">✕</button>'+
+      '<div>已配 <b style="color:var(--jade)">'+MG.done+'</b> / '+MG.total+'</div>'+
+      '<div class="gmeta">步数 '+MG.moves+'</div></div>'+
+    '<div class="matchwrap">'+col(lefts,true)+col(rights,false)+'</div>'+
+    '<div class="note" style="margin-top:16px">点一个英文，再点它对应的'+(MG.mode==='cn'?'中文':'同义词')+'。点错会抖一下，配对成功会变绿。</div>';
+}
+function matchTap(id,side,el){
+  if(el.classList.contains('matched')) return;
+  if(!MG.sel){ clearSel(); el.classList.add('sel'); MG.sel={id:id,side:side,el:el}; return; }
+  if(MG.sel.el===el){ el.classList.remove('sel'); MG.sel=null; return; }
+  if(MG.sel.side===side){ MG.sel.el.classList.remove('sel'); el.classList.add('sel'); MG.sel={id:id,side:side,el:el}; return; }
+  MG.moves++;
+  if(MG.sel.id===id){
+    MG.sel.el.classList.remove('sel'); MG.sel.el.classList.add('matched'); el.classList.add('matched');
+    MG.sel=null; MG.done++; MG.matchedInBatch++;
+    speak(byId[id].w);
+    var meta=view.querySelector('.gmeta'); if(meta)meta.textContent='步数 '+MG.moves;
+    var hd=view.querySelector('.gtop b'); if(hd)hd.textContent=MG.done;
+    if(MG.matchedInBatch===MG.batch.length){ setTimeout(nextMatchBatch,420); }
+  } else {
+    var a=MG.sel.el, b=el; a.classList.remove('sel'); a.classList.add('bad'); b.classList.add('bad');
+    if(S.wrong){ /* 记错词：把这次点错的两个加入错题本 */ S.wrong[MG.sel.id]=1; S.wrong[id]=1; save(); }
+    var sa=MG.sel; MG.sel=null;
+    setTimeout(function(){ a.classList.remove('bad'); b.classList.remove('bad'); },420);
+    var meta2=view.querySelector('.gmeta'); if(meta2)meta2.textContent='步数 '+MG.moves;
+  }
+}
+function clearSel(){ var s=view.querySelector('.mtile.sel'); if(s)s.classList.remove('sel'); }
+function matchDone(){
+  var t=Date.now()-MG.start; var moves=MG.moves, total=MG.total; MG=null;
+  view.innerHTML='<div class="card summary"><div style="font-size:46px">🏆</div>'+
+    '<div class="lab" style="margin-top:6px">全部 '+total+' 组配对完成！</div>'+
+    '<div class="sgrid"><div><b style="color:var(--jade)">'+fmtTime(t)+'</b><span class="muted">用时</span></div><div><b style="color:var(--honey-d)">'+moves+'</b><span class="muted">总步数</span></div></div>'+
+    '<div style="display:flex;flex-direction:column;gap:10px">'+
+      '<button class="btn honey" onclick="gameSetup(\'match\')">再来一局</button>'+
+      '<button class="btn ghost" onclick="go(\'play\')">回到闯关</button>'+
+    '</div></div>';
+}
+
+/* ---- 选择题 ---- */
+function chooseQuizMode(){
+  view.innerHTML='<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button><div style="flex:1;font-weight:800">出题方式</div></div>'+
+   '<div class="scopelist">'+
+     '<button class="card scope" onclick="beginQuiz(\'e2c\')"><div class="si bg-h">🔤→中</div><div class="stt"><b>看英文 选中文</b><span>最基础，适合刚背完</span></div><div class="arrow">›</div></button>'+
+     '<button class="card scope" onclick="beginQuiz(\'c2e\')"><div class="si bg-h">中→🔤</div><div class="stt"><b>看中文 选英文</b><span>反向巩固拼写印象</span></div><div class="arrow">›</div></button>'+
+     '<button class="card scope" onclick="beginQuiz(\'syn\')"><div class="si bg-j">≈</div><div class="stt"><b>同义替换</b><span>⭐ 看考点词 选同义词</span></div><div class="arrow">›</div></button>'+
+   '</div>';
+}
+var QZ=null;
+function beginQuiz(mode){
+  var pool=GPool.slice();
+  if(mode==='syn') pool=pool.filter(function(w){return cleanSyns(w).length>0;});
+  if(!pool.length){ toast('这批词不适合该题型，换一种吧'); chooseQuizMode(); return; }
+  var qs=shuffle(pool).slice(0,Math.min(20,pool.length)).map(function(w){return w.id;});
+  QZ={ mode:mode, ids:qs, pos:0, correct:0, wrong:0, tries:0 };
+  renderQ();
+}
+function buildOptions(w,mode){
+  if(mode==='e2c'){ var corr=w.cn; var ds=pick(WORDS.filter(function(x){return x.id!==w.id;}).map(function(x){return x.cn;}),3,[corr]); return {correct:corr, opts:shuffle([corr].concat(ds))}; }
+  if(mode==='c2e'){ var corr2=w.w; var ds2=pick(WORDS.filter(function(x){return x.id!==w.id;}).map(function(x){return x.w;}),3,[corr2]); return {correct:corr2, opts:shuffle([corr2].concat(ds2))}; }
+  var mine=cleanSyns(w); var corr3=mine[Math.floor(Math.random()*mine.length)];
+  var exclude=mine.concat([w.w.toLowerCase()]); var ds3=pick(SYN_POOL,3,exclude); return {correct:corr3, opts:shuffle([corr3].concat(ds3))};
+}
+function renderQ(){
+  if(QZ.pos>=QZ.ids.length){ return quizDone(); }
+  var w=byId[QZ.ids[QZ.pos]]; var mode=QZ.mode;
+  var ob=buildOptions(w,mode); QZ.cur={w:w, correct:ob.correct, mode:mode}; QZ.tries=0;
+  var qlabel, promptHTML;
+  if(mode==='e2c'){ qlabel='下面哪个是它的意思？'; var lw=w.w.length>13?' long':''; promptHTML='<div class="q-word'+lw+'">'+esc(w.w)+'</div>'+(w.ipa?'<div class="q-sub">'+esc(w.ipa)+'</div>':'')+'<div class="q-sub" style="margin-top:10px"><button class="speak mini" onclick="speak(\''+jx(w.w)+'\',this)">🔊 听</button></div>'; }
+  else if(mode==='c2e'){ qlabel='下面哪个单词是这个意思？'; promptHTML='<div class="q-cn">'+esc(w.cn)+'</div>'; }
+  else { qlabel='它的同义替换词是哪个？（雅思阅读考法）'; var lw2=w.w.length>13?' long':''; promptHTML='<div class="q-word'+lw2+'">'+esc(w.w)+'</div><div class="q-sub">'+esc(w.cn)+'</div>'; }
+  var letters=['A','B','C','D'];
+  var optsHTML=ob.opts.map(function(o,i){ return '<button class="opt" data-v="'+esc(o)+'" onclick="answer(this)"><span class="k">'+letters[i]+'</span><span>'+esc(o)+'</span></button>'; }).join('');
+  view.innerHTML=
+    '<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button>'+
+      '<div class="pbar"><i style="width:'+Math.round(QZ.pos/QZ.ids.length*100)+'%"></i></div>'+
+      '<div class="pcount">'+(QZ.pos+1)+' / '+QZ.ids.length+'</div></div>'+
+    '<div class="card qcard"><div class="muted center" style="font-size:13px;margin-bottom:4px">'+qlabel+'</div>'+promptHTML+'</div>'+
+    '<div class="opts" id="opts">'+optsHTML+'</div>'+
+    '<div id="qhintbox"></div>';
+}
+function answer(btn){
+  var val=btn.getAttribute('data-v'); var cur=QZ.cur; var correct=cur.correct;
+  var opts=document.getElementById('opts');
+  if(val===correct){
+    btn.classList.add('right');
+    Array.prototype.forEach.call(opts.children,function(b){ b.onclick=null; if(b!==btn)b.classList.add('dim'); });
+    if(QZ.tries===0){ QZ.correct++; if(S.wrong[cur.w.id])delete S.wrong[cur.w.id]; }
+    save();
+    if(cur.mode!=='e2c') speak(cur.w.w);
+    setTimeout(function(){ QZ.pos++; renderQ(); }, 700);
+  } else {
+    btn.classList.add('wrong'); btn.onclick=null;
+    QZ.tries++;
+    if(QZ.tries===1){
+      var hint;
+      if(cur.mode==='c2e'||cur.mode==='syn'){ hint='提示：正确答案以 <b>'+esc(correct[0].toUpperCase())+'</b> 开头，共 '+correct.replace(/\s/g,'').length+' 个字母'; }
+      else { hint='提示：再读一遍 <b>'+esc(cur.w.w)+'</b> '+(cur.w.ipa?esc(cur.w.ipa):'')+'，想想词根'; }
+      document.getElementById('qhintbox').innerHTML='<div class="qhint">'+hint+'</div>';
+    } else {
+      QZ.wrong++; S.wrong[cur.w.id]=1; save();
+      Array.prototype.forEach.call(opts.children,function(b){ b.onclick=null; if(b.getAttribute('data-v')===correct)b.classList.add('right'); });
+      document.getElementById('qhintbox').innerHTML='<div class="qhint" style="background:var(--coral-soft);color:var(--coral-d)">答案：<b>'+esc(correct)+'</b> ·已收进错题本</div>';
+      setTimeout(function(){ QZ.pos++; renderQ(); }, 1500);
+    }
+  }
+}
+function quizDone(){
+  var total=QZ.ids.length, c=QZ.correct, wr=QZ.wrong; var rate=Math.round(c/total*100); QZ=null;
+  var emoji=rate>=90?'🏆':rate>=70?'👏':rate>=50?'💪':'📚';
+  var msg=rate>=90?'太强了！':rate>=70?'不错，继续保持':rate>=50?'再多刷几轮':'别灰心，重点攻错题';
+  view.innerHTML='<div class="card summary"><div style="font-size:42px">'+emoji+'</div>'+
+    '<div class="big" style="margin-top:8px;color:var(--honey-d)">'+rate+'%</div><div class="lab">一次答对率 · '+msg+'</div>'+
+    '<div class="sgrid"><div><b style="color:var(--jade)">'+c+'</b><span class="muted">一次答对</span></div><div><b style="color:var(--coral)">'+wr+'</b><span class="muted">进错题本</span></div></div>'+
+    '<div style="display:flex;flex-direction:column;gap:10px">'+
+      (wr>0?'<button class="btn honey" onclick="GPool=wrongListA();GKind=\'quiz\';chooseQuizMode()">🩹 立刻攻克 '+wr+' 个错题</button>':'')+
+      '<button class="btn ghost" onclick="gameSetup(\'quiz\')">再测一组</button>'+
+      '<button class="btn ghost" onclick="go(\'play\')">回到闯关</button>'+
+    '</div></div>';
+}
+
+/* ---- 拼写 ---- */
+var SP=null;
+function startSpell(){
+  var pool=shuffle(GPool.slice()).slice(0,Math.min(12,GPool.length));
+  SP={ids:pool.map(function(w){return w.id;}), pos:0, correct:0, wrong:0, revealed:false, tries:0};
+  renderSpell();
+}
+function renderSpell(){
+  if(SP.pos>=SP.ids.length){ return spellDone(); }
+  var w=byId[SP.ids[SP.pos]]; SP.revealed=false; SP.tries=0;
+  var mask=w.w.replace(/[a-z]/gi,'_').replace(/_/g,'_ ').trim();
+  view.innerHTML=
+    '<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button>'+
+      '<div class="pbar"><i style="width:'+Math.round(SP.pos/SP.ids.length*100)+'%"></i></div>'+
+      '<div class="pcount">'+(SP.pos+1)+' / '+SP.ids.length+'</div></div>'+
+    '<div class="card spcard">'+
+      '<div class="sp-cn">'+esc(w.cn)+'</div>'+
+      '<button class="speak" onclick="speak(\''+jx(w.w)+'\',this)">🔊 听单词</button>'+
+      '<div class="sp-hint" id="spHint">'+mask+'</div>'+
+      '<input class="sp-input" id="spIn" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="在这里拼写">'+
+      '<div id="spMsg"></div>'+
+    '</div>'+
+    '<div class="sp-actions"><button class="btn ghost" onclick="spellHint()">提示首字母</button><button class="btn honey" onclick="spellCheck()">检查</button></div>'+
+    '<div class="sp-actions" style="margin-top:10px"><button class="btn ghost" onclick="spellReveal()">看答案 · 下一个</button></div>';
+  var inp=document.getElementById('spIn'); if(inp){ inp.focus(); inp.addEventListener('keydown',function(e){ if(e.key==='Enter')spellCheck(); }); }
+}
+function spellHint(){
+  var w=byId[SP.ids[SP.pos]];
+  var n=Math.min((SP.hintN||0)+1, w.w.length);
+  SP.hintN=n;
+  var shown=w.w.split('').map(function(ch,i){ return i<n?(/[a-z]/i.test(ch)?ch:ch):(/[a-z]/i.test(ch)?'_':ch); }).join(' ');
+  document.getElementById('spHint').textContent=shown;
+}
+function spellCheck(){
+  var w=byId[SP.ids[SP.pos]]; var inp=document.getElementById('spIn');
+  var val=(inp.value||'').trim().toLowerCase();
+  if(!val) return;
+  if(val===w.w.toLowerCase()){
+    inp.classList.remove('no'); inp.classList.add('ok');
+    document.getElementById('spMsg').innerHTML='<div class="sp-reveal">✓ '+esc(w.w)+'</div>';
+    if(SP.tries===0 && !SP.revealed){ SP.correct++; if(S.wrong[w.id])delete S.wrong[w.id]; save(); }
+    speak(w.w);
+    SP.hintN=0;
+    setTimeout(function(){ SP.pos++; renderSpell(); }, 850);
+  } else {
+    SP.tries++; inp.classList.add('no');
+    if(SP.tries===1){ document.getElementById('spMsg').innerHTML='<div class="qhint" style="background:var(--coral-soft);color:var(--coral-d)">还不对，再试一次，或点「提示首字母」</div>'; }
+    else { document.getElementById('spMsg').innerHTML='<div class="qhint" style="background:var(--coral-soft);color:var(--coral-d)">正确拼写：<b>'+esc(w.w)+'</b></div>'; if(!SP._countedWrong){ SP.wrong++; S.wrong[w.id]=1; save(); SP._countedWrong=true; } }
+  }
+}
+function spellReveal(){
+  var w=byId[SP.ids[SP.pos]];
+  if(!SP.revealed && SP.tries===0){ SP.wrong++; S.wrong[w.id]=1; save(); }
+  SP.revealed=true; SP.hintN=0; SP._countedWrong=false;
+  SP.pos++; renderSpell();
+}
+function spellDone(){
+  var total=SP.ids.length, c=SP.correct, wr=SP.wrong; SP=null;
+  var rate=Math.round(c/total*100); var emoji=rate>=80?'🏆':rate>=50?'💪':'📚';
+  view.innerHTML='<div class="card summary"><div style="font-size:42px">'+emoji+'</div>'+
+    '<div class="big" style="margin-top:8px;color:var(--honey-d)">'+c+' / '+total+'</div><div class="lab">一次拼对</div>'+
+    '<div style="display:flex;flex-direction:column;gap:10px;margin-top:18px">'+
+      '<button class="btn honey" onclick="gameSetup(\'spell\')">再练一组</button>'+
+      '<button class="btn ghost" onclick="go(\'play\')">回到闯关</button>'+
+    '</div></div>';
+}
+
+/* ---- 单词故事 ---- */
+function renderStories(){
+  view.innerHTML='<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button><div style="flex:1;font-weight:800">单词故事 · 在语境里记词</div></div>'+
+   '<div class="storylist">'+
+    STORIES.map(function(s,i){
+      var n=countStoryWords(s.text);
+      return '<button class="card storycard" onclick="openStory('+i+')"><div class="se">'+s.emoji+'</div><div class="stt"><b>'+esc(s.title)+'</b><span>'+esc(s.zh)+' · '+n+' 个考点词</span></div><div class="arrow" style="color:var(--muted);font-size:18px">›</div></button>';
+    }).join('')+
+   '</div>'+
+   '<div class="note">📖 文中<b style="color:var(--honey-d);border-bottom:1.5px dotted var(--honey)">高亮</b>的都是 538 里的考点词，点一下就能看释义、听发音、跳词库。先通读猜意思，再点开生词核对——这就是雅思阅读的真实状态。</div>';
+}
+var STORY_RE=/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g;
+function countStoryWords(text){ var m,c=0; STORY_RE.lastIndex=0; while((m=STORY_RE.exec(text))){ if(byWord[m[1].toLowerCase()]!=null)c++; } return c; }
+function renderStoryText(text){
+  STORY_RE.lastIndex=0;
+  return text.replace(STORY_RE,function(_,head,disp){
+    var id=byWord[head.toLowerCase()];
+    var show=disp||head;
+    if(id==null) return '<b>'+esc(show)+'</b>';
+    return '<span class="tw" onclick="openWord('+id+')">'+esc(show)+'</span>';
+  });
+}
+function openStory(i){
+  var s=STORIES[i];
+  var ids=[]; var seen={}; STORY_RE.lastIndex=0; var m;
+  while((m=STORY_RE.exec(s.text))){ var id=byWord[m[1].toLowerCase()]; if(id!=null&&!seen[id]){seen[id]=1;ids.push(id);} }
+  view.innerHTML=
+    '<div class="session-top"><button class="x" onclick="renderStories()">‹ 返回</button><div style="flex:1"></div><button class="iconbtn" onclick="speakStory('+i+')" title="朗读全文">🔊</button></div>'+
+    '<div class="card storyread"><h2>'+esc(s.title)+'</h2><div class="stheme">'+s.emoji+' '+esc(s.zh)+'</div>'+
+      '<div class="storytext">'+renderStoryText(s.text)+'</div>'+
+      '<div class="storyvocab"><div class="lab">📒 本篇考点词（'+ids.length+'）· 点词查看</div><div class="wlist">'+ids.map(function(id){return wItem(byId[id]);}).join('')+'</div></div>'+
+    '</div>'+
+    '<div class="row" style="margin-top:12px"><button class="btn honey" onclick="GPool=['+ids.join(',')+'].map(function(x){return byId[x];});GKind=\'quiz\';chooseQuizMode()">📝 测一测本篇词</button></div>';
+}
+function speakStory(i){
+  var plain=STORIES[i].text.replace(STORY_RE,function(_,h,d){return d||h;});
+  speak(plain.length>200?plain.slice(0,200):plain);
+}
+
+/* ===================== 词库 ===================== */
+var LIB={q:'',cat:0,status:-9,limit:60};
+function renderLib(){
+  var res=filterLib();
+  var shown=res.slice(0,LIB.limit);
+  var fbtn=function(label,key,val){ var on=LIB[key]===val; return '<button class="fbtn'+(on?' on':'')+'" onclick="LIB.'+key+'='+(typeof val==='string'?'\''+val+'\'':val)+';LIB.limit=60;renderLib()">'+label+'</button>'; };
+  view.innerHTML=
+    '<div class="searchbar"><span class="mag">🔍</span><input id="q" placeholder="搜单词 / 中文 / 同义词…" value="'+esc(LIB.q)+'"><button class="iconbtn" style="width:32px;height:32px;font-size:14px" onclick="LIB.q=\'\';renderLib()">✕</button></div>'+
+    '<div class="filters">'+
+      (CURLIB.tiers? fbtn('全部分类','cat',0)+fbtn('第1类','cat',1)+fbtn('第2类','cat',2)+fbtn('第3类','cat',3)+'<span style="width:1px;height:18px;background:var(--line);margin:0 2px"></span>' : '')+
+      fbtn('全部','status',-9)+fbtn('未学','status',-1)+fbtn('不认识','status',0)+fbtn('模糊','status',1)+fbtn('记得','status',2)+fbtn('收藏','status',9)+
+    '</div>'+
+    '<div class="muted" style="font-size:13px;margin:0 4px 10px">共 '+res.length+' 个结果</div>'+
+    (res.length? '<div class="wlist">'+shown.map(wItem).join('')+'</div>'+
+       (res.length>LIB.limit?'<button class="btn ghost loadmore" onclick="LIB.limit+=60;renderLib()">再显示 60 个（剩 '+(res.length-LIB.limit)+'）</button>':'')
+     : '<div class="emptyst"><div class="em">🔎</div>没找到匹配的词，换个关键词试试</div>');
+  var inp=document.getElementById('q');
+  if(inp){ inp.oninput=function(){ LIB.q=inp.value; LIB.limit=60; var r=filterLib(); var box=view.querySelector('.wlist'); var cnt=view.querySelector('.muted'); if(cnt)cnt.textContent='共 '+r.length+' 个结果';
+    if(box){ box.innerHTML=r.slice(0,LIB.limit).map(wItem).join(''); } }; }
+}
+function filterLib(){
+  var q=LIB.q.trim().toLowerCase();
+  return WORDS.filter(function(w){
+    if(LIB.cat && w.cat!==LIB.cat) return false;
+    if(LIB.status===9){ if(!isFav(w.id))return false; }
+    else if(LIB.status!==-9 && markOf(w.id)!==LIB.status) return false;
+    if(q){ return w.w.toLowerCase().indexOf(q)>=0 || w.cn.toLowerCase().indexOf(q)>=0 || w.syn.toLowerCase().indexOf(q)>=0; }
+    return true;
+  });
+}
+function wItem(w){
+  var m=markOf(w.id);
+  return '<button class="card witem" onclick="openWord('+w.id+')">'+
+    '<span class="dotk m'+(m>=0?m:'')+'" title="'+(m===2?'记得':m===1?'模糊':m===0?'不认识':'未学')+'"></span>'+
+    '<span class="wmain"><span class="ww">'+esc(w.w)+' '+badge(w)+'</span><span class="wc">'+esc(w.cn)+'</span></span>'+
+    '<span class="wfav'+(isFav(w.id)?' on':'')+'" onclick="event.stopPropagation();toggleFav('+w.id+');refreshLists()">'+(isFav(w.id)?'★':'☆')+'</span></button>';
+}
+function refreshLists(){ if(TAB==='lib')renderLib(); else if(TAB==='me')renderMe(); }
+
+/* ===================== 我的（三色词集 + 收藏 + 错题 + 设置） ===================== */
+var ME_VIEW=null;
+function renderMe(){
+  if(ME_VIEW) return renderMeList(ME_VIEW);
+  var c0=markList(0).length, c1=markList(1).length, c2=markList(2).length;
+  view.innerHTML=
+   '<div class="sec-t first">三色词集 · 背词结果自动汇总</div>'+
+   '<div class="coltri">'+
+     '<button class="col0" onclick="openMeList(\'m0\')"><span class="e">🔴</span><span class="n">'+c0+'</span><span class="l">不认识</span></button>'+
+     '<button class="col1" onclick="openMeList(\'m1\')"><span class="e">🟡</span><span class="n">'+c1+'</span><span class="l">模糊</span></button>'+
+     '<button class="col2" onclick="openMeList(\'m2\')"><span class="e">🟢</span><span class="n">'+c2+'</span><span class="l">记得</span></button>'+
+   '</div>'+
+   '<div class="sec-t">其它词集</div>'+
+   '<div class="scopelist">'+
+     scopeRow2('fav','⭐','bg-h','收藏夹','你标星的重点词',favList().length)+
+     scopeRow2('wrong','🩹','bg-c','错题本','游戏/测试做错的词',wrongListA().length)+
+   '</div>'+
+   '<div class="sec-t">数据</div>'+
+   '<div class="scopelist">'+
+     '<button class="card scope" onclick="openSettings()"><div class="si bg-n">⚙</div><div class="stt"><b>进度备份与设置</b><span>导出 / 导入 / 重设计划 / 口音</span></div><div class="arrow">›</div></button>'+
+   '</div>'+
+   '<div class="note">🎨 每次背词选「不认识 / 模糊 / 记得」，这里会自动分进三个词集。点任一词集可单独再背或测，最适合考前一天专攻红色（不认识）和黄色（模糊）。</div>';
+}
+function scopeRow2(scope,ic,bg,title,sub,num){
+  return '<button class="card scope" onclick="openMeList(\''+scope+'\')"><div class="si '+bg+'">'+ic+'</div><div class="stt"><b>'+title+'</b><span>'+esc(sub)+'</span></div><div class="sn">'+num+'</div><div class="arrow">›</div></button>';
+}
+function openMeList(scope){ ME_VIEW=scope; renderMeList(scope); }
+function meBack(){ ME_VIEW=null; renderMe(); }
+function renderMeList(scope){
+  var titleMap={m0:'🔴 不认识',m1:'🟡 模糊',m2:'🟢 记得',fav:'⭐ 收藏夹',wrong:'🩹 错题本'};
+  var ws = scope==='fav'?favList(): scope==='wrong'?wrongListA(): markList(scope==='m0'?0:scope==='m1'?1:2);
+  view.innerHTML=
+   '<div class="session-top"><button class="x" onclick="meBack()">‹</button><div style="flex:1;font-weight:800">'+titleMap[scope]+' · '+ws.length+' 词</div></div>'+
+   (ws.length?
+     '<div class="row wrapr" style="margin-bottom:12px">'+
+       '<button class="btn honey sm" onclick="startStudy(\''+scope+'\')">📖 背这组</button>'+
+       '<button class="btn ghost sm" onclick="GPool=scopeWords(\''+scope+'\');GKind=\'dict\';startDict()">🎧 听写这组</button>'+
+       '<button class="btn ghost sm" onclick="GPool=scopeWords(\''+scope+'\');GKind=\'quiz\';chooseQuizMode()">📝 测这组</button>'+
+       (scope==='wrong'?'<button class="btn ghost sm" onclick="clearWrong()">🧹 清空错题</button>':'')+
+     '</div>'+
+     '<div class="wlist">'+ws.map(wItem).join('')+'</div>'
+     : '<div class="emptyst"><div class="em">'+(scope==='fav'?'⭐':scope==='wrong'?'🩹':'🗂️')+'</div>'+(scope==='wrong'?'错题本是空的，太棒了！':scope==='fav'?'还没有收藏，去词库点 ☆ 收藏吧':'这个词集还是空的，先去背词吧')+'</div>');
+}
+function clearWrong(){ if(confirm('确定清空错题本？')){ S.wrong={}; save(); renderMeList('wrong'); toast('错题本已清空'); } }
+
+/* ===================== 单词详情弹层 ===================== */
+const modal=document.getElementById('modal');
+function openModal(html){ document.getElementById('sheetBody').innerHTML=html; modal.classList.add('open'); }
+function closeModal(){ modal.classList.remove('open'); }
+modal.addEventListener('click',function(e){ if(e.target.hasAttribute('data-close')) closeModal(); });
+function openWord(id){
+  var w=byId[id]; var m=markOf(id);
+  var stTag=m===2?'<span class="chip" style="color:var(--jade-d)">🟢 记得</span>':m===1?'<span class="chip" style="color:var(--honey-d)">🟡 模糊</span>':m===0?'<span class="chip" style="color:var(--coral-d)">🔴 不认识</span>':'<span class="chip">未学</span>';
+  openModal(
+   '<div class="center"><div class="word'+(w.w.length>13?' long':'')+'" style="font-size:38px">'+esc(w.w)+'</div>'+
+     (w.ipa?'<div class="ipa">'+esc(w.ipa)+'</div>':'')+
+     '<div style="margin-top:12px"><button class="speak" onclick="speak(\''+jx(w.w)+'\',this)">🔊 听发音</button></div></div>'+
+   '<div class="cn" style="margin-top:14px;text-align:center">'+esc(w.cn)+'</div>'+
+   '<div class="center" style="margin-bottom:6px">'+badge(w)+(w.rank?' <span class="chip" style="padding:2px 9px">排名 '+w.rank+'</span>':'')+' '+stTag+'</div>'+
+   '<div class="kao"><div class="lab">⭐ '+CURLIB.skill+'考点 · 真题同义替换（点小卡查有道）</div><div class="synwrap">'+synCardsHTML(w)+'</div></div>'+
+   (w.tip?'<div class="tipbox">💡 '+esc(w.tip)+'</div>':'')+
+   '<div class="dictrow"><a href="'+youdao(w.w)+'" target="_blank" rel="noopener">📕 有道词典</a><a href="'+bing(w.w)+'" target="_blank" rel="noopener">📘 必应词典</a></div>'+
+   (rootOf(w.w)>=0?'<button class="rootchip" onclick="openRootModal('+rootOf(w.w)+')">🌱 词根 '+esc(ROOTS[rootOf(w.w)].r)+'（'+esc(ROOTS[rootOf(w.w)].m)+'）· 看同根词</button>':'')+
+   '<div class="row" style="margin-top:14px">'+
+     '<button class="btn ghost" onclick="toggleFav('+id+');openWord('+id+');refreshLists()">'+(isFav(id)?'★ 取消收藏':'☆ 收藏')+'</button>'+
+     (m===2?'<button class="btn ghost" onclick="setMark('+id+',-1);save();openWord('+id+');refreshLists()">↺ 标为未学</button>':'<button class="btn jade" onclick="setMark('+id+',2);save();closeModal();refreshLists();toast(\'已标为记得 🟢\')">✓ 标为记得</button>')+
+   '</div>'
+  );
+}
+
+/* ===================== 设置 / 数据 ===================== */
+document.getElementById('btnData').addEventListener('click',openSettings);
+document.getElementById('btnSound').addEventListener('click',function(){
+  ROOT.settings.accent = ROOT.settings.accent==="us"?"uk":"us"; save();
+  toast(ROOT.settings.accent==="us"?"发音：美音 🇺🇸":"发音：英音 🇬🇧");
+  speak("example");
+});
+function openSettings(){
+  var kn=knownCount();
+  openModal(
+   '<div class="sec-t first">进度与设置</div>'+
+   '<div class="note" style="margin-top:0">当前词库：<b>'+CURLIB.name+'</b><br>开始日期 <b>'+S.start+'</b> · 周期 <b>'+curDays()+'</b> 天 · 已掌握 <b>'+kn+'/'+N+'</b> · 错题 '+wrongListA().length+' · 收藏 '+favList().length+'<br>进度保存在<b>本设备浏览器</b>里，两个词库各自独立记录。换设备 / 清缓存 / 换浏览器前，请先导出备份。</div>'+
+   '<div class="row" style="margin-top:14px">'+
+     '<button class="btn ghost" onclick="setAccent(\'us\')"'+(ROOT.settings.accent==='us'?' style="border-color:var(--honey);color:var(--honey-d)"':'')+'>🇺🇸 美音</button>'+
+     '<button class="btn ghost" onclick="setAccent(\'uk\')"'+(ROOT.settings.accent==='uk'?' style="border-color:var(--honey);color:var(--honey-d)"':'')+'>🇬🇧 英音</button>'+
+   '</div>'+
+   '<div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">'+
+     '<button class="btn honey" onclick="openCycle()">🗓 调整背词周期（当前 '+curDays()+' 天）</button>'+
+     '<button class="btn" onclick="exportData()">⬇️ 导出全部进度备份（.json）</button>'+
+     '<button class="btn ghost" onclick="document.getElementById(\'impFile\').click()">⬆️ 导入进度备份</button>'+
+     '<input type="file" id="impFile" accept="application/json,.json" style="display:none">'+
+     '<button class="btn ghost" onclick="restartPlan()">🔄 从今天重新排计划（保留周期与已背记录）</button>'+
+     '<button class="btn ghost" style="color:var(--coral)" onclick="resetActive()">🗑️ 清空『'+CURLIB.short+'』进度</button>'+
+   '</div>'+
+   '<div class="note">🔊 发音用有道词典真人音频（需联网）；个别词没有音频会自动用系统朗读兜底。点右上角 🔊 也能一键切换英 / 美音。导出的备份文件包含<b>两个词库</b>的全部进度。</div>'
+  );
+  var f=document.getElementById('impFile'); if(f){ f.onchange=importData; }
+}
+function setAccent(a){ ROOT.settings.accent=a; save(); openSettings(); speak("example"); }
+function exportData(){
+  try{
+    var blob=new Blob([JSON.stringify(ROOT)],{type:"application/json"});
+    var url=URL.createObjectURL(blob); var a=document.createElement('a');
+    a.href=url; a.download="ielts-vocab-progress-"+todayStr()+".json"; document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); },300);
+    toast("已导出备份 ✅");
+  }catch(e){ toast("导出失败，请换个浏览器试试"); }
+}
+function importData(e){
+  var file=e.target.files[0]; if(!file)return;
+  var r=new FileReader();
+  r.onload=function(){ try{
+      var obj=JSON.parse(r.result);
+      ROOT = (obj && obj.libs)? normRoot(obj) : fromOld(obj);
+      useLib(ROOT.active); updateChrome(); closeModal(); ME_VIEW=null; go('home'); toast("导入成功 ✅");
+    }catch(err){ toast("文件无法识别"); } };
+  r.readAsText(file);
+}
+function restartPlan(){ if(confirm('从今天重新开始当前 '+curDays()+' 天计划？已背记录会保留，只是重新安排每天的词。')){ replan(curDays()); closeModal(); go('home'); toast("已重设计划 🔄"); } }
+function resetActive(){ if(confirm('确定清空『'+CURLIB.name+'』的进度、收藏和错题？此操作无法撤销（另一个词库不受影响）。')){ ROOT.libs[CURLIB.id]=defProg(CURLIB.defDays); useLib(CURLIB.id); save(); closeModal(); ME_VIEW=null; go('home'); toast("已清空当前词库"); } }
+
+/* ===================== 听写（只听发音拼单词） ===================== */
+var DC=null;
+function startDict(){
+  if(!GPool.length){ toast('这组没有词'); return; }
+  var pool=shuffle(GPool.slice()).slice(0,Math.min(15,GPool.length));
+  DC={ids:pool.map(function(w){return w.id;}), pos:0, correct:0, wrong:0, revealed:false, tries:0, hintN:0, countedWrong:false};
+  renderDict();
+}
+function renderDict(){
+  if(DC.pos>=DC.ids.length){ return dictDone(); }
+  var w=byId[DC.ids[DC.pos]]; DC.revealed=false; DC.tries=0; DC.hintN=0; DC.countedWrong=false;
+  var letters=w.w.replace(/[^a-z]/gi,'').length;
+  var phrase=/\s/.test(w.w);
+  view.innerHTML=
+    '<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button>'+
+      '<div class="pbar"><i style="width:'+Math.round(DC.pos/DC.ids.length*100)+'%"></i></div>'+
+      '<div class="pcount">'+(DC.pos+1)+' / '+DC.ids.length+'</div></div>'+
+    '<div class="card spcard">'+
+      '<div class="dc-ear">🎧 听发音，拼出你听到的单词</div>'+
+      '<button class="speak big" id="dcPlay" onclick="speak(\''+jx(w.w)+'\',this)">🔊 再听一遍</button>'+
+      '<div class="dc-meta">'+letters+' 个字母'+(phrase?' · 词组（含空格）':'')+'</div>'+
+      '<input class="sp-input" id="dcIn" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="把听到的拼在这里">'+
+      '<div id="dcMsg"></div>'+
+      '<button class="dc-cn" id="dcCnBtn" onclick="dictPeekCn()">🤔 想不起？看中文提示</button>'+
+    '</div>'+
+    '<div class="sp-actions"><button class="btn ghost" onclick="dictHint()">提示首字母</button><button class="btn honey" onclick="dictCheck()">检查</button></div>'+
+    '<div class="sp-actions" style="margin-top:10px"><button class="btn ghost" onclick="dictReveal()">看答案 · 下一个</button></div>';
+  var inp=document.getElementById('dcIn'); if(inp){ inp.focus(); inp.addEventListener('keydown',function(e){ if(e.key==='Enter')dictCheck(); }); }
+  setTimeout(function(){ var b=document.getElementById('dcPlay'); if(b) speak(w.w,b); }, 300);
+}
+function dictPeekCn(){ var w=byId[DC.ids[DC.pos]]; var el=document.getElementById('dcCnBtn'); if(el){ el.outerHTML='<div class="dc-cnshow">中文：'+esc(w.cn)+'</div>'; } }
+function dictHint(){
+  var w=byId[DC.ids[DC.pos]];
+  var n=Math.min((DC.hintN||0)+1, w.w.length); DC.hintN=n;
+  var shown=w.w.split('').map(function(ch,i){ return i<n?ch:(/[a-z]/i.test(ch)?'_':ch); }).join(' ');
+  var m=document.getElementById('dcMsg'); if(m) m.innerHTML='<div class="qhint">'+shown+'</div>';
+}
+function dictCheck(){
+  var w=byId[DC.ids[DC.pos]]; var inp=document.getElementById('dcIn'); if(!inp) return;
+  var val=(inp.value||'').trim().toLowerCase().replace(/\s+/g,' ');
+  if(!val) return;
+  if(val===w.w.toLowerCase()){
+    inp.classList.remove('no'); inp.classList.add('ok');
+    document.getElementById('dcMsg').innerHTML='<div class="sp-reveal">✓ '+esc(w.w)+'</div><div class="dc-cnshow" style="margin-top:6px">'+esc(w.cn)+'</div>';
+    if(DC.tries===0 && !DC.revealed){ DC.correct++; if(S.wrong[w.id])delete S.wrong[w.id]; save(); }
+    speak(w.w);
+    setTimeout(function(){ DC.pos++; renderDict(); }, 950);
+  } else {
+    DC.tries++; inp.classList.add('no');
+    if(DC.tries===1){ document.getElementById('dcMsg').innerHTML='<div class="qhint" style="background:var(--coral-soft);color:var(--coral-d)">还不对，再听一遍试试，或点「提示首字母」</div>'; var b=document.getElementById('dcPlay'); if(b)speak(w.w,b); }
+    else { document.getElementById('dcMsg').innerHTML='<div class="qhint" style="background:var(--coral-soft);color:var(--coral-d)">正确拼写：<b>'+esc(w.w)+'</b>　('+esc(w.cn)+')</div>'; if(!DC.countedWrong){ DC.wrong++; S.wrong[w.id]=1; save(); DC.countedWrong=true; } }
+  }
+}
+function dictReveal(){
+  var w=byId[DC.ids[DC.pos]];
+  if(!DC.revealed && DC.tries===0 && !DC.countedWrong){ DC.wrong++; S.wrong[w.id]=1; save(); }
+  DC.revealed=true; DC.pos++; renderDict();
+}
+function dictDone(){
+  var total=DC.ids.length, c=DC.correct; DC=null;
+  var rate=total?Math.round(c/total*100):0; var emoji=rate>=80?'🏆':rate>=50?'💪':'📚';
+  view.innerHTML='<div class="card summary"><div style="font-size:42px">'+emoji+'</div>'+
+    '<div class="big" style="margin-top:8px;color:var(--honey-d)">'+c+' / '+total+'</div><div class="lab">一次听写正确</div>'+
+    '<div style="display:flex;flex-direction:column;gap:10px;margin-top:18px">'+
+      '<button class="btn honey" onclick="gameSetup(\'dict\')">再听写一组</button>'+
+      '<button class="btn ghost" onclick="go(\'play\')">回到测试</button>'+
+    '</div></div>';
+}
+
+/* ===================== 词根记忆法 ===================== */
+var ROOTS=[
+ {r:"spect / spic", m:"看（look）", ex:[
+   {w:"inspect", cn:"v. 检查、视察", eg:"Inspectors carefully inspect the bridge for cracks.", egcn:"检查员仔细检查桥上的裂缝。"},
+   {w:"prospect", cn:"n. 前景、前途", eg:"A university degree improves your job prospects.", egcn:"大学学位能改善你的就业前景。"},
+   {w:"spectator", cn:"n. 观众", eg:"The stadium can hold sixty thousand spectators.", egcn:"这座体育场能容纳六万名观众。"},
+   {w:"conspicuous", cn:"adj. 显眼的", eg:"Her bright red coat made her conspicuous in the crowd.", egcn:"她鲜红的外套让她在人群中很显眼。"}]},
+ {r:"port", m:"搬运、拿（carry）", ex:[
+   {w:"transport", cn:"v./n. 运输、交通", eg:"Goods are transported across the country by rail.", egcn:"货物通过铁路运往全国各地。"},
+   {w:"export", cn:"v. 出口", eg:"The country exports most of its coffee to Europe.", egcn:"这个国家把大部分咖啡出口到欧洲。"},
+   {w:"import", cn:"v. 进口", eg:"Japan imports large amounts of oil every year.", egcn:"日本每年进口大量石油。"},
+   {w:"portable", cn:"adj. 便携的", eg:"A laptop is a portable computer you can carry anywhere.", egcn:"笔记本是可随身携带的便携电脑。"}]},
+ {r:"dict", m:"说（say）", ex:[
+   {w:"predict", cn:"v. 预测", eg:"Scientists can now predict earthquakes more accurately.", egcn:"科学家现在能更准确地预测地震。"},
+   {w:"contradict", cn:"v. 反驳、与……矛盾", eg:"The new evidence contradicts the earlier theory.", egcn:"新证据与早先的理论相矛盾。"},
+   {w:"dictate", cn:"v. 口述；支配", eg:"He dictated the letter to his assistant.", egcn:"他向助手口述了这封信。"},
+   {w:"dictionary", cn:"n. 词典", eg:"Look the word up in a dictionary if you are unsure.", egcn:"不确定就查词典。"}]},
+ {r:"struct", m:"建造（build）", ex:[
+   {w:"construct", cn:"v. 建造", eg:"It took three years to construct the tunnel.", egcn:"修建这条隧道用了三年。"},
+   {w:"structure", cn:"n. 结构", eg:"The essay needs a clearer structure.", egcn:"这篇文章需要更清晰的结构。"},
+   {w:"instruct", cn:"v. 指导、指示", eg:"The manual instructs users how to install the software.", egcn:"说明书指导用户如何安装软件。"},
+   {w:"destruction", cn:"n. 破坏、毁灭", eg:"The flood caused widespread destruction.", egcn:"洪水造成了大面积破坏。"}]},
+ {r:"ject", m:"扔、投（throw）", ex:[
+   {w:"reject", cn:"v. 拒绝", eg:"The committee rejected the proposal.", egcn:"委员会否决了这项提案。"},
+   {w:"inject", cn:"v. 注射、注入", eg:"The nurse injected the vaccine into his arm.", egcn:"护士把疫苗注射进他的手臂。"},
+   {w:"project", cn:"n. 项目；v. 投射", eg:"She is leading a research project on climate.", egcn:"她在主持一个气候研究项目。"},
+   {w:"object", cn:"v. 反对；n. 物体", eg:"Many residents objected to the new airport.", egcn:"许多居民反对修建新机场。"}]},
+ {r:"vert / vers", m:"转（turn）", ex:[
+   {w:"convert", cn:"v. 转变、转换", eg:"The old factory was converted into flats.", egcn:"这家旧工厂被改建成了公寓。"},
+   {w:"reverse", cn:"v. 颠倒、逆转", eg:"It is hard to reverse the damage to the environment.", egcn:"对环境的破坏很难逆转。"},
+   {w:"diverse", cn:"adj. 多样的", eg:"Singapore has a very diverse population.", egcn:"新加坡的人口非常多元。"},
+   {w:"version", cn:"n. 版本", eg:"This is the latest version of the app.", egcn:"这是该应用的最新版本。"}]},
+ {r:"scrib / script", m:"写（write）", ex:[
+   {w:"describe", cn:"v. 描述", eg:"Can you describe the man you saw?", egcn:"你能描述一下你看到的那个人吗？"},
+   {w:"subscribe", cn:"v. 订阅", eg:"Millions of people subscribe to the channel.", egcn:"数百万人订阅了这个频道。"},
+   {w:"prescribe", cn:"v. 开（药）、规定", eg:"The doctor prescribed some antibiotics.", egcn:"医生开了一些抗生素。"},
+   {w:"manuscript", cn:"n. 手稿", eg:"The ancient manuscript is kept in the library.", egcn:"这份古老的手稿保存在图书馆里。"}]},
+ {r:"duc / duct", m:"引导、带领（lead）", ex:[
+   {w:"produce", cn:"v. 生产", eg:"This region produces excellent wine.", egcn:"这个地区出产优质葡萄酒。"},
+   {w:"reduce", cn:"v. 减少", eg:"We must reduce plastic waste.", egcn:"我们必须减少塑料垃圾。"},
+   {w:"conduct", cn:"v. 进行、实施", eg:"Researchers conducted a survey of five hundred students.", egcn:"研究人员对五百名学生进行了调查。"},
+   {w:"educate", cn:"v. 教育", eg:"The campaign educates people about healthy eating.", egcn:"这项活动教育人们健康饮食。"}]},
+ {r:"ven / vent", m:"来（come）", ex:[
+   {w:"prevent", cn:"v. 阻止、预防", eg:"Washing your hands helps prevent infection.", egcn:"勤洗手有助于预防感染。"},
+   {w:"invent", cn:"v. 发明", eg:"Edison invented many useful devices.", egcn:"爱迪生发明了许多有用的装置。"},
+   {w:"convenient", cn:"adj. 方便的", eg:"The hotel is convenient for the airport.", egcn:"这家酒店去机场很方便。"},
+   {w:"event", cn:"n. 事件、活动", eg:"The festival is the biggest event of the year.", egcn:"这个节日是一年中最大的活动。"}]},
+ {r:"tract", m:"拉、拖（pull）", ex:[
+   {w:"attract", cn:"v. 吸引", eg:"The museum attracts thousands of tourists.", egcn:"这座博物馆吸引了成千上万的游客。"},
+   {w:"extract", cn:"v. 提取、提炼", eg:"Sugar is extracted from sugar cane.", egcn:"糖是从甘蔗中提取的。"},
+   {w:"distract", cn:"v. 使分心", eg:"Loud music can distract students from studying.", egcn:"大声的音乐会让学生分心。"},
+   {w:"contract", cn:"n. 合同；v. 收缩", eg:"Both sides signed a two-year contract.", egcn:"双方签了一份两年的合同。"}]},
+ {r:"ced / cess", m:"走、行（go）", ex:[
+   {w:"process", cn:"n. 过程；v. 处理", eg:"Learning a language is a slow process.", egcn:"学语言是个缓慢的过程。"},
+   {w:"access", cn:"n./v. 进入、获取", eg:"Students can access the library online.", egcn:"学生可以在线访问图书馆。"},
+   {w:"exceed", cn:"v. 超过", eg:"The cost must not exceed the budget.", egcn:"费用不得超过预算。"},
+   {w:"proceed", cn:"v. 继续进行", eg:"After a short break, the meeting proceeded.", egcn:"短暂休息后，会议继续进行。"}]},
+ {r:"form", m:"形状、形成（shape）", ex:[
+   {w:"transform", cn:"v. 转变、改造", eg:"The internet has transformed how we work.", egcn:"互联网改变了我们的工作方式。"},
+   {w:"reform", cn:"v. 改革", eg:"The government plans to reform the tax system.", egcn:"政府计划改革税制。"},
+   {w:"uniform", cn:"n. 制服；adj. 统一的", eg:"All the students wear a school uniform.", egcn:"所有学生都穿校服。"},
+   {w:"formula", cn:"n. 公式、配方", eg:"The company keeps its formula a secret.", egcn:"这家公司对其配方保密。"}]},
+ {r:"mit / miss", m:"送、放（send）", ex:[
+   {w:"transmit", cn:"v. 传播、传送", eg:"Mosquitoes can transmit several diseases.", egcn:"蚊子能传播多种疾病。"},
+   {w:"emit", cn:"v. 排放、发出", eg:"Cars emit harmful gases.", egcn:"汽车排放有害气体。"},
+   {w:"permit", cn:"v. 允许", eg:"Smoking is not permitted inside.", egcn:"室内禁止吸烟。"},
+   {w:"mission", cn:"n. 任务、使命", eg:"Their mission is to protect endangered animals.", egcn:"他们的使命是保护濒危动物。"}]},
+ {r:"sect", m:"切（cut）", ex:[
+   {w:"insect", cn:"n. 昆虫", eg:"Bees are useful insects.", egcn:"蜜蜂是有益的昆虫。"},
+   {w:"section", cn:"n. 部分、章节", eg:"Read the first section of the report.", egcn:"阅读报告的第一部分。"},
+   {w:"intersection", cn:"n. 交叉路口", eg:"Turn left at the next intersection.", egcn:"在下一个路口左转。"},
+   {w:"dissect", cn:"v. 解剖、剖析", eg:"Students dissect a frog in biology class.", egcn:"学生在生物课上解剖青蛙。"}]},
+ {r:"bio", m:"生命（life）", ex:[
+   {w:"biology", cn:"n. 生物学", eg:"She is studying marine biology.", egcn:"她在学海洋生物学。"},
+   {w:"biography", cn:"n. 传记", eg:"I am reading a biography of Einstein.", egcn:"我在读一本爱因斯坦的传记。"},
+   {w:"antibiotic", cn:"n. 抗生素", eg:"Antibiotics cannot cure a cold.", egcn:"抗生素治不好感冒。"},
+   {w:"biodiversity", cn:"n. 生物多样性", eg:"Rainforests are rich in biodiversity.", egcn:"雨林生物多样性丰富。"}]},
+ {r:"geo", m:"土地、地球（earth）", ex:[
+   {w:"geography", cn:"n. 地理", eg:"Geography is my favourite subject.", egcn:"地理是我最喜欢的科目。"},
+   {w:"geology", cn:"n. 地质学", eg:"Geology is the study of rocks and the earth.", egcn:"地质学是研究岩石和地球的学科。"},
+   {w:"geometry", cn:"n. 几何", eg:"Geometry deals with shapes and angles.", egcn:"几何研究形状和角度。"},
+   {w:"geothermal", cn:"adj. 地热的", eg:"Iceland uses geothermal energy to heat homes.", egcn:"冰岛用地热能为房屋供暖。"}]},
+ {r:"aud", m:"听（hear）", ex:[
+   {w:"audience", cn:"n. 观众、听众", eg:"The audience clapped loudly.", egcn:"观众热烈鼓掌。"},
+   {w:"audio", cn:"adj. 音频的", eg:"The audio quality of the recording is poor.", egcn:"这段录音的音质很差。"},
+   {w:"auditorium", cn:"n. 礼堂", eg:"The lecture was held in a large auditorium.", egcn:"讲座在一个大礼堂举行。"},
+   {w:"audible", cn:"adj. 听得见的", eg:"Her voice was barely audible.", egcn:"她的声音几乎听不见。"}]},
+ {r:"vis / vid", m:"看（see）", ex:[
+   {w:"visible", cn:"adj. 可见的", eg:"The stars are clearly visible tonight.", egcn:"今晚星星清晰可见。"},
+   {w:"vision", cn:"n. 视力；远见", eg:"Carrots are good for your vision.", egcn:"胡萝卜对视力有好处。"},
+   {w:"evident", cn:"adj. 明显的", eg:"It is evident that the plan failed.", egcn:"很明显这个计划失败了。"},
+   {w:"supervise", cn:"v. 监督", eg:"A teacher supervises the exam.", egcn:"一名老师监考。"}]},
+ {r:"man / manu", m:"手（hand）", ex:[
+   {w:"manual", cn:"n. 手册；adj. 手工的", eg:"Follow the instructions in the manual.", egcn:"按照手册里的说明操作。"},
+   {w:"manufacture", cn:"v. 制造", eg:"The factory manufactures car parts.", egcn:"这家工厂制造汽车零件。"},
+   {w:"manage", cn:"v. 管理、设法", eg:"She manages a team of ten people.", egcn:"她管理着一个十人的团队。"},
+   {w:"manipulate", cn:"v. 操纵", eg:"The data had been manipulated to look better.", egcn:"数据被操纵以显得更好看。"}]},
+ {r:"therm", m:"热（heat）", ex:[
+   {w:"thermometer", cn:"n. 温度计", eg:"Use a thermometer to check his temperature.", egcn:"用温度计量他的体温。"},
+   {w:"thermal", cn:"adj. 热的、保暖的", eg:"Thermal clothing keeps climbers warm.", egcn:"保暖衣物让登山者保持温暖。"},
+   {w:"thermostat", cn:"n. 恒温器", eg:"Set the thermostat to twenty degrees.", egcn:"把恒温器设到二十度。"}]},
+ {r:"tele", m:"远（far）", ex:[
+   {w:"telephone", cn:"n. 电话", eg:"She called me on the telephone.", egcn:"她用电话给我打电话。"},
+   {w:"telescope", cn:"n. 望远镜", eg:"Astronomers study stars through a telescope.", egcn:"天文学家用望远镜研究星星。"},
+   {w:"television", cn:"n. 电视", eg:"We watched the news on television.", egcn:"我们在电视上看了新闻。"}]},
+ {r:"cred", m:"相信（believe）", ex:[
+   {w:"credible", cn:"adj. 可信的", eg:"The witness gave a credible account.", egcn:"证人给出了可信的陈述。"},
+   {w:"credit", cn:"n. 信用、赞扬", eg:"She got credit for her hard work.", egcn:"她因努力工作而受到赞扬。"},
+   {w:"incredible", cn:"adj. 难以置信的", eg:"The view from the top was incredible.", egcn:"山顶的景色令人难以置信。"}]},
+ {r:"sci", m:"知道（know）", ex:[
+   {w:"science", cn:"n. 科学", eg:"Science helps us understand the world.", egcn:"科学帮助我们理解世界。"},
+   {w:"conscious", cn:"adj. 有意识的、察觉到的", eg:"She was conscious of being watched.", egcn:"她意识到自己被注视着。"},
+   {w:"conscience", cn:"n. 良心", eg:"His conscience would not let him lie.", egcn:"良心让他无法说谎。"}]},
+ {r:"pop / publ", m:"人民、大众（people）", ex:[
+   {w:"population", cn:"n. 人口", eg:"The city's population is growing fast.", egcn:"这座城市的人口增长很快。"},
+   {w:"popular", cn:"adj. 受欢迎的", eg:"Football is popular all over the world.", egcn:"足球在全世界都很受欢迎。"},
+   {w:"public", cn:"adj. 公众的", eg:"The park is open to the public.", egcn:"公园对公众开放。"},
+   {w:"publish", cn:"v. 出版、发表", eg:"The journal publishes new research.", egcn:"这本期刊发表新的研究。"}]},
+ {r:"soli / sole", m:"单独（alone）", ex:[
+   {w:"solitary", cn:"adj. 独居的、孤独的", eg:"Tigers are largely solitary animals.", egcn:"老虎基本是独居动物。"},
+   {w:"isolate", cn:"v. 隔离、孤立", eg:"The village was isolated by the heavy snow.", egcn:"大雪使这个村庄与外界隔绝。"},
+   {w:"sole", cn:"adj. 唯一的", eg:"She was the sole survivor of the crash.", egcn:"她是这场事故唯一的幸存者。"}]},
+ {r:"flu", m:"流（flow）", ex:[
+   {w:"fluent", cn:"adj. 流利的", eg:"She is fluent in three languages.", egcn:"她能流利地讲三种语言。"},
+   {w:"influence", cn:"v./n. 影响", eg:"Advertising influences what we buy.", egcn:"广告影响我们的购买。"},
+   {w:"fluid", cn:"n. 液体；adj. 流动的", eg:"Drink plenty of fluids when you are ill.", egcn:"生病时要多喝水。"}]},
+ {r:"tain / ten", m:"握住、保持（hold）", ex:[
+   {w:"sustainable", cn:"adj. 可持续的", eg:"We need sustainable sources of energy.", egcn:"我们需要可持续的能源。"},
+   {w:"maintain", cn:"v. 维持、保养", eg:"It is expensive to maintain an old house.", egcn:"维护一栋老房子很贵。"},
+   {w:"contain", cn:"v. 包含", eg:"The drink contains a lot of sugar.", egcn:"这种饮料含有大量糖。"},
+   {w:"retain", cn:"v. 保留", eg:"Plants retain water in their leaves.", egcn:"植物把水分保留在叶子里。"}]},
+ {r:"migr", m:"迁移（move）", ex:[
+   {w:"migrate", cn:"v. 迁徙", eg:"Many birds migrate south in winter.", egcn:"许多鸟在冬天向南迁徙。"},
+   {w:"immigrant", cn:"n. 移民（迁入者）", eg:"The city welcomes immigrants from many countries.", egcn:"这座城市欢迎来自许多国家的移民。"},
+   {w:"emigrate", cn:"v. 移居国外", eg:"Her family emigrated to Canada.", egcn:"她家移居到了加拿大。"}]},
+ {r:"loc", m:"地方（place）", ex:[
+   {w:"local", cn:"adj. 当地的", eg:"We ate at a local restaurant.", egcn:"我们在一家当地餐馆吃饭。"},
+   {w:"locate", cn:"v. 位于、找出", eg:"The hotel is located near the beach.", egcn:"这家酒店位于海滩附近。"},
+   {w:"relocate", cn:"v. 搬迁", eg:"The company relocated its head office to Berlin.", egcn:"公司把总部迁到了柏林。"}]},
+ {r:"nov", m:"新（new）", ex:[
+   {w:"novel", cn:"adj. 新奇的；n. 小说", eg:"They came up with a novel solution.", egcn:"他们想出了一个新颖的解决方案。"},
+   {w:"innovation", cn:"n. 创新", eg:"The company is known for innovation.", egcn:"这家公司以创新著称。"},
+   {w:"renovate", cn:"v. 翻新、修复", eg:"They plan to renovate the old theatre.", egcn:"他们打算翻新这座老剧院。"}]},
+ {r:"sens / sent", m:"感觉（feel）", ex:[
+   {w:"sense", cn:"n. 感觉、意义", eg:"Dogs have a strong sense of smell.", egcn:"狗的嗅觉很灵敏。"},
+   {w:"sensitive", cn:"adj. 敏感的", eg:"The skin around the eyes is very sensitive.", egcn:"眼睛周围的皮肤很敏感。"},
+   {w:"consent", cn:"n./v. 同意", eg:"Parents must give consent for the trip.", egcn:"家长必须同意才能参加这次旅行。"}]},
+ {r:"grad / gress", m:"走、步（step）", ex:[
+   {w:"gradual", cn:"adj. 逐渐的", eg:"There has been a gradual rise in temperature.", egcn:"气温一直在逐渐上升。"},
+   {w:"graduate", cn:"v. 毕业", eg:"She will graduate from university next year.", egcn:"她明年大学毕业。"},
+   {w:"progress", cn:"n./v. 进步、进展", eg:"He is making good progress in English.", egcn:"他的英语进步很大。"}]}
+];
+var W2R=null;
+function rootOf(word){
+  if(!W2R){ W2R={}; ROOTS.forEach(function(R,i){ R.ex.forEach(function(e){ var k=e.w.toLowerCase(); if(!(k in W2R))W2R[k]=i; }); }); }
+  var k=String(word||'').toLowerCase();
+  return (k in W2R)? W2R[k] : -1;
+}
+function rootWordsHTML(R){
+  return R.ex.map(function(e){
+    var inLib=byWord[e.w.toLowerCase()];
+    var isHead=!!gFind(e.w);
+    var tag=isHead?'<span class="kbadge">考点词</span>':'';
+    var en=(inLib!==undefined)?'<span class="rw-en link" onclick="openWord('+inLib+')">'+esc(e.w)+'</span>':'<span class="rw-en">'+esc(e.w)+'</span>';
+    return '<div class="rword">'+
+      '<div class="rw-h">'+en+tag+'<button class="pp-sp" onclick="event.stopPropagation();speak(\''+jx(e.w)+'\',this)">🔊</button></div>'+
+      '<div class="rw-cn">'+esc(e.cn)+'</div>'+
+      '<div class="rw-eg">'+esc(e.eg)+'</div>'+
+      '<div class="rw-egcn">'+esc(e.egcn)+'</div>'+
+    '</div>';
+  }).join('');
+}
+function renderRoots(){
+  view.innerHTML=
+   '<div class="session-top"><button class="x" onclick="go(\'play\')">✕</button><div style="flex:1;font-weight:800">🌱 词根记忆法</div></div>'+
+   '<div class="note" style="margin-top:0">记住一个词根，就能顺藤摸瓜记住一串雅思词。标「考点词」的是本词库收录的词，可点开看详情、加收藏。共 '+ROOTS.length+' 组常用词根。</div>'+
+   '<div class="rootlist">'+
+     ROOTS.map(function(R,i){
+       var kn=R.ex.filter(function(e){return gFind(e.w);}).length;
+       return '<button class="card rootcard" onclick="openRootDetail('+i+')">'+
+         '<div class="rt"><b>'+esc(R.r)+'</b><span class="rm">'+esc(R.m)+'</span></div>'+
+         '<div class="rmeta">'+R.ex.length+' 词'+(kn?' · '+kn+' 考点':'')+' <span class="arrow">›</span></div></button>';
+     }).join('')+
+   '</div>';
+}
+function openRootDetail(i){
+  var R=ROOTS[i];
+  view.innerHTML=
+   '<div class="session-top"><button class="x" onclick="renderRoots()">‹</button><div style="flex:1;font-weight:800">词根 '+esc(R.r)+'</div></div>'+
+   '<div class="card roothero"><div class="rh-r">'+esc(R.r)+'</div><div class="rh-m">'+esc(R.m)+'</div></div>'+
+   '<div class="rwords">'+rootWordsHTML(R)+'</div>'+
+   '<div class="note">💡 把这一串词连读两遍。下次遇到带 “'+esc(R.r)+'” 的陌生词，就能猜出大概意思。</div>';
+}
+function openRootModal(i){
+  var R=ROOTS[i];
+  openModal('<div class="center"><div class="rh-r" style="font-size:30px">'+esc(R.r)+'</div><div class="rh-m" style="margin-top:2px">'+esc(R.m)+'</div></div><div class="rwords" style="margin-top:10px">'+rootWordsHTML(R)+'</div>');
+}
+
+/* ===================== 启动 ===================== */
+var _freshActive = !ROOT.libs[ROOT.active].start;
+useLib(ROOT.active);
+updateChrome();
+go('home');
+if(_freshActive){ openCycle(); }
+</script>
+</body>
+</html>
